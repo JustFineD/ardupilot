@@ -21,6 +21,7 @@ const AP_Param::Info Plane::var_info[] = {
     // @Param: SYSID_SW_TYPE
     // @DisplayName: Software Type
     // @Description: This is used by the ground station to recognise the software type (eg ArduPlane vs ArduCopter)
+    // @Values: 0:ArduPlane,4:AntennaTracker,10:Copter,20:Rover,40:ArduSub
     // @User: Advanced
     // @ReadOnly: True
     GSCALAR(software_type,          "SYSID_SW_TYPE",  Parameters::k_software_type),
@@ -38,15 +39,6 @@ const AP_Param::Info Plane::var_info[] = {
     // @Range: 1 255
     // @User: Advanced
     GSCALAR(sysid_my_gcs,           "SYSID_MYGCS",    255),
-
-#if CLI_ENABLED == ENABLED
-    // @Param: CLI_ENABLED
-    // @DisplayName: CLI Enable
-    // @Description: This enables/disables the checking for three carriage returns on telemetry links on startup to enter the diagnostics command line interface
-    // @Values: 0:Disabled,1:Enabled
-    // @User: Advanced
-    GSCALAR(cli_enabled,            "CLI_ENABLED",    0),
-#endif
 
     // @Group: SERIAL
     // @Path: ../libraries/AP_SerialManager/AP_SerialManager.cpp
@@ -230,7 +222,8 @@ const AP_Param::Info Plane::var_info[] = {
 
     // @Param: USE_REV_THRUST
     // @DisplayName: Bitmask for when to allow negative reverse thrust
-    // @Description: Typically THR_MIN will be clipped to zero unless reverse thrust is available. Since you may not want negative thrust available at all times this bitmask allows THR_MIN to go below 0 while executing certain auto-mission commands.
+    // @Description: This controls when to use reverse thrust. If set to zero then reverse thrust is never used. If set to a non-zero value then the bits correspond to flight stages where reverse thrust may be used. Note that reverse thrust is only ever auto-enabled in auto-throttle modes. In modes where throttle control is pilot controlled the ability to do reverse thrust is controlled by throttle stick input. The most commonly used value for USE_REV_THRUST is 2, which means AUTO_LAND only. That enables reverse thrust in the landing stage of AUTO mode. Another common choice is 1, which means to use reverse thrust in all auto flight stages.
+    // @Values: 0:Never,1:AutoAlways,2:AutoLanding
     // @Bitmask: 0:AUTO_ALWAYS,1:AUTO_LAND,2:AUTO_LOITER_TO_ALT,3:AUTO_LOITER_ALL,4:AUTO_WAYPOINTS,5:LOITER,6:RTL,7:CIRCLE,8:CRUISE,9:FBWB,10:GUIDED
     // @User: Advanced
     GSCALAR(use_reverse_thrust,     "USE_REV_THRUST",  USE_REVERSE_THRUST_AUTO_LAND_APPROACH),
@@ -443,7 +436,7 @@ const AP_Param::Info Plane::var_info[] = {
 
     // @Param: THR_SLEWRATE
     // @DisplayName: Throttle slew rate
-    // @Description: maximum percentage change in throttle per second. A setting of 10 means to not change the throttle by more than 10% of the full throttle range in one second.
+    // @Description: maximum percentage change in throttle per second. A setting of 10 means to not change the throttle by more than 10% of the full throttle range in one second. Note that the minimum throttle change is 1 microsecond per loop, which provides a lower limit on the throttle slew rate, especially for quadplanes that run at 300 loops per second by default.
     // @Units: %/s
     // @Range: 0 127
     // @Increment: 1
@@ -692,20 +685,6 @@ const AP_Param::Info Plane::var_info[] = {
     // @User: Standard
     GSCALAR(auto_trim,              "TRIM_AUTO",      AUTO_TRIM),
 
-    // @Param: VTAIL_OUTPUT
-    // @DisplayName: VTail output
-    // @Description: Enable VTail output in software. If enabled then the APM will provide software VTail mixing on the elevator and rudder channels. There are 8 different mixing modes available, which refer to the 8 ways the elevator can be mapped to the two VTail servos. Please also see the MIXING_GAIN parameter for the output gain of the mixer.
-    // @Values: 0:Disabled,1:UpUp,2:UpDown,3:DownUp,4:DownDown,5:UpUpSwap,6:UpDownSwap,7:DownUpSwap,8:DownDownSwap
-    // @User: User
-    GSCALAR(vtail_output,           "VTAIL_OUTPUT",  0),
-
-    // @Param: ELEVON_OUTPUT
-    // @DisplayName: Elevon output
-    // @Description: Enable software elevon output mixer. If enabled then the APM will provide software elevon mixing on the aileron and elevator channels. There are 8 different mixing modes available, which refer to the 8 ways the elevator can be mapped to the two elevon servos. Please also see the MIXING_GAIN parameter for the output gain of the mixer.
-    // @Values: 0:Disabled,1:UpUp,2:UpDown,3:DownUp,4:DownDown,5:UpUpSwap,6:UpDownSwap,7:DownUpSwap,8:DownDownSwap
-    // @User: User
-    GSCALAR(elevon_output,           "ELEVON_OUTPUT",  0),
-
     // @Param: MIXING_GAIN
     // @DisplayName: Mixing Gain
     // @Description: The gain for the Vtail and elevon output mixers. The default is 0.5, which ensures that the mixer doesn't saturate, allowing both input channels to go to extremes while retaining control over the output. Hardware mixers often have a 1.0 gain, which gives more servo throw, but can saturate. If you don't have enough throw on your servos with VTAIL_OUTPUT or ELEVON_OUTPUT enabled then you can raise the gain using MIXING_GAIN. The mixer allows outputs in the range 900 to 2100 microseconds.
@@ -731,8 +710,8 @@ const AP_Param::Info Plane::var_info[] = {
     // @Param: DSPOILR_RUD_RATE
     // @DisplayName: Differential spoilers rudder rate
     // @Description: Sets the amount of deflection that the rudder output will apply to the differential spoilers, as a percentage. The default value of 100 results in full rudder applying full deflection. A value of 0 will result in the differential spoilers exactly following the elevons (no rudder effect).
-    // @Units: d%
-    // @Range: -1000 1000
+    // @Units: %
+    // @Range: -100 100
     // @User: User
     GSCALAR(dspoiler_rud_rate,      "DSPOILR_RUD_RATE",  DSPOILR_RUD_RATE_DEFAULT),
 
@@ -905,13 +884,6 @@ const AP_Param::Info Plane::var_info[] = {
     // @Values: 0:Disable,1:Enable - go HOME then land,2:Enable - go directly to landing sequence
     // @User: Standard
     GSCALAR(rtl_autoland,         "RTL_AUTOLAND",   0),
-
-    // @Param: RC_TRIM_AT_START
-    // @DisplayName: RC Trims auto set at start.
-    // @Description: Automatically set roll/pitch trim from Tx at ground start. This makes the assumption that the RC transmitter has not been altered since trims were last captured.
-    // @Values: 0:Disable,1:Enable
-    // @User: Standard
-    GSCALAR(trim_rc_at_start,     "TRIM_RC_AT_START",    0), 
 
     // @Param: CRASH_ACC_THRESH
     // @DisplayName: Crash Deceleration Threshold
@@ -1198,6 +1170,22 @@ const AP_Param::GroupInfo ParametersG2::var_info[] = {
     // @User: Standard
     AP_GROUPINFO("RUDD_DT_GAIN", 9, ParametersG2, rudd_dt_gain, 10),
 
+    // @Param: MANUAL_RCMASK
+    // @DisplayName: Manual R/C pass-through mask
+    // @Description: Mask of R/C channels to pass directly to corresponding output channel when in MANUAL mode. When in any mode except MANUAL the channels selected with this option behave normally. This parameter is designed to allow for complex mixing strategies to be used for MANUAL flight using transmitter based mixing. Note that when this option is used you need to be very careful with pre-flight checks to ensure that the output is correct both in MANUAL and non-MANUAL modes.
+    // @Bitmask: 0:Chan1,1:Chan2,2:Chan3,3:Chan4,4:Chan5,5:Chan6,6:Chan7,7:Chan8,8:Chan9,9:Chan10,10:Chan11,11:Chan12,12:Chan13,13:Chan14,14:Chan15,15:Chan16
+    // @User: Advanced
+    AP_GROUPINFO("MANUAL_RCMASK", 10, ParametersG2, manual_rc_mask, 0),
+    
+    // @Param: HOME_RESET_ALT
+    // @DisplayName: Home reset altitude threshold
+    // @Description: When the aircraft is within this altitude of the home waypoint, while disarmed it will automatically update the home position. Set to 0 to continously reset it.
+    // @Values: -1:Never reset,0:Always reset
+    // @Range: -1 127
+    // @Units: m
+    // @User: Advanced
+    AP_GROUPINFO("HOME_RESET_ALT", 11, ParametersG2, home_reset_threshold, 0),
+
     AP_GROUPEND
 };
 
@@ -1280,19 +1268,19 @@ const AP_Param::ConversionInfo conversion_table[] = {
 void Plane::load_parameters(void)
 {
     if (!AP_Param::check_var_info()) {
-        cliSerial->printf("Bad parameter table\n");
+        hal.console->printf("Bad parameter table\n");
         AP_HAL::panic("Bad parameter table");
     }
     if (!g.format_version.load() ||
         g.format_version != Parameters::k_format_version) {
 
         // erase all parameters
-        cliSerial->printf("Firmware change: erasing EEPROM...\n");
+        hal.console->printf("Firmware change: erasing EEPROM...\n");
         AP_Param::erase_all();
 
         // save the current format version
         g.format_version.set_and_save(Parameters::k_format_version);
-        cliSerial->printf("done.\n");
+        hal.console->printf("done.\n");
     }
 
     uint32_t before = micros();
@@ -1316,6 +1304,9 @@ void Plane::load_parameters(void)
     const uint16_t old_aux_chan_mask = 0x3FF0;
     SRV_Channels::upgrade_parameters(old_rc_keys, old_aux_chan_mask, &rcmap);
 
+    // possibly convert elevon and vtail mixers
+    convert_mixers();
+    
     if (quadplane.enable) {
         // quadplanes needs a higher loop rate
         AP_Param::set_default_by_name("SCHED_LOOP_RATE", 300);
@@ -1323,5 +1314,115 @@ void Plane::load_parameters(void)
 
     AP_Param::set_frame_type_flags(AP_PARAM_FRAME_PLANE);
 
-    cliSerial->printf("load_all took %uus\n", (unsigned)(micros() - before));
+    hal.console->printf("load_all took %uus\n", (unsigned)(micros() - before));
+}
+
+/*
+  convert from old ELEVON_OUTPUT and VTAIL_OUTPUT mixers to function
+  based mixing
+ */
+void Plane::convert_mixers(void)
+{
+    AP_Int8 elevon_output;
+    AP_Int8 vtail_output;
+    AP_Param::ConversionInfo elevon_info = {
+        Parameters::k_param_elevon_output,
+        0,
+        AP_PARAM_INT8,
+        nullptr
+    };
+    AP_Param::ConversionInfo vtail_info = {
+        Parameters::k_param_vtail_output,
+        0,
+        AP_PARAM_INT8,
+        nullptr
+    };
+    SRV_Channel *chan1 = SRV_Channels::srv_channel(CH_1);
+    SRV_Channel *chan2 = SRV_Channels::srv_channel(CH_2);
+    SRV_Channel *chan4 = SRV_Channels::srv_channel(CH_4);
+
+    if (AP_Param::find_old_parameter(&vtail_info, &vtail_output) &&
+        vtail_output.get() != 0 &&
+        chan2->get_function() == SRV_Channel::k_elevator &&
+        chan4->get_function() == SRV_Channel::k_rudder &&
+        !chan2->function_configured() &&
+        !chan4->function_configured()) {
+        hal.console->printf("Converting vtail_output %u\n", vtail_output.get());
+        switch (vtail_output) {
+        case MIXING_UPUP:
+        case MIXING_UPUP_SWP:
+            chan2->reversed_set_and_save_ifchanged(false);
+            chan4->reversed_set_and_save_ifchanged(false);
+            break;
+        case MIXING_UPDN:
+        case MIXING_UPDN_SWP:
+            chan2->reversed_set_and_save_ifchanged(false);
+            chan4->reversed_set_and_save_ifchanged(true);
+            break;
+        case MIXING_DNUP:
+        case MIXING_DNUP_SWP:
+            chan2->reversed_set_and_save_ifchanged(true);
+            chan4->reversed_set_and_save_ifchanged(false);
+            break;
+        case MIXING_DNDN:
+        case MIXING_DNDN_SWP:
+            chan2->reversed_set_and_save_ifchanged(true);
+            chan4->reversed_set_and_save_ifchanged(true);
+            break;
+        }
+        if (vtail_output < MIXING_UPUP_SWP) {
+            chan2->function_set_and_save(SRV_Channel::k_vtail_right);
+            chan4->function_set_and_save(SRV_Channel::k_vtail_left);
+        } else {
+            chan2->function_set_and_save(SRV_Channel::k_vtail_left);
+            chan4->function_set_and_save(SRV_Channel::k_vtail_right);
+        }
+    } else if (AP_Param::find_old_parameter(&elevon_info, &elevon_output) &&
+        elevon_output.get() != 0 &&
+        chan1->get_function() == SRV_Channel::k_aileron &&
+        chan2->get_function() == SRV_Channel::k_elevator &&
+        !chan1->function_configured() &&
+        !chan2->function_configured()) {
+        hal.console->printf("convert elevon_output %u\n", elevon_output.get());
+        switch (elevon_output) {
+        case MIXING_UPUP:
+        case MIXING_UPUP_SWP:
+            chan2->reversed_set_and_save_ifchanged(false);
+            chan1->reversed_set_and_save_ifchanged(false);
+            break;
+        case MIXING_UPDN:
+        case MIXING_UPDN_SWP:
+            chan2->reversed_set_and_save_ifchanged(false);
+            chan1->reversed_set_and_save_ifchanged(true);
+            break;
+        case MIXING_DNUP:
+        case MIXING_DNUP_SWP:
+            chan2->reversed_set_and_save_ifchanged(true);
+            chan1->reversed_set_and_save_ifchanged(false);
+            break;
+        case MIXING_DNDN:
+        case MIXING_DNDN_SWP:
+            chan2->reversed_set_and_save_ifchanged(true);
+            chan1->reversed_set_and_save_ifchanged(true);
+            break;
+        }
+        if (elevon_output < MIXING_UPUP_SWP) {
+            chan1->function_set_and_save(SRV_Channel::k_elevon_right);
+            chan2->function_set_and_save(SRV_Channel::k_elevon_left);
+        } else {
+            chan1->function_set_and_save(SRV_Channel::k_elevon_left);
+            chan2->function_set_and_save(SRV_Channel::k_elevon_right);
+        }
+    }
+
+    // convert any k_aileron_with_input to aileron and k_elevator_with_input to k_elevator
+    for (uint8_t i=0; i<NUM_SERVO_CHANNELS; i++) {
+        SRV_Channel *chan = SRV_Channels::srv_channel(i);
+        if (chan->get_function() == SRV_Channel::k_aileron_with_input) {
+            chan->function_set_and_save(SRV_Channel::k_aileron);
+        } else if (chan->get_function() == SRV_Channel::k_elevator_with_input) {
+            chan->function_set_and_save(SRV_Channel::k_elevator);
+        }
+    }
+    
 }

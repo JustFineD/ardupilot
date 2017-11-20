@@ -1,7 +1,6 @@
 #include "GCS_Mavlink.h"
 
 #include "Tracker.h"
-#include "version.h"
 
 // default sensors are present and healthy: gyro, accelerometer, barometer, rate_control, attitude_stabilization, yaw_position, altitude control, x/y position control, motor_control
 #define MAVLINK_SENSOR_PRESENT_DEFAULT (MAV_SYS_STATUS_SENSOR_3D_GYRO | MAV_SYS_STATUS_SENSOR_3D_ACCEL | MAV_SYS_STATUS_SENSOR_ABSOLUTE_PRESSURE | MAV_SYS_STATUS_SENSOR_ANGULAR_RATE_CONTROL | MAV_SYS_STATUS_SENSOR_ATTITUDE_STABILIZATION | MAV_SYS_STATUS_SENSOR_YAW_POSITION | MAV_SYS_STATUS_SENSOR_Z_ALTITUDE_CONTROL | MAV_SYS_STATUS_SENSOR_XY_POSITION_CONTROL | MAV_SYS_STATUS_SENSOR_MOTOR_OUTPUTS)
@@ -101,19 +100,6 @@ void Tracker::send_location(mavlink_channel_t chan)
         ahrs.yaw_sensor);
 }
 
-void Tracker::send_hwstatus(mavlink_channel_t chan)
-{
-    mavlink_msg_hwstatus_send(
-        chan,
-        0,
-        0);
-}
-
-void Tracker::send_waypoint_request(mavlink_channel_t chan)
-{
-    gcs().chan(chan-MAVLINK_COMM_0).queued_waypoint_send();
-}
-
 void Tracker::send_nav_controller_output(mavlink_channel_t chan)
 {
 	float alt_diff = (g.alt_source == ALT_SOURCE_BARO) ? nav_status.alt_difference_baro : nav_status.alt_difference_gps;
@@ -180,11 +166,6 @@ bool GCS_MAVLINK_Tracker::try_send_message(enum ap_message id)
         tracker.send_nav_controller_output(chan);
         break;
 
-    case MSG_GPS_RAW:
-        CHECK_PAYLOAD_SIZE(GPS_RAW_INT);
-        send_gps_raw(tracker.gps);
-        break;
-
     case MSG_RADIO_IN:
         CHECK_PAYLOAD_SIZE(RC_CHANNELS);
         send_radio_in(0);
@@ -210,16 +191,6 @@ bool GCS_MAVLINK_Tracker::try_send_message(enum ap_message id)
         send_sensor_offsets(tracker.ins, tracker.compass, tracker.barometer);
         break;
 
-    case MSG_NEXT_PARAM:
-        CHECK_PAYLOAD_SIZE(PARAM_VALUE);
-        queued_param_send();
-        break;
-
-    case MSG_NEXT_WAYPOINT:
-        CHECK_PAYLOAD_SIZE(MISSION_REQUEST);
-        tracker.send_waypoint_request(chan);
-        break;
-
     case MSG_AHRS:
         CHECK_PAYLOAD_SIZE(AHRS);
         send_ahrs(tracker.ahrs);
@@ -230,46 +201,8 @@ bool GCS_MAVLINK_Tracker::try_send_message(enum ap_message id)
         tracker.send_simstate(chan);
         break;
 
-    case MSG_HWSTATUS:
-        CHECK_PAYLOAD_SIZE(HWSTATUS);
-        tracker.send_hwstatus(chan);
-        break;
-    case MSG_MAG_CAL_PROGRESS:
-        tracker.compass.send_mag_cal_progress(chan);
-        break;
-
-    case MSG_MAG_CAL_REPORT:
-        tracker.compass.send_mag_cal_report(chan);
-        break;
-
-    case MSG_SERVO_OUT:
-    case MSG_EXTENDED_STATUS1:
-    case MSG_EXTENDED_STATUS2:
-    case MSG_RETRY_DEFERRED:
-    case MSG_ADSB_VEHICLE:
-    case MSG_CURRENT_WAYPOINT:
-    case MSG_VFR_HUD:
-    case MSG_SYSTEM_TIME:
-    case MSG_LIMITS_STATUS:
-    case MSG_FENCE_STATUS:
-    case MSG_WIND:
-    case MSG_RANGEFINDER:
-    case MSG_TERRAIN:
-    case MSG_BATTERY2:
-    case MSG_BATTERY_STATUS:
-    case MSG_CAMERA_FEEDBACK:
-    case MSG_MOUNT_STATUS:
-    case MSG_OPTICAL_FLOW:
-    case MSG_GIMBAL_REPORT:
-    case MSG_EKF_STATUS_REPORT:
-    case MSG_PID_TUNING:
-    case MSG_VIBRATION:
-    case MSG_RPM:
-    case MSG_MISSION_ITEM_REACHED:
-    case MSG_POSITION_TARGET_GLOBAL_INT:
-    case MSG_AOA_SSA:
-    case MSG_LANDING:
-        break; // just here to prevent a warning
+    default:
+        return GCS_MAVLINK::try_send_message(id);
     }
     return true;
 }
@@ -387,6 +320,9 @@ GCS_MAVLINK_Tracker::data_stream_send(void)
         send_message(MSG_EXTENDED_STATUS2);
         send_message(MSG_NAV_CONTROLLER_OUTPUT);
         send_message(MSG_GPS_RAW);
+        send_message(MSG_GPS_RTK);
+        send_message(MSG_GPS2_RAW);
+        send_message(MSG_GPS2_RTK);
     }
 
     if (stream_trigger(STREAM_POSITION)) {
@@ -506,18 +442,6 @@ void GCS_MAVLINK_Tracker::handleMessage(mavlink_message_t* msg)
     }
 
 
-    case MAVLINK_MSG_ID_PARAM_REQUEST_LIST:
-    {
-        handle_param_request_list(msg);
-        break;
-    }
-
-    case MAVLINK_MSG_ID_PARAM_SET:
-    {
-        handle_param_set(msg, nullptr);
-        break;
-    }
-
     case MAVLINK_MSG_ID_HEARTBEAT:
         break;
 
@@ -601,26 +525,11 @@ void GCS_MAVLINK_Tracker::handleMessage(mavlink_message_t* msg)
 
             case MAV_CMD_GET_HOME_POSITION:
                 send_home(tracker.ahrs.get_home());
-                result = MAV_RESULT_ACCEPTED;
-                break;
-
-            case MAV_CMD_DO_SET_MODE:
-                switch ((uint16_t)packet.param1) {
-                    case MAV_MODE_MANUAL_ARMED:
-                    case MAV_MODE_MANUAL_DISARMED:
-                        tracker.set_mode(MANUAL);
-                        result = MAV_RESULT_ACCEPTED;
-                        break;
-
-                    case MAV_MODE_AUTO_ARMED:
-                    case MAV_MODE_AUTO_DISARMED:
-                        tracker.set_mode(AUTO);
-                        result = MAV_RESULT_ACCEPTED;
-                        break;
-
-                    default:
-                        result = MAV_RESULT_UNSUPPORTED;
+                Location ekf_origin;
+                if (tracker.ahrs.get_origin(ekf_origin)) {
+                    send_ekf_origin(ekf_origin);
                 }
+                result = MAV_RESULT_ACCEPTED;
                 break;
 
             case MAV_CMD_DO_SET_SERVO:
@@ -640,14 +549,6 @@ void GCS_MAVLINK_Tracker::handleMessage(mavlink_message_t* msg)
                 if (is_equal(packet.param1,1.0f) || is_equal(packet.param1,3.0f)) {
                     // when packet.param1 == 3 we reboot to hold in bootloader
                     hal.scheduler->reboot(is_equal(packet.param1,3.0f));
-                    result = MAV_RESULT_ACCEPTED;
-                }
-                break;
-            }
-
-            case MAV_CMD_REQUEST_AUTOPILOT_CAPABILITIES: {
-                if (is_equal(packet.param1,1.0f)) {
-                    send_autopilot_version(FIRMWARE_VERSION);
                     result = MAV_RESULT_ACCEPTED;
                 }
                 break;
@@ -803,20 +704,6 @@ mission_failed:
         break;
     }
 
-    case MAVLINK_MSG_ID_SET_MODE:
-    {
-        handle_set_mode(msg, FUNCTOR_BIND(&tracker, &Tracker::mavlink_set_mode, bool, uint8_t));
-        break;
-    }
-
-    case MAVLINK_MSG_ID_SERIAL_CONTROL:
-        handle_serial_control(msg, tracker.gps);
-        break;
-
-    case MAVLINK_MSG_ID_AUTOPILOT_VERSION_REQUEST:
-        send_autopilot_version(FIRMWARE_VERSION);
-        break;
-
     default:
         handle_common_message(msg);
         break;
@@ -881,13 +768,7 @@ void Tracker::gcs_update(void)
  */
 void Tracker::gcs_retry_deferred(void)
 {
-    gcs().send_message(MSG_RETRY_DEFERRED);
-    gcs().service_statustext();
-}
-
-AP_GPS *GCS_MAVLINK_Tracker::get_gps() const
-{
-    return &tracker.gps;
+    gcs().retry_deferred();
 }
 
 Compass *GCS_MAVLINK_Tracker::get_compass() const
@@ -895,8 +776,39 @@ Compass *GCS_MAVLINK_Tracker::get_compass() const
     return &tracker.compass;
 }
 
+/*
+  set_mode() wrapper for MAVLink SET_MODE
+ */
+bool GCS_MAVLINK_Tracker::set_mode(uint8_t mode)
+{
+    switch (mode) {
+    case AUTO:
+    case MANUAL:
+    case SCAN:
+    case SERVO_TEST:
+    case STOP:
+        tracker.set_mode((enum ControlMode)mode);
+        return true;
+    }
+    return false;
+}
+
+const AP_FWVersion &GCS_MAVLINK_Tracker::get_fwver() const
+{
+    return tracker.fwver;
+}
+
+void GCS_MAVLINK_Tracker::set_ekf_origin(const Location& loc)
+{
+    tracker.set_ekf_origin(loc);
+}
+
 /* dummy methods to avoid having to link against AP_Camera */
 void AP_Camera::control_msg(mavlink_message_t const*) {}
 void AP_Camera::configure(float, float, float, float, float, float, float) {}
 void AP_Camera::control(float, float, float, float, float, float) {}
+void AP_Camera::send_feedback(mavlink_channel_t chan) {}
 /* end dummy methods to avoid having to link against AP_Camera */
+
+// dummy method to avoid linking AFS
+bool AP_AdvancedFailsafe::gcs_terminate(bool should_terminate) {return false;}

@@ -116,6 +116,7 @@ public:
         k_motor12               = 85,
         k_dspoilerLeft2         = 86,           ///< differential spoiler 2 (left wing)
         k_dspoilerRight2        = 87,           ///< differential spoiler 2 (right wing)
+        k_winch                 = 88,
         k_nr_aux_servo_functions         ///< This must be the last enum value (only add new values _before_ this one)
     } Aux_servo_function_t;
 
@@ -166,6 +167,28 @@ public:
     // return true if function is for a multicopter motor
     static bool is_motor(SRV_Channel::Aux_servo_function_t function);
 
+    // return the function of a channel
+    SRV_Channel::Aux_servo_function_t get_function(void) const {
+        return (SRV_Channel::Aux_servo_function_t)function.get();
+    }
+
+    // set and save function for channel. Used in upgrade of parameters in plane
+    void function_set_and_save(SRV_Channel::Aux_servo_function_t f) {
+        function.set_and_save(int8_t(f));
+    }
+
+    // set and save function for reversed. Used in upgrade of parameters in plane
+    void reversed_set_and_save_ifchanged(bool r) {
+        reversed.set_and_save_ifchanged(r?1:0);
+    }
+    
+    // return true if the SERVOn_FUNCTION has been configured in
+    // either storage or a defaults file. This is used for upgrade of
+    // parameters in plane
+    bool function_configured(void) const {
+        return function.configured();
+    }
+    
 private:
     AP_Int16 servo_min;
     AP_Int16 servo_max;
@@ -256,6 +279,9 @@ public:
     // return zero on error.
     static float get_output_norm(SRV_Channel::Aux_servo_function_t function);
 
+    // get output channel mask for a function
+    static uint16_t get_output_channel_mask(SRV_Channel::Aux_servo_function_t function);
+    
     // limit slew rate to given limit in percent per second
     static void limit_slew_rate(SRV_Channel::Aux_servo_function_t function, float slew_rate, float dt);
 
@@ -306,9 +332,12 @@ public:
     // set output to trim value
     static void set_output_to_trim(SRV_Channel::Aux_servo_function_t function);
 
-    // copy radio_in to radio_out
+    // copy radio_in to servo out
     static void copy_radio_in_out(SRV_Channel::Aux_servo_function_t function, bool do_input_output=false);
 
+    // copy radio_in to servo_out by channel mask
+    static void copy_radio_in_out_mask(uint16_t mask);
+    
     // setup failsafe for an auxiliary channel function, by pwm
     static void set_failsafe_pwm(SRV_Channel::Aux_servo_function_t function, uint16_t pwm);
 
@@ -377,6 +406,14 @@ public:
     static bool upgrade_parameters(const uint8_t old_keys[14], uint16_t aux_channel_mask, RCMapper *rcmap);
     static void upgrade_motors_servo(uint8_t ap_motors_key, uint8_t ap_motors_idx, uint8_t new_channel);
 
+    // given a zero-based motor channel, return the k_motor function for that channel
+    static SRV_Channel::Aux_servo_function_t get_motor_function(uint8_t channel) {
+        if (channel < 8) {
+            return SRV_Channel::Aux_servo_function_t(SRV_Channel::k_motor1+channel);
+        }
+        return SRV_Channel::Aux_servo_function_t((SRV_Channel::k_motor9+(channel-8)));
+    }
+    
 private:
     struct {
         bool k_throttle_reversible:1;

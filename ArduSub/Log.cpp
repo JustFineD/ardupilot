@@ -1,5 +1,4 @@
 #include "Sub.h"
-#include "version.h"
 
 #if LOGGING_ENABLED == ENABLED
 
@@ -160,13 +159,13 @@ void Sub::Log_Write_Performance()
     struct log_Performance pkt = {
         LOG_PACKET_HEADER_INIT(LOG_PERFORMANCE_MSG),
         time_us          : AP_HAL::micros64(),
-        num_long_running : perf_info_get_num_long_running(),
-        num_loops        : perf_info_get_num_loops(),
-        max_time         : perf_info_get_max_time(),
+        num_long_running : perf_info.get_num_long_running(),
+        num_loops        : perf_info.get_num_loops(),
+        max_time         : perf_info.get_max_time(),
         pm_test          : pmTest1,
         i2c_lockup_count : 0,
         ins_error_count  : ins.error_count(),
-        log_dropped      : DataFlash.num_dropped() - perf_info_get_num_dropped(),
+        log_dropped      : DataFlash.num_dropped() - perf_info.get_num_dropped(),
         hal.util->available_memory()
     };
     DataFlash.WriteCriticalBlock(&pkt, sizeof(pkt));
@@ -179,11 +178,7 @@ void Sub::Log_Write_Attitude()
     targets.z = wrap_360_cd(targets.z);
     DataFlash.Log_Write_Attitude(ahrs, targets);
 
-#if OPTFLOW == ENABLED
-    DataFlash.Log_Write_EKF(ahrs,optflow.enabled());
-#else
-    DataFlash.Log_Write_EKF(ahrs,false);
-#endif
+    DataFlash.Log_Write_EKF(ahrs);
     DataFlash.Log_Write_AHRS2(ahrs);
 #if CONFIG_HAL_BOARD == HAL_BOARD_SITL
     sitl.Log_Write_SIMSTATE(&DataFlash);
@@ -469,8 +464,6 @@ void Sub::Log_Write_Vehicle_Startup_Messages()
 void Sub::log_init(void)
 {
     DataFlash.Init(log_structure, ARRAY_SIZE(log_structure));
-
-    gcs().reset_cli_timeout();
 }
 
 #else // LOGGING_ENABLED

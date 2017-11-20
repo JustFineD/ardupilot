@@ -7,20 +7,13 @@
 // loiter_init - initialise loiter controller
 bool Copter::loiter_init(bool ignore_checks)
 {
-#if FRAME_CONFIG == HELI_FRAME
-    // do not allow helis to enter Loiter if the Rotor Runup is not complete
-    if (!ignore_checks && !motors->rotor_runup_complete()){
-        return false;
-    }
-#endif
-
     if (position_ok() || ignore_checks) {
 
         // set target to current position
         wp_nav->init_loiter_target();
 
         // initialize vertical speed and acceleration
-        pos_control->set_speed_z(-g.pilot_velocity_z_max, g.pilot_velocity_z_max);
+        pos_control->set_speed_z(-get_pilot_speed_dn(), g.pilot_speed_up);
         pos_control->set_accel_z(g.pilot_accel_z);
 
         // initialise position and desired velocity
@@ -81,7 +74,7 @@ void Copter::loiter_run()
     float takeoff_climb_rate = 0.0f;
 
     // initialize vertical speed and acceleration
-    pos_control->set_speed_z(-g.pilot_velocity_z_max, g.pilot_velocity_z_max);
+    pos_control->set_speed_z(-get_pilot_speed_dn(), g.pilot_speed_up);
     pos_control->set_accel_z(g.pilot_accel_z);
 
     // process pilot inputs unless we are in radio failsafe
@@ -97,7 +90,7 @@ void Copter::loiter_run()
 
         // get pilot desired climb rate
         target_climb_rate = get_pilot_desired_climb_rate(channel_throttle->get_control_in());
-        target_climb_rate = constrain_float(target_climb_rate, -g.pilot_velocity_z_max, g.pilot_velocity_z_max);
+        target_climb_rate = constrain_float(target_climb_rate, -get_pilot_speed_dn(), g.pilot_speed_up);
     } else {
         // clear out pilot desired acceleration in case radio failsafe event occurs and we do not switch to RTL for some reason
         wp_nav->clear_pilot_desired_acceleration();

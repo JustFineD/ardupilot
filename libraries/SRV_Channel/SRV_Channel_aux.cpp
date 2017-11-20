@@ -38,10 +38,6 @@ void SRV_Channel::output_ch(void)
     case k_rcin1 ... k_rcin16: // rc pass-thru
         passthrough_from = int8_t(function - k_rcin1);
         break;
-    case k_motor1 ... k_motor8:
-    case k_motor9 ... k_motor12:
-        // handled by AP_Motors::rc_write()
-        return;
     }
     if (passthrough_from != -1) {
         // we are doing passthrough from input to output for this channel
@@ -256,6 +252,24 @@ SRV_Channels::copy_radio_in_out(SRV_Channel::Aux_servo_function_t function, bool
 }
 
 /*
+  copy radio_in to radio_out for a channel mask
+ */
+void
+SRV_Channels::copy_radio_in_out_mask(uint16_t mask)
+{
+    for (uint8_t i = 0; i < NUM_SERVO_CHANNELS; i++) {
+        if ((1U<<i) & mask) {
+            RC_Channel *rc = RC_Channels::rc_channel(channels[i].ch_num);
+            if (rc == nullptr) {
+                continue;
+            }
+            channels[i].set_output_pwm(rc->get_radio_in());
+        }
+    }
+
+}
+
+/*
   setup failsafe value for an auxiliary function type to a LimitValue
  */
 void
@@ -394,6 +408,7 @@ bool SRV_Channels::set_aux_channel_default(SRV_Channel::Aux_servo_function_t fun
     channels[channel].function.set(function);
     channels[channel].aux_servo_function_setup();
     function_mask.set((uint8_t)function);
+    functions[function].channel_mask |= 1U<<channel;
     return true;
 }
 
@@ -445,6 +460,21 @@ int16_t SRV_Channels::get_output_scaled(SRV_Channel::Aux_servo_function_t functi
     }
     return 0;
 }
+
+/*
+  get mask of output channels for a function
+ */
+uint16_t SRV_Channels::get_output_channel_mask(SRV_Channel::Aux_servo_function_t function)
+{
+    if (!initialised) {
+        update_aux_servo_function();
+    }
+    if (function < SRV_Channel::k_nr_aux_servo_functions) {
+        return functions[function].channel_mask;
+    }
+    return 0;
+}
+
 
 // set the trim for a function channel to given pwm
 void SRV_Channels::set_trim_to_pwm_for(SRV_Channel::Aux_servo_function_t function, int16_t pwm)
@@ -571,6 +601,10 @@ float SRV_Channels::get_output_norm(SRV_Channel::Aux_servo_function_t function)
  */
 void SRV_Channels::limit_slew_rate(SRV_Channel::Aux_servo_function_t function, float slew_rate, float dt)
 {
+    if (slew_rate <= 0) {
+        // nothing to do
+        return;
+    }
     for (uint8_t i=0; i<NUM_SERVO_CHANNELS; i++) {
         SRV_Channel &ch = channels[i];
         if (ch.function == function) {
