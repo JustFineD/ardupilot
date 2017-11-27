@@ -1,0 +1,26 @@
+digraph "AC_Avoid::limit_velocity"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AC_Avoid::limit_velocity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AC_Avoid::get_max_speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#a2ba87fd18a092d9f11ba197255064d16"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AC_AttitudeControl\l::sqrt_controller",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a1788967db1aa0dfe68fad24da23947f9"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="is_zero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a2a12cce483e9b870da70d30406d82c60"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a0375e3d67fd3911cacee5c3e1408c0f2"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="safe_sqrt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ac89eb1832d8e4d67fcf1ac07e3c25184"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="safe_sqrt\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#aa5cb9421d48def32eb7574adb1b152b0"];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="safe_sqrt\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a6952300e3d03222491051d674312b67d"];
+  Node6 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="safe_sqrt\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a40ae6cfccff676d9d2ff57e2e9ca549c"];
+  Node6 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="safe_sqrt\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#acf6795fb73b8b915b53126f71cd2712a"];
+}

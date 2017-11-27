@@ -1,0 +1,52 @@
+digraph "NavEKF2_core::UpdateStrapdownEquationsNED"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="NavEKF2_core::UpdateStrapdown\lEquationsNED",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Quaternion::rotate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQuaternion.html#aad078c52b4d7e9221963199f0dd075df"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Quaternion::from_axis\l_angle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQuaternion.html#a6c21fe33378aa16a33cba869ba4af5dc"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Vector3::length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVector3.html#ac1fd5514e368a1e1c2d13f71eda18345"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="norm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#adc76d4a5e5c9ae8cb7ab17b55c40d636"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a0375e3d67fd3911cacee5c3e1408c0f2"];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="is_zero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a2a12cce483e9b870da70d30406d82c60"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Quaternion::normalize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQuaternion.html#a48e6bafb249c895ed25f29dc9170e11e"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Quaternion::length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQuaternion.html#a6f5e82dd828c59392a3133d6d5877f39"];
+  Node9 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Matrix3::mul_transpose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMatrix3.html#a3705734aec6b67d729011cd792d7398a"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Quaternion::inverse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQuaternion.html#a0df66e20ea437eb346f8852690ede6a9"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Quaternion::Quaternion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQuaternion.html#abcc01358aada56ea5f0db4da18aaf77d"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Quaternion::rotation\l_matrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQuaternion.html#afb7132c9c69a984a40be950a17effeaa"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="NavEKF2_core::ConstrainStates",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF2__core.html#aad4ed2734e815393b01f13c4cdca85fa"];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="constrain_float",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#ad525609d9dba6ffa556a0fbf08a3f9b4"];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="constrain_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a20e8f8671c282c69c1954652b6d61585"];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="constrain_value\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a37e8e901754cb9c8e53a8e3030c82c50"];
+  Node16 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="constrain_value\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afdbe107ec1987d318a6347816fbf2b89"];
+  Node16 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="constrain_value\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ae6c621670c214da687de21d4e3a92587"];
+  Node16 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="constrain_value\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afe3990b00e9abc43fa97dfaf8e32f5c4"];
+  Node14 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="MAX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a5c0b5c82749ac54970b2699d3c10ee9b"];
+}

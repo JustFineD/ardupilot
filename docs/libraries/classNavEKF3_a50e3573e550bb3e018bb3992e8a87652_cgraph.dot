@@ -1,0 +1,12 @@
+digraph "NavEKF3::have_ekf_logging"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="NavEKF3::have_ekf_logging",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="NavEKF3::getTimingStatistics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF3.html#a64bf0554f2d36eb25103b94967c8bf6c"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NavEKF3_core::getTimingStatistics",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF3__core.html#afd979c9874cd3b626b62af60938fc674"];
+}

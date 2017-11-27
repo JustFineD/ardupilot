@@ -1,0 +1,48 @@
+digraph "AP_HAL::RCOutput::enable_ch"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_HAL::RCOutput::enable_ch",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SRV_Channels::enable\l_aux_servos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channels.html#ad4306fcdcf8ba30daa7c0bf62072ca2a",tooltip="Should be called after the the servo functions have been initialized. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SRV_Channels::enable\l_by_mask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channels.html#a9b49d78db4c04bf0a87cdded70bdd58e",tooltip="enable output channels using a channel mask "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RCOutputRGBLed::hw_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRCOutputRGBLed.html#a0231956650e7369488d5fc5e30f39818"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RC_UART::loop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__UART.html#a410755d321a1790e7e49aad3a71f64a9"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Motors::rc_enable_ch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a91e69152a30b5e1020f3e49271b9d054"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_MotorsMatrix::enable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsMatrix.html#a934ca726182ad47b9fa2fe78aeb076c2"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_MotorsMatrix::AP\l_MotorsMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsMatrix.html#a1079a240f98556fe4cb0af7d1d039917",tooltip="Constructor. "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Motors__test_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d"];
+  Node6 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_MotorsTri::enable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsTri.html#a47d592e54579b7ef9a8b887e57f0a8e9"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_MotorsTri::AP_MotorsTri",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsTri.html#a282f48b7e788fbbe5ae835a00937cb02",tooltip="Constructor. "];
+  Node6 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_MotorsCoax::enable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsCoax.html#a7fe65e911c51fc652863ac6add5e14e1"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AP_MotorsCoax::AP_MotorsCoax",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsCoax.html#a9f2013067a9ad3699bad4bd7ec4fba55",tooltip="Constructor. "];
+  Node6 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_MotorsSingle::enable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsSingle.html#a6f680a991a165820c9d4d271e3082e0a"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="AP_MotorsSingle::AP\l_MotorsSingle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsSingle.html#a93eade83957680ac6f0b01fadc8fbbfa",tooltip="Constructor. "];
+  Node6 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="AP_MotorsHeli_Dual\l::enable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Dual.html#ac1ba74732be86ef690df5a00947ff368"];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="AP_MotorsHeli_Dual\l::AP_MotorsHeli_Dual",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Dual.html#a55d0c8d6ba98819e849fbd31be3353db"];
+  Node6 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="AP_MotorsHeli_Single\l::enable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Single.html#adba1c07c5edd3d389f788e2deed5d49e"];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="AP_MotorsHeli_Single\l::AP_MotorsHeli_Single",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Single.html#aa617a5f4634505d942568279034b2be2"];
+  Node6 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="AP_Motors::get_pwm_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a03665c7df835ae4b22a34c650819ce27"];
+  Node1 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$RCInputToRCOutput_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d"];
+}

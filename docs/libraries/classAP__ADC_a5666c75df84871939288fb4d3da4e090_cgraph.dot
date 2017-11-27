@@ -1,0 +1,18 @@
+digraph "AP_ADC::AP_ADC"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_ADC::AP_ADC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_ADC::Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__ADC.html#a3e3f2b27090b3f6e12ae44387856c28e"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_ADC::Ch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__ADC.html#a56d48d12c85ac39ca1691f1eee9c6889"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_ADC::Ch6",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__ADC.html#a394fc5e2639fee226446cf0495828286"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_ADC::new_data_available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__ADC.html#ad68747c668529d9c7f056837aec20293"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_ADC::num_samples\l_available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__ADC.html#a4b7c5b5066a56568648c94a61b51cb52"];
+}

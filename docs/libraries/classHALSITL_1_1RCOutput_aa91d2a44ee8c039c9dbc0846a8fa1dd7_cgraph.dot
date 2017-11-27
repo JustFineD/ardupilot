@@ -1,0 +1,26 @@
+digraph "HALSITL::RCOutput::RCOutput"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="HALSITL::RCOutput::\lRCOutput",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HALSITL::RCOutput::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1RCOutput.html#a692486bec7f38b4be3ce6a88ae44c721"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="HALSITL::RCOutput::\lset_freq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1RCOutput.html#adef0c8e90f259bd056860da33c465c99"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="HALSITL::RCOutput::\lget_freq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1RCOutput.html#a6da8f473a6551c52cced12b238e183ce"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HALSITL::RCOutput::\lenable_ch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1RCOutput.html#a01b585d5ecc611ded0273e668d5394c2"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="HALSITL::RCOutput::\ldisable_ch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1RCOutput.html#acc9d515226146b4faeb5a81df20bddcb"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HALSITL::RCOutput::\lwrite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1RCOutput.html#ade8c021cd3195d6e4d5b049f02eb9b87"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="HALSITL::RCOutput::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1RCOutput.html#a98c11957e3e1ff8ba832bc9a6b7be9b1"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="HALSITL::RCOutput::cork",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1RCOutput.html#acfa8005ff0dd3c7efe57dcefe8adff24"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="HALSITL::RCOutput::push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1RCOutput.html#a20c062434c90eebb5aaaacd50df08aa5"];
+}

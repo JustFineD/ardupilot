@@ -1,0 +1,8 @@
+<map id="check_latlng" name="check_latlng">
+<area shape="rect" id="node2" href="$classAC__Fence.html#a9e7499c3b42f4ef5cc120bf103d17fe3" title="handler for polygon fence messages with GCS " alt="" coords="148,15,311,42"/>
+<area shape="rect" id="node4" href="$structGCS__MAVLINK.html#ae507720fd8a0a7f67bc8100a5ae55c40" title="GCS_MAVLINK::handle\l_rally_point" alt="" coords="148,68,311,109"/>
+<area shape="rect" id="node7" href="$location_8h.html#a9b7e911ac78bab5a978b4f0d3941e250" title="location_sanitize" alt="" coords="170,134,289,161"/>
+<area shape="rect" id="node3" href="$classAC__Fence.html#ae37cf33a4fd250b66386253720fddbc9" title="set_home_distance &#45; update vehicle&#39;s distance from home in meters &#45; required for circular horizontal ..." alt="" coords="369,5,519,47"/>
+<area shape="rect" id="node5" href="$structGCS__MAVLINK.html#a0cddddd51bc5ea4c137c1927d2e34d97" title="GCS_MAVLINK::handle\l_common_rally_message" alt="" coords="359,71,529,112"/>
+<area shape="rect" id="node6" href="$structGCS__MAVLINK.html#a13da94a2548ade6552a5250eb3251e89" title="GCS_MAVLINK::handle\l_common_message" alt="" coords="577,71,740,112"/>
+</map>

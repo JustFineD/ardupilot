@@ -1,0 +1,30 @@
+digraph "GCS_MAVLINK::handle_serial_control"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GCS_MAVLINK::handle\l_serial_control",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GCS_MAVLINK::lock_channel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structGCS__MAVLINK.html#a7e936df0a7c89b61cb717118cb4c21a2"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="valid_channel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$GCS__MAVLink_8h.html#a17ee8d1ce05b7d160ccc6a78b92b774f"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_GPS::lock_port",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__GPS.html#a27bb197524818a82bd813d22a6b0c1b5"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_HAL::Util::get_shell\l_stream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Util.html#adb24bf463166ae7e94c8e1361423041e"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_HAL::UARTDriver\l::set_flow_control",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1UARTDriver.html#ae831a0d75f4760267d444c522e1271a1"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_HAL::UARTDriver\l::begin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1UARTDriver.html#a2a83124757f6f8f6eb4d25b11c9cb97e"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_HAL::Print::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Print.html#acc65391952a43334f8f5c9bef341f501"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_HAL::Stream::txspace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html#a1768308e013072eb91ecf0ccdc171da6"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_HAL::Scheduler::\ldelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html#ab3175e2e6223ccfe82f957e41cc12b26"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_HAL::Stream::available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html#ae6aa935b5bbd553a2654bfec4e14961e"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_HAL::Stream::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html#ae42ff362cc2a7e527c22f92a3740c2ac"];
+}

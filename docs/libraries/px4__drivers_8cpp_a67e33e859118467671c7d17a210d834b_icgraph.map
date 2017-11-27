@@ -1,0 +1,29 @@
+<map id="waitpid" name="waitpid">
+<area shape="rect" id="node2" href="$classAP__BoardConfig.html#aa07dcdc737c7b35b7728a287abbd8e7b" title="AP_BoardConfig::px4\l_setup_sbus" alt="" coords="116,67,264,108"/>
+<area shape="rect" id="node10" href="$classAP__BoardConfig.html#aa4196422a112564ccbf73a187612161b" title="AP_BoardConfig::px4\l_start_driver" alt="" coords="116,242,264,283"/>
+<area shape="rect" id="node3" href="$classAP__BoardConfig.html#acc8c8524ca7415a823bb446a8a09d1f1" title="AP_BoardConfig::px4\l_setup" alt="" coords="1047,99,1195,140"/>
+<area shape="rect" id="node4" href="$classAP__BoardConfig.html#a53de1d2c0a124ff0d6e3455126237bb5" title="AP_BoardConfig::init" alt="" coords="1279,106,1423,133"/>
+<area shape="rect" id="node5" href="$AHRS__Test_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="1536,48,1591,74"/>
+<area shape="rect" id="node6" href="$classAP__BoardConfig.html#a49a7027797d4a5fd9be56b55c85b8e90" title="AP_BoardConfig::AP\l_BoardConfig" alt="" coords="1491,99,1636,140"/>
+<area shape="rect" id="node7" href="$classSchedTest.html#ae9afb73f76391e34d47286a516fe5292" title="SchedTest::setup" alt="" coords="1501,165,1626,192"/>
+<area shape="rect" id="node8" href="$classSchedTest.html#ab41681c4e9b1eda12cc3f85ed89e82cf" title="SchedTest::five_second_call" alt="" coords="1684,140,1875,166"/>
+<area shape="rect" id="node9" href="$Scheduler__test_8cpp.html#a7dfd9b79bc5a37d7df40207afbc5431f" title="setup" alt="" coords="1752,190,1807,217"/>
+<area shape="rect" id="node11" href="$classAP__BoardConfig.html#aa907eb67931dea502d3eaba210763871" title="AP_BoardConfig::in\l_sensor_config_error" alt="" coords="337,40,480,82"/>
+<area shape="rect" id="node12" href="$classAP__BoardConfig.html#a8eea748fde57e8fe745477393457c576" title="AP_BoardConfig::px4\l_setup_drivers" alt="" coords="589,99,737,140"/>
+<area shape="rect" id="node13" href="$classAP__BoardConfig.html#afccb4bd76345c66eacfc89255f3bb535" title="AP_BoardConfig::px4\l_tone_alarm" alt="" coords="335,158,483,199"/>
+<area shape="rect" id="node14" href="$classAP__BoardConfig.html#aa2db66012c1c14fc1ae4f42ff3433785" title="AP_BoardConfig::px4\l_setup_px4io" alt="" coords="589,192,737,234"/>
+<area shape="rect" id="node15" href="$classAP__BoardConfig.html#abf10a9f4d43760ea3311c4bd22e6205f" title="AP_BoardConfig::px4\l_setup_peripherals" alt="" coords="827,192,975,234"/>
+<area shape="rect" id="node16" href="$classPX4_1_1PX4Storage.html#aad546c170b46ea2e79f105f6a3118ae3" title="PX4::PX4Storage::_mtd_load" alt="" coords="312,325,505,352"/>
+<area shape="rect" id="node21" href="$classOreoLED__PX4.html#aa3c8b6ae5779103b16f78266427ef193" title="OreoLED_PX4::init" alt="" coords="342,376,475,402"/>
+<area shape="rect" id="node22" href="$classAP__RangeFinder__PX4__PWM.html#a55a5489f43240f0e64b7a1e01f964daa" title="AP_RangeFinder_PX4\l_PWM::detect" alt="" coords="332,427,485,468"/>
+<area shape="rect" id="node28" href="$classAP__RPM__PX4__PWM.html#adb0fbc30f7ec21ba8f4ef05195375bf4" title="AP_RPM_PX4_PWM::AP\l_RPM_PX4_PWM" alt="" coords="321,492,496,534"/>
+<area shape="rect" id="node17" href="$classPX4_1_1PX4Storage.html#a02878fb502221c2389d3758bbab18170" title="PX4::PX4Storage::_storage_open" alt="" coords="553,325,772,352"/>
+<area shape="rect" id="node18" href="$classPX4_1_1PX4Storage.html#a905f7ce49985c0670a8f05e196e18c1f" title="PX4::PX4Storage::read\l_block" alt="" coords="821,268,980,310"/>
+<area shape="rect" id="node20" href="$classPX4_1_1PX4Storage.html#aae27b43fbe4428f430fad9f8d035a67f" title="PX4::PX4Storage::write\l_block" alt="" coords="820,334,981,375"/>
+<area shape="rect" id="node19" href="$classPX4_1_1PX4Storage.html#a3e2527da1f5db2c322daba7ddf78944b" title="PX4::PX4Storage::init" alt="" coords="1045,308,1196,334"/>
+<area shape="rect" id="node23" href="$classRangeFinder.html#a7f7f9dce880eb37d53df67cba39bdda9" title="RangeFinder::detect\l_instance" alt="" coords="593,427,733,468"/>
+<area shape="rect" id="node24" href="$classRangeFinder.html#a1c2d6a488e35a856814b5d48ca3d5d9e" title="RangeFinder::init" alt="" coords="840,434,961,461"/>
+<area shape="rect" id="node25" href="$RFIND__test_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="1324,409,1379,436"/>
+<area shape="rect" id="node26" href="$classRangeFinder.html#a95856f52f03d5234d587600faedcbfaf" title="RangeFinder::num_sensors" alt="" coords="1029,460,1212,486"/>
+<area shape="rect" id="node27" href="$classAP__Proximity__RangeFinder.html#a00972bd55509a984f8a71c4cfdb78445" title="AP_Proximity_RangeFinder\l::update" alt="" coords="1260,460,1443,502"/>
+</map>

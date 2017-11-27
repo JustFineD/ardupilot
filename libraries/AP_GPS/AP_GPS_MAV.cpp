@@ -110,9 +110,48 @@ void AP_GPS_MAV::handle_msg(const mavlink_message_t *msg)
             }
 
         case MAVLINK_MSG_ID_HIL_GPS: {
+
             mavlink_hil_gps_t packet;
             mavlink_msg_hil_gps_decode(msg, &packet);
 
+// Update bt DF 27/11/17
+            state.time_week     = 0;
+            state.time_week_ms  = packet.time_usec / 1000; // copy from original code
+            state.status = AP_GPS::GPS_OK_FIX_3D; // (AP_GPS::GPS_Status)packet.fix_type;
+
+            Location loc = {};
+            loc.lat = packet.lat;
+            loc.lng = packet.lon;
+            loc.alt = (packet.alt) / 10000.0f; // mm
+
+            state.location = loc;
+            state.location.options = 0;
+
+            state.hdop = 2; // packet.eph;
+            state.vdop = 2; //packet.epv;
+            state.num_sats = packet.satellites_visible;
+
+            Vector3f vel(packet.vn/100.0f, packet.ve/100.0f, packet.vd/100.f);
+
+            state.velocity = vel;
+            state.ground_course = wrap_360(degrees(atan2f(vel.y, vel.x)));
+            state.ground_speed = norm(vel.x, vel.y);
+
+            state.have_speed_accuracy = true;
+            state.have_horizontal_accuracy = true;
+            state.have_vertical_accuracy = true;
+            state.have_vertical_velocity = true;
+
+            state.speed_accuracy = 0;
+            state.horizontal_accuracy = 0;
+            state.vertical_accuracy = 0;
+
+            state.last_gps_time_ms = AP_HAL::millis();
+            _new_data = true;
+            break;
+        }
+
+/*
             state.time_week = 0;
             state.time_week_ms  = packet.time_usec/1000;
             state.status = (AP_GPS::GPS_Status)packet.fix_type;
@@ -143,6 +182,7 @@ void AP_GPS_MAV::handle_msg(const mavlink_message_t *msg)
             _new_data = true;
             break;
             }
+            */
         default:
             // ignore all other messages
             break;

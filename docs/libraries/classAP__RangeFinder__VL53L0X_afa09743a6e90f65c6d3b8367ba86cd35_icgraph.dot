@@ -1,0 +1,35 @@
+digraph "AP_RangeFinder_VL53L0X::read_register16"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_RangeFinder_VL53L0X\l::read_register16",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_RangeFinder_VL53L0X\l::get_reading",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__VL53L0X.html#a6d85723df25c37c2fc998f4ae8ce6588"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_RangeFinder_VL53L0X\l::timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__VL53L0X.html#aa9efdad4b38a7ae8b07fcae35c49f3b5"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_RangeFinder_VL53L0X\l::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__VL53L0X.html#ac67db36587944e0a5a1295a75933302c"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_RangeFinder_VL53L0X\l::detect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__VL53L0X.html#acda2670d739ed1966164fee6001680a0"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="RangeFinder::detect\l_instance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRangeFinder.html#a7f7f9dce880eb37d53df67cba39bdda9"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="RangeFinder::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRangeFinder.html#a1c2d6a488e35a856814b5d48ca3d5d9e"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$RFIND__test_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d"];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="RangeFinder::num_sensors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRangeFinder.html#a95856f52f03d5234d587600faedcbfaf"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_Proximity_RangeFinder\l::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity__RangeFinder.html#a00972bd55509a984f8a71c4cfdb78445"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_RangeFinder_VL53L0X\l::getSequenceStepTimeouts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__VL53L0X.html#aee8dc588ee1ce3c0fc1b1548a137f3b0"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_RangeFinder_VL53L0X\l::getMeasurementTimingBudget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__VL53L0X.html#a99578fad928a8259ab6419cd20a9d00f"];
+  Node12 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AP_RangeFinder_VL53L0X\l::setMeasurementTimingBudget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__VL53L0X.html#adec2d569b8b1567535371a3d69b4c95f"];
+  Node13 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

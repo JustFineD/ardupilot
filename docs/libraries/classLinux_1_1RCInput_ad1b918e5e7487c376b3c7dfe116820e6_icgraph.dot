@@ -1,0 +1,18 @@
+digraph "Linux::RCInput::add_sbus_input"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::RCInput::add\l_sbus_input",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::RCInput_SBUS\l::_timer_tick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1RCInput__SBUS.html#abfee87e744e16f1ddc3753f26dc07258"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Linux::RCInput::_timer_tick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1RCInput.html#a0d5d4518e1ed51c95fe36a9d6ea7ecac"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Linux::Scheduler::\l_rcin_task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Scheduler.html#ab4423cb70540d467b8464d67ffd9c325"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Linux::Scheduler::\l_timer_task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Scheduler.html#a78a6776a646f8e58f5f39cf2ce366608"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Linux::RCInput_Multi\l::_timer_tick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1RCInput__Multi.html#a0b12cfca1c9ff9bcbf8f2818d8c1007f"];
+}

@@ -1,0 +1,20 @@
+digraph "SerialDevice::~SerialDevice"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SerialDevice::~SerialDevice",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SerialDevice::open",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSerialDevice.html#aaad60303d5def2e5abf4b9988e74ff2d"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SerialDevice::close",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSerialDevice.html#a93d69b452e5db251aa5baf050ffbe4fa"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SerialDevice::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSerialDevice.html#a93c12dd5e93213bb98b83924a07ed040"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SerialDevice::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSerialDevice.html#ab9d80891c101e2dd0ab0ce378a4e4982"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SerialDevice::set_blocking",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSerialDevice.html#a3b3ba391824a7d8bacd54dd2ee7a6cd7"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SerialDevice::set_speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSerialDevice.html#aa9b83a160a4706f759a35875f2ec5a13"];
+}

@@ -1,0 +1,15 @@
+digraph "libraries/AP_HAL_QURT/mainapp" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_fed4d61a34137c3b5da073c921a836df {
+    graph [ bgcolor="#ddddee", pencolor="black", label="AP_HAL_QURT" fontname="Helvetica", fontsize="10", URL="dir_fed4d61a34137c3b5da073c921a836df.html"]
+  dir_b25e243709a41eeb8735e7e842e18113 [shape=box, label="mainapp", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b25e243709a41eeb8735e7e842e18113.html"];
+  }
+  dir_1cbc10423b2512b31103883361e0123b [shape=box label="AP_HAL" fillcolor="white" style="filled" color="red" URL="dir_1cbc10423b2512b31103883361e0123b.html"];
+  dir_df3f4256615fd4197927a84a019a8bd8 [shape=box label="AP_Common" fillcolor="white" style="filled" color="red" URL="dir_df3f4256615fd4197927a84a019a8bd8.html"];
+  dir_1cbc10423b2512b31103883361e0123b->dir_df3f4256615fd4197927a84a019a8bd8 [headlabel="10", labeldistance=1.5 headhref="dir_000057_000036.html"];
+  dir_b25e243709a41eeb8735e7e842e18113->dir_1cbc10423b2512b31103883361e0123b [headlabel="1", labeldistance=1.5 headhref="dir_000085_000057.html"];
+  dir_b25e243709a41eeb8735e7e842e18113->dir_df3f4256615fd4197927a84a019a8bd8 [headlabel="1", labeldistance=1.5 headhref="dir_000085_000036.html"];
+  dir_df3f4256615fd4197927a84a019a8bd8->dir_1cbc10423b2512b31103883361e0123b [headlabel="5", labeldistance=1.5 headhref="dir_000036_000057.html"];
+}

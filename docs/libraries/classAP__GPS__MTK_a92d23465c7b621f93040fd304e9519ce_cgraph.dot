@@ -1,0 +1,30 @@
+digraph "AP_GPS_MTK::read"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_GPS_MTK::read",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_HAL::Stream::available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html#ae6aa935b5bbd553a2654bfec4e14961e"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_HAL::Stream::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html#ae42ff362cc2a7e527c22f92a3740c2ac"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_GPS_Backend::swap\l_int32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__GPS__Backend.html#a8e71e2e307aeb48d4d4aecaa64b00c20"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="wrap_360",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#aac44349f9b159f31fc43fe924d52f7fc"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="wrap_360\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ad909fc5c89c69617f13018963a685bd5"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="wrap_360\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a3c6b3854a342ae989b7c2296b4c6c6ec"];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="wrap_360\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ad75d42039e8eda0c32431b8882b46fc4"];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="wrap_360\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#aaf5c8a69731644be38edeaedbd1b1c8d"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_GPS_Backend::make\l_gps_time",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__GPS__Backend.html#a61d3376fe67c0f2f8b0cb865dfc863b1"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_GPS_Backend::fill\l_3d_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__GPS__Backend.html#a349cb407ea3c09c424ed77bcf72a488b"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="radians",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a75b14352ec1c95a8276af9a0813cfdc3"];
+}

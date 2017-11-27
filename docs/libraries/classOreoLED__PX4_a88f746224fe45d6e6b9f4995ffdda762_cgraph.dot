@@ -1,0 +1,57 @@
+digraph "OreoLED_PX4::healthy"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OreoLED_PX4::healthy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OreoLED_PX4::handle\l_led_control",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#a8a9bbad92734cecc23ce5f97da42b09a"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OreoLED_PX4::clear\l_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#aafa0e9ee898bc853b4860a2c201d4e77"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OreoLED_PX4::oreo_state\l::clear_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structOreoLED__PX4_1_1oreo__state.html#abc37426b4e17082e9ab96456c32a9950"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OreoLED_PX4::set_rgb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#ac79742b697403772ab712adeff362b23"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="OreoLED_PX4::send_sync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#a656fbe69fdb01fc4aad63ed924f1a396"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="OreoLED_PX4::oreo_state\l::send_sync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structOreoLED__PX4_1_1oreo__state.html#a0b6e252809555491929be472ba670f71"];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="OreoLED_PX4::set_macro",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#ad6e87dbe026c0b2861938c9a8d4b6571"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="OreoLED_PX4::oreo_state\l::set_macro",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structOreoLED__PX4_1_1oreo__state.html#a8789cc28e35c84d1a87debfbc230b91d"];
+  Node9 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="OreoLED_PX4::update\l_timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#aa70b3ddbf5f8ac9388c3112027983918"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="OreoLED_PX4::slow_counter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#a9a3d3cafea8612a81ec2ec78e5ae413d"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="OreoLED_PX4::sync_counter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#af3780cb76c252aca739ac808def8c8f5"];
+  Node12 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="OreoLED_PX4::mode_firmware\l_update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#a9a65fcb02bb0ac417e0be0d43ef3d9d7"];
+  Node13 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="OreoLED_PX4::mode_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#af475c030beb24fc3dc69cbfb82913ea9"];
+  Node14 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="OreoLED_PX4::mode_failsafe\l_radio",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#a21938506a072edf4d756e9f5988a34f9"];
+  Node15 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="OreoLED_PX4::set_standard\l_colors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#abf28e4c91050cc92b0170a29bc9931b2"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="OreoLED_PX4::mode_failsafe_batt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#a7e6695374962b787554681f74599f682"];
+  Node17 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="OreoLED_PX4::mode_auto\l_flight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#a0fab32966e63ad1dc4c6e6c95da87ec3"];
+  Node18 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="OreoLED_PX4::mode_pilot\l_flight",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#abe3d962f91f473e37ada97116ffcda94"];
+  Node19 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

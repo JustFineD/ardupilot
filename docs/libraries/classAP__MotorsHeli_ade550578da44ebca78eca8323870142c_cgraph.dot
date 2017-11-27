@@ -1,0 +1,12 @@
+digraph "AP_MotorsHeli::reset_flight_controls"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_MotorsHeli::reset\l_flight_controls",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_MotorsHeli::init\l_outputs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli.html#ace1a63150b1449b08a4d6ac325c0882a"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_MotorsHeli::calculate\l_scalars",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli.html#a3b035659d70ab36f882f7c9871074b0c"];
+}

@@ -1,0 +1,21 @@
+digraph "AccelCalibrator::get_num_samples_collected"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AccelCalibrator::get\l_num_samples_collected",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_InertialSensor::\lget_primary_accel_cal\l_sample_avg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__InertialSensor.html#a7858aea15cce3a9190135b050c4f71db"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_InertialSensor::\l_acal_save_calibrations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__InertialSensor.html#a8fc427251113bec9b5b91c42b33e75d8"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_InertialSensor::\lget_acal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__InertialSensor.html#ab7992b2d70b268a86ad4354531ae464d"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_AccelCal::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AccelCal.html#a5a2c8a471866eff24b340cc9680f9868"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_AccelCal::AP_AccelCal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AccelCal.html#a04edd404ef14de6e6106e02f3746afeb"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_InertialSensor::\lacal_update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__InertialSensor.html#a9ca5d711a97f4c33fe6a7c31b1329761"];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

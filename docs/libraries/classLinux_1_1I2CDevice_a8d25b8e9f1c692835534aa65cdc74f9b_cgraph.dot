@@ -1,0 +1,48 @@
+digraph "Linux::I2CDevice::register_periodic_callback"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::I2CDevice::register\l_periodic_callback",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::PollerThread\l::add_timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1PollerThread.html#acf9896662e9de3a070bf0c56ee33ac9b"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Linux::TimerPollable\l::TimerPollable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1TimerPollable.html#abf3089dab751514d048f80b98941f101"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Linux::TimerPollable\l::setup_timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1TimerPollable.html#aede210356b091ef11f46aa73793cee69"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Linux::TimerPollable\l::adjust_timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1TimerPollable.html#ab4fdb7c8fdea2b648bbcd11a8efb787f"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_HAL::panic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceAP__HAL.html#a71832f03d849a0c088f04fc98d3c8143"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_HAL::RCInput::teardown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCInput.html#a2bea13d38f2b9ae8bf5193a3a69f0a31"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_HAL::RCInput::new\l_input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCInput.html#aee1fade33080edef83dd7db0fad0f7da"];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_HAL::RCInput::num\l_channels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCInput.html#ae55f959c6115c1f41783af3a2b6c4fcd"];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_HAL::RCInput::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCInput.html#a078fd7e6d2e6a899009ec674a8e03498"];
+  Node6 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_HAL::Scheduler::\ldelay_microseconds",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html#a78c4f1b1f192ac1c99544b6cc8f099b0"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Linux::Thread::is_started",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#a240d7b48a9a8eb43638f67295a1819e5"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Linux::Thread::get\l_stack_usage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#a6884970a0811ae21953c57fb98aa6e96"];
+  Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Linux::Thread::set\l_stack_size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#a8d3282b714faaf68eae534e9276419f0"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Linux::Thread::start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#a0d768b661886d6ef463a19d01f02fd3f"];
+  Node15 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Linux::Thread::_run\l_trampoline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#a18067b247d564909ee4e17494be5116f"];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="Linux::Thread::_poison\l_stack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#a18e058f2fff1d040f82725cdd03278c1"];
+  Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="Linux::align_to",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceLinux.html#aa34987ac24945c9252dbe37e6769381e"];
+  Node17 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="swap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix__alg_8cpp.html#a4ae7bd9da0bae1b05a7c352df26008ff"];
+  Node16 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="Linux::Thread::_run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#accef76b1c9d5096cd4a16c679d3b6ff3"];
+}

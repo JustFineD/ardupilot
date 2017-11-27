@@ -1,0 +1,14 @@
+digraph "AP_InertialSensor_Invensense::_check_raw_temp"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_InertialSensor_Invensense\l::_check_raw_temp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_InertialSensor_Invensense\l::_block_read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__InertialSensor__Invensense.html#a1bb3a083c04cbfbf313b5f294a8c91bc"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_HAL::Device::read\l_registers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Device.html#a66215f964cfb5c7421effdb88a749550"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_HAL::Device::transfer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Device.html#a2af24b5f93b678af718b65a606e538b0"];
+}

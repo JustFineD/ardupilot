@@ -1,0 +1,21 @@
+digraph "AP_WheelEncoder_Quadrature::irq_handler"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_WheelEncoder_Quadrature\l::irq_handler",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_WheelEncoder_Quadrature\l::irq_handler0_pina",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder__Quadrature.html#ac0a68882e07442009c89dd306b3467f4"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_WheelEncoder_Quadrature\l::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder__Quadrature.html#a3a27a29cab25251c5993e4e7afab9071"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_WheelEncoder_Quadrature\l::irq_handler0_pinb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder__Quadrature.html#ad7af326721edf55e1b68c6d1b785cb56"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_WheelEncoder_Quadrature\l::irq_handler1_pina",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder__Quadrature.html#ab8c81f788c72d88e3c005223cdaed4e8"];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_WheelEncoder_Quadrature\l::irq_handler1_pinb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder__Quadrature.html#a0ba6936259d149171b7bb3ac4e51e80f"];
+  Node6 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

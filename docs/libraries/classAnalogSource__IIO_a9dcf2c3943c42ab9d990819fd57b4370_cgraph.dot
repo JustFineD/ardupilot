@@ -1,0 +1,18 @@
+digraph "AnalogSource_IIO::voltage_average_ratiometric"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AnalogSource_IIO::voltage\l_average_ratiometric",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AnalogSource_IIO::voltage\l_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__IIO.html#a93c21dea3c2b90c0d53d37b0a2d61ed3"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AnalogSource_IIO::read\l_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__IIO.html#a99e4878021dcfe65223db6416e0c8087"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AnalogSource_IIO::read\l_latest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__IIO.html#ae25f06a820a8c6b32608c454f60773dc"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_HAL::Scheduler::\lsuspend_timer_procs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html#ae7d4952721abae16479fef1f0ca37145"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_HAL::Scheduler::\lresume_timer_procs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html#a7c51e7d405211cac2090dbd456223ef7"];
+}

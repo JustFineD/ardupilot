@@ -1,0 +1,99 @@
+<map id="AC_Avoid::adjust_velocity" name="AC_Avoid::adjust_velocity">
+<area shape="rect" id="node2" href="$classAC__Avoid.html#abee541d127ce0da1fe6be54f987a0779" title="AC_Avoid::adjust_velocity" alt="" coords="229,631,405,657"/>
+<area shape="rect" id="node3" href="$AP__Math_8h.html#a6b187a3fa1e9f663e89175e7e8e213d6" title="MIN" alt="" coords="748,5,795,32"/>
+<area shape="rect" id="node4" href="$classAC__Avoid.html#ab17bec0b2b5b58be5d4686d680a68a6a" title="AC_Avoid::adjust_velocity\l_circle_fence" alt="" coords="453,375,629,417"/>
+<area shape="rect" id="node80" href="$classAC__Avoid.html#ac02a966259c9abb5ca2e5e4ee8e72d91" title="AC_Avoid::adjust_velocity\l_polygon_fence" alt="" coords="453,623,629,665"/>
+<area shape="rect" id="node92" href="$classAC__Avoid.html#acda5962c20c1d4c06eb2137c092e9569" title="AC_Avoid::adjust_velocity\l_beacon_fence" alt="" coords="453,718,629,759"/>
+<area shape="rect" id="node95" href="$classAC__Avoid.html#aac95ba12099c07f5b9c6bfd5f7cee4b2" title="AC_Avoid::adjust_velocity\l_proximity" alt="" coords="453,842,629,883"/>
+<area shape="rect" id="node5" href="$classAC__Fence.html#a233d3a13b201e30c21c6d319f73d1ab2" title="get_enabled_fences &#45; returns bitmask of enabled fences " alt="" coords="690,535,853,577"/>
+<area shape="rect" id="node6" href="$classAC__Fence.html#a57e4980284a5d418bdee8a9abcb77e68" title="get_breaches &#45; returns bit mask of the fence types that have been breached " alt="" coords="686,484,857,511"/>
+<area shape="rect" id="node7" href="$classAC__Avoid.html#a41d275eda1fdeb8d0fe4fcafe02fa8f9" title="AC_Avoid::get_position" alt="" coords="692,317,851,344"/>
+<area shape="rect" id="node20" href="$structVector2.html#ad8ebafde96f43521d3647e2552387529" title="Vector2::length" alt="" coords="953,492,1064,519"/>
+<area shape="rect" id="node23" href="$classAC__Fence.html#ab26922c6d979d1f0e4d0cff136b6854a" title="get_radius &#45; returns the fence radius in meters " alt="" coords="695,56,847,83"/>
+<area shape="rect" id="node24" href="$classAC__Fence.html#a030cba699d6f13503232480828f0e3c5" title="get_margin &#45; returns the fence margin in meters " alt="" coords="693,601,849,628"/>
+<area shape="rect" id="node71" href="$AP__Math_8h.html#a2a12cce483e9b870da70d30406d82c60" title="is_zero" alt="" coords="1609,381,1673,408"/>
+<area shape="rect" id="node72" href="$classAC__Avoid.html#ad63f697807f8b865c973e147cb774f20" title="AC_Avoid::get_stopping\l_distance" alt="" coords="1161,158,1324,199"/>
+<area shape="rect" id="node73" href="$classAC__Avoid.html#a2ba87fd18a092d9f11ba197255064d16" title="AC_Avoid::get_max_speed" alt="" coords="1152,543,1333,569"/>
+<area shape="rect" id="node8" href="$classAP__InertialNav.html#a39348dd51a8c32fe16d01dfef284e31a" title="AP_InertialNav::get\l_position" alt="" coords="941,375,1077,417"/>
+<area shape="rect" id="node9" href="$location_8cpp.html#a527b26472ed6f2e0c141e109a0722a0a" title="location_diff" alt="" coords="963,259,1055,285"/>
+<area shape="rect" id="node17" href="$classAP__InertialNav.html#a0400fb5866678c5657542a4c2769839b" title="AP_InertialNav::get\l_origin" alt="" coords="941,310,1077,351"/>
+<area shape="rect" id="node18" href="$classAP__AHRS.html#aea45b16e6469a3b392b8bf52fb864732" title="AP_AHRS::get_home" alt="" coords="933,208,1084,235"/>
+<area shape="rect" id="node10" href="$location_8cpp.html#ad2368c582f3e0c135e2a74772f4db61a" title="longitude_scale" alt="" coords="1187,275,1299,301"/>
+<area shape="rect" id="node11" href="$AP__Math_8h.html#ad525609d9dba6ffa556a0fbf08a3f9b4" title="constrain_float" alt="" coords="1395,275,1502,301"/>
+<area shape="rect" id="node12" href="$AP__Math_8h.html#a20e8f8671c282c69c1954652b6d61585" title="constrain_value" alt="" coords="1584,275,1697,301"/>
+<area shape="rect" id="node13" href="$AP__Math_8cpp.html#a37e8e901754cb9c8e53a8e3030c82c50" title="constrain_value\&lt; int \&gt;" alt="" coords="1777,189,1928,216"/>
+<area shape="rect" id="node14" href="$AP__Math_8cpp.html#afdbe107ec1987d318a6347816fbf2b89" title="constrain_value\&lt; short \&gt;" alt="" coords="1769,240,1936,267"/>
+<area shape="rect" id="node15" href="$AP__Math_8cpp.html#ae6c621670c214da687de21d4e3a92587" title="constrain_value\&lt; float \&gt;" alt="" coords="1771,291,1934,317"/>
+<area shape="rect" id="node16" href="$AP__Math_8cpp.html#afe3990b00e9abc43fa97dfaf8e32f5c4" title="constrain_value\&lt; double \&gt;" alt="" coords="1765,341,1940,368"/>
+<area shape="rect" id="node19" href="$classAP__AHRS.html#a702b6313fff141dced78533a4d258ab0" title="AP_AHRS::set_home" alt="" coords="1167,224,1318,251"/>
+<area shape="rect" id="node21" href="$AP__Math_8h.html#adc76d4a5e5c9ae8cb7ab17b55c40d636" title="norm" alt="" coords="1423,488,1474,515"/>
+<area shape="rect" id="node22" href="$AP__Math_8h.html#a0375e3d67fd3911cacee5c3e1408c0f2" title="sq" alt="" coords="1621,488,1660,515"/>
+<area shape="rect" id="node25" href="$classAC__Fence.html#a32ddec2d811a21b723c83fca515a2004" title="AC_Fence::manual_recovery\l_start" alt="" coords="913,594,1104,635"/>
+<area shape="rect" id="node26" href="$namespaceAP__HAL.html#a77dffbb18891996280308e21316ec186" title="AP_HAL::millis" alt="" coords="1187,605,1298,632"/>
+<area shape="rect" id="node27" href="$namespaceAP__HAL.html#a59336c5fceaf28a76d1df1581a87a25d" title="AP_HAL::millis64" alt="" coords="1386,956,1511,983"/>
+<area shape="rect" id="node28" href="$classLinux_1_1Scheduler.html#a53ecaae0fdc72f85bd57c4b0cff93653" title="Linux::Scheduler::from" alt="" coords="1564,1019,1717,1045"/>
+<area shape="rect" id="node56" href="$classLinux_1_1Scheduler.html#a682b4c34f330f66db5ab4aa5d96e13f9" title="Linux::Scheduler::stopped\l_clock_usec" alt="" coords="2661,1317,2835,1358"/>
+<area shape="rect" id="node29" href="$classLinux_1_1Scheduler.html#a3d77c332e051c28c83fb07757e7100bd" title="Linux::Scheduler::init" alt="" coords="1781,960,1925,987"/>
+<area shape="rect" id="node36" href="$classLinux_1_1Scheduler.html#a02a34a123dfebaf360f7010745e1e646" title="Linux::Scheduler::register\l_timer_process" alt="" coords="1991,1162,2161,1203"/>
+<area shape="rect" id="node47" href="$classLinux_1_1Scheduler.html#a14f3239ecbb9889823b20dc9de655c2f" title="Linux::Scheduler::delay" alt="" coords="1773,1447,1932,1473"/>
+<area shape="rect" id="node49" href="$classLinux_1_1Scheduler.html#a4cffd5bcba0175bf49c7aa75ff3bf09a" title="Linux::Scheduler::delay\l_microseconds" alt="" coords="2669,1382,2827,1423"/>
+<area shape="rect" id="node50" href="$classLinux_1_1Scheduler.html#a5cb50b637d5fd3e5f9220bc23db0fb3f" title="Linux::Scheduler::register\l_delay_callback" alt="" coords="1767,829,1938,870"/>
+<area shape="rect" id="node51" href="$classLinux_1_1Scheduler.html#aa2be97cb8686d72cc322fb38f69a940c" title="Linux::Scheduler::register\l_io_process" alt="" coords="1991,1279,2161,1321"/>
+<area shape="rect" id="node52" href="$classLinux_1_1Scheduler.html#abba967d02c28cb0b16a7cebbff9bc6d6" title="Linux::Scheduler::suspend\l_timer_procs" alt="" coords="1988,814,2164,855"/>
+<area shape="rect" id="node62" href="$classLinux_1_1Scheduler.html#aee4e701b92cb4721c4de1bfcdcded70c" title="Linux::Scheduler::resume\l_timer_procs" alt="" coords="1991,675,2161,717"/>
+<area shape="rect" id="node64" href="$classLinux_1_1Scheduler.html#af23753e7c6bfa97553db215a64235455" title="Linux::Scheduler::in\l_timerprocess" alt="" coords="1784,1011,1921,1053"/>
+<area shape="rect" id="node65" href="$classLinux_1_1Scheduler.html#ac193459e3575c7a0588fdc72250c2044" title="Linux::Scheduler::register\l_timer_failsafe" alt="" coords="1767,1077,1938,1118"/>
+<area shape="rect" id="node66" href="$classLinux_1_1Scheduler.html#ad6070a7ee637adf5101b1e6b6efbf8f6" title="Linux::Scheduler::system\l_initialized" alt="" coords="1767,894,1938,935"/>
+<area shape="rect" id="node68" href="$classLinux_1_1Scheduler.html#ae72cfa66c849ffd882ef518c35c71e69" title="Linux::Scheduler::reboot" alt="" coords="1771,1143,1934,1169"/>
+<area shape="rect" id="node69" href="$classLinux_1_1Scheduler.html#a392aebafcdfe9a812e4db4b7a9dcce9c" title="Linux::Scheduler::stop\l_clock" alt="" coords="1777,711,1929,753"/>
+<area shape="rect" id="node30" href="$namespaceAP__HAL.html#a71832f03d849a0c088f04fc98d3c8143" title="AP_HAL::panic" alt="" coords="2020,960,2132,987"/>
+<area shape="rect" id="node45" href="$classLinux_1_1Scheduler.html#a163eb7b285c95b1b1d036fc61d723910" title="Linux::Scheduler::\l_debug_stack" alt="" coords="2013,610,2139,651"/>
+<area shape="rect" id="node31" href="$classAP__HAL_1_1RCInput.html#a2bea13d38f2b9ae8bf5193a3a69f0a31" title="AP_HAL::RCInput::teardown" alt="" coords="2212,1224,2403,1251"/>
+<area shape="rect" id="node35" href="$classAP__HAL_1_1Scheduler.html#a78c4f1b1f192ac1c99544b6cc8f099b0" title="AP_HAL::Scheduler::\ldelay_microseconds" alt="" coords="2459,907,2605,949"/>
+<area shape="rect" id="node32" href="$classAP__HAL_1_1RCInput.html#aee1fade33080edef83dd7db0fad0f7da" title="AP_HAL::RCInput::new\l_input" alt="" coords="2451,1093,2613,1134"/>
+<area shape="rect" id="node33" href="$classAP__HAL_1_1RCInput.html#ae55f959c6115c1f41783af3a2b6c4fcd" title="AP_HAL::RCInput::num\l_channels" alt="" coords="2451,1158,2613,1199"/>
+<area shape="rect" id="node34" href="$classAP__HAL_1_1RCInput.html#a078fd7e6d2e6a899009ec674a8e03498" title="AP_HAL::RCInput::read" alt="" coords="2451,1224,2613,1251"/>
+<area shape="rect" id="node37" href="$classAP__HAL_1_1UARTDriver.html#a6ceedc792594e59fc7d80b39a435f027" title="AP_HAL::UARTDriver\l::printf" alt="" coords="2231,1275,2384,1317"/>
+<area shape="rect" id="node38" href="$classAP__HAL_1_1UARTDriver.html#aa8abfb6d6641299472c29ac1edde559f" title="AP_HAL::UARTDriver\l::vprintf" alt="" coords="2455,1275,2609,1317"/>
+<area shape="rect" id="node39" href="$print__vprintf_8cpp.html#a1534eaeab54696df96975b56d9f49212" title="print_vprintf" alt="" coords="2703,1197,2793,1224"/>
+<area shape="rect" id="node40" href="$classAP__HAL_1_1Print.html#acc65391952a43334f8f5c9bef341f501" title="AP_HAL::Print::write" alt="" coords="2906,1223,3050,1249"/>
+<area shape="rect" id="node41" href="$ftoa__engine_8cpp.html#a1c28234da8f20b43c85890d4bb452947" title="ftoa_engine" alt="" coords="2933,1273,3023,1300"/>
+<area shape="rect" id="node42" href="$replace_8cpp.html#a880bcc7b85a09e6254691bebd5344b51" title="strnlen" alt="" coords="2947,1071,3009,1097"/>
+<area shape="rect" id="node43" href="$utoa__invert_8cpp.html#a34926f552460b47c414ec4d83b32815c" title="ulltoa_invert" alt="" coords="2932,1121,3024,1148"/>
+<area shape="rect" id="node44" href="$utoa__invert_8cpp.html#a5d99bba8e697c1e11da489d88fca8559" title="ultoa_invert" alt="" coords="2933,1172,3023,1199"/>
+<area shape="rect" id="node46" href="$classLinux_1_1Thread.html#a6884970a0811ae21953c57fb98aa6e96" title="Linux::Thread::get\l_stack_usage" alt="" coords="3532,770,3659,811"/>
+<area shape="rect" id="node48" href="$classLinux_1_1Scheduler.html#a647872aff158b510c56862f51f951538" title="Linux::Scheduler::microsleep" alt="" coords="2883,1389,3073,1416"/>
+<area shape="rect" id="node53" href="$classLinux_1_1Semaphore.html#afc4c8706abb7e68aa4001ea372dc614e" title="Linux::Semaphore::take" alt="" coords="2227,831,2387,857"/>
+<area shape="rect" id="node54" href="$classLinux_1_1Semaphore.html#a561b4f40f3a76335f1a686c2aed526f9" title="Linux::Semaphore::take\l_nonblocking" alt="" coords="2452,823,2612,865"/>
+<area shape="rect" id="node55" href="$namespaceAP__HAL.html#a7aa0ce7625c9680e30ff4a99940907a5" title="AP_HAL::micros64" alt="" coords="2465,1041,2599,1068"/>
+<area shape="rect" id="node57" href="$classLinux_1_1Scheduler.html#ab373a83d818679432520ea881044b2a7" title="Linux::Scheduler::teardown" alt="" coords="2888,1324,3068,1351"/>
+<area shape="rect" id="node58" href="$classLinux_1_1PeriodicThread.html#a136aaf6e713f63b246fc4a2905e6e9a1" title="Linux::PeriodicThread\l::stop" alt="" coords="3121,1187,3269,1229"/>
+<area shape="rect" id="node61" href="$classLinux_1_1Thread.html#a32b7d184279634922e2f3b23b584fbcd" title="Linux::Thread::join" alt="" coords="3131,1324,3260,1351"/>
+<area shape="rect" id="node59" href="$classLinux_1_1Thread.html#a240d7b48a9a8eb43638f67295a1819e5" title="Linux::Thread::is_started" alt="" coords="3317,913,3484,940"/>
+<area shape="rect" id="node60" href="$classLinux_1_1Thread.html#a8d3282b714faaf68eae534e9276419f0" title="Linux::Thread::set\l_stack_size" alt="" coords="3532,906,3659,947"/>
+<area shape="rect" id="node63" href="$classLinux_1_1Semaphore.html#a216f91636f64b57b59d43ef64af91624" title="Linux::Semaphore::give" alt="" coords="2228,728,2387,755"/>
+<area shape="rect" id="node67" href="$classLinux_1_1Scheduler.html#ac52c8da3f1f4fd79c50bd64379daf399" title="Linux::Scheduler::\l_wait_all_threads" alt="" coords="2013,894,2139,935"/>
+<area shape="rect" id="node70" href="$classLinux_1_1Scheduler.html#a70b024d7d0886bf47b46cc3ee310d638" title="Linux::Scheduler::\l_run_io" alt="" coords="2013,741,2139,782"/>
+<area shape="rect" id="node74" href="$classAC__AttitudeControl.html#a1788967db1aa0dfe68fad24da23947f9" title="AC_AttitudeControl\l::sqrt_controller" alt="" coords="1381,539,1516,581"/>
+<area shape="rect" id="node75" href="$AP__Math_8cpp.html#ac89eb1832d8e4d67fcf1ac07e3c25184" title="safe_sqrt" alt="" coords="1603,539,1679,565"/>
+<area shape="rect" id="node76" href="$AP__Math_8cpp.html#aa5cb9421d48def32eb7574adb1b152b0" title="safe_sqrt\&lt; int \&gt;" alt="" coords="1795,407,1910,433"/>
+<area shape="rect" id="node77" href="$AP__Math_8cpp.html#a6952300e3d03222491051d674312b67d" title="safe_sqrt\&lt; short \&gt;" alt="" coords="1788,457,1917,484"/>
+<area shape="rect" id="node78" href="$AP__Math_8cpp.html#a40ae6cfccff676d9d2ff57e2e9ca549c" title="safe_sqrt\&lt; float \&gt;" alt="" coords="1790,508,1915,535"/>
+<area shape="rect" id="node79" href="$AP__Math_8cpp.html#acf6795fb73b8b915b53126f71cd2712a" title="safe_sqrt\&lt; double \&gt;" alt="" coords="1783,559,1922,585"/>
+<area shape="rect" id="node81" href="$structVector2.html#a7027a23fe57300a1142fdb9e28d6e3da" title="Vector2::is_zero" alt="" coords="713,849,830,876"/>
+<area shape="rect" id="node82" href="$classAC__Fence.html#ad7b2fae72b7a0d41fa341916be48e3f7" title="returns pointer to array of polygon points and num_points is filled in with the total number ..." alt="" coords="690,653,853,694"/>
+<area shape="rect" id="node83" href="$classAC__Avoid.html#a7e9a8c28e3f61c7e7ee3bf5afe986e4f" title="AC_Avoid::adjust_velocity\l_polygon" alt="" coords="683,718,859,759"/>
+<area shape="rect" id="node84" href="$classAC__Fence.html#a9ab2e92431697e0f47896edce9e87cf9" title="returns true if we&#39;ve breached the polygon boundary. simple passthrough to underlying _poly_loader ob..." alt="" coords="936,878,1081,919"/>
+<area shape="rect" id="node87" href="$classAP__AHRS.html#ae559b9d6fdd1e8ed3001258f58c98c39" title="AP_AHRS::sin_yaw" alt="" coords="938,944,1079,971"/>
+<area shape="rect" id="node88" href="$classAP__AHRS.html#a1aaffcffc239930cb651fad539362fa0" title="AP_AHRS::cos_yaw" alt="" coords="936,711,1081,737"/>
+<area shape="rect" id="node89" href="$AP__Math_8h.html#a5c0b5c82749ac54970b2699d3c10ee9b" title="MAX" alt="" coords="983,761,1034,788"/>
+<area shape="rect" id="node90" href="$structVector2.html#a6dbbf670e7cdee42222de3aacb63d56a" title="Vector2\&lt; float \&gt;::closest\l_point" alt="" coords="925,813,1092,854"/>
+<area shape="rect" id="node91" href="$classAC__Avoid.html#a888f3551abae1ca6982f69ee8a42d09a" title="AC_Avoid::limit_velocity" alt="" coords="926,543,1091,569"/>
+<area shape="rect" id="node85" href="$classAC__PolyFence__loader.html#a91a6b4c5611590d524eacac2c2aeec3a" title="AC_PolyFence_loader\l::boundary_breached" alt="" coords="1167,958,1319,999"/>
+<area shape="rect" id="node86" href="$polygon_8cpp.html#a69c7755ab39f2ede645c4542b3aed07c" title="Polygon_outside" alt="" coords="1389,1007,1508,1033"/>
+<area shape="rect" id="node93" href="$classAP__Beacon.html#a127177bfb42969c6fbcc74e638981d49" title="AP_Beacon::get_boundary\l_points" alt="" coords="683,783,860,825"/>
+<area shape="rect" id="node94" href="$classAP__Beacon.html#a78c5501000d02e25916d46cbdd5c2318" title="AP_Beacon::device_ready" alt="" coords="921,995,1097,1021"/>
+<area shape="rect" id="node96" href="$classAP__Proximity.html#a705c8ca4f3987e3b02478bc01826a53f" title="AP_Proximity::get_status" alt="" coords="686,900,857,927"/>
+<area shape="rect" id="node97" href="$classAP__Proximity.html#afb59cefa0abc90cb0d8a89754f8601bd" title="AP_Proximity::get_boundary\l_points" alt="" coords="677,999,865,1041"/>
+<area shape="rect" id="node98" href="$classAP__Proximity__Backend.html#a0285564537ba74f044b6a6f7b2179a46" title="AP_Proximity_Backend\l::get_boundary_points" alt="" coords="929,1046,1089,1087"/>
+</map>

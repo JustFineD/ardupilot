@@ -1,0 +1,44 @@
+digraph "NavEKF3_core::InitialiseVariables"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="NavEKF3_core::Initialise\lVariables",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_AHRS::get_ins",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS.html#a14398c5d2ae68bbe1c67482a91909ad9"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_InertialSensor::\lget_loop_delta_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__InertialSensor.html#a2f4bc45cbad98a18a4d74210bf62e9c3"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MAX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a5c0b5c82749ac54970b2699d3c10ee9b"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Vector3::zero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVector3.html#adf1769d5ee5df2f8585df2f540fa5efe"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Vector2::zero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structVector2.html#a6b537328ae913e3e7267b539e7a4af92"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Matrix3::zero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMatrix3.html#a90cfd0bec53253429603b5600dcdce81"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_AHRS::get_compass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS.html#adf808841de62499bc8c388fc798d47f1"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Compass::get_primary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompass.html#a0120c84cc915d5a34aafedc1ce3f5186"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Compass::setHIL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompass.html#a30a8fa22b1e7ee8eec8143732d40716d"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Matrix3::from_euler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMatrix3.html#a62587bd216436f09f06b9e1330f84bc0"];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="is_equal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#accbd9f8bbc0adacd51efa66fad490c24"];
+  Node10 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Compass::get_declination",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompass.html#a5051de1d15ee203600422235ab93c88c"];
+  Node10 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Compass::_setup_earth\l_field",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompass.html#a0bc30e897c2c0c412120e1b1337bd1cb"];
+  Node14 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Matrix3::mul_transpose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMatrix3.html#a3705734aec6b67d729011cd792d7398a"];
+  Node9 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Compass::last_update_usec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompass.html#a9600516e0dbde9186d3b14b3457af013"];
+  Node16 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="Compass::getHIL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompass.html#a4d696bdfb4d2ab9f0646d413cb6a0ee4"];
+  Node9 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

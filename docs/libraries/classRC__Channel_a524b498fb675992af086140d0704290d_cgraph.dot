@@ -1,0 +1,26 @@
+digraph "RC_Channel::get_control_in_zero_dz"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RC_Channel::get_control\l_in_zero_dz",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RC_Channel::pwm_to\l_range_dz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__Channel.html#a4605a723d0f7e67bb7e9e541470999d6"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="constrain_int16",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a68558c4f79a8582543daefde13c64abc"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="constrain_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a20e8f8671c282c69c1954652b6d61585"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="constrain_value\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a37e8e901754cb9c8e53a8e3030c82c50"];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="constrain_value\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afdbe107ec1987d318a6347816fbf2b89"];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="constrain_value\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ae6c621670c214da687de21d4e3a92587"];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="constrain_value\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afe3990b00e9abc43fa97dfaf8e32f5c4"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="RC_Channel::pwm_to\l_angle_dz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__Channel.html#abff1f42e3b1735cef70c8068ef272027"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="RC_Channel::pwm_to\l_angle_dz_trim",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__Channel.html#a59cc8a34225be7627bb9aead4d719b24"];
+}

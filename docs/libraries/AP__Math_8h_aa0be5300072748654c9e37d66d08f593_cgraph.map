@@ -1,0 +1,11 @@
+<map id="usec_to_hz" name="usec_to_hz">
+<area shape="rect" id="node2" href="$AP__Math_8h.html#ae2d4d03c107c3e6a127fb167e3908aa2" title="linear_interpolate" alt="" coords="143,5,263,32"/>
+<area shape="rect" id="node3" href="$AP__Math_8h.html#a587a30a56f2ab102c7b42f89e4770530" title="get_random16" alt="" coords="151,56,255,83"/>
+<area shape="rect" id="node4" href="$AP__Math_8h.html#ab7fb2f11772d144a53f0e75d0615d715" title="rand_float" alt="" coords="163,107,242,133"/>
+<area shape="rect" id="node5" href="$AP__Math_8h.html#a503b5e90e28955239da7740ba7c9145b" title="rand_vec3f" alt="" coords="159,157,246,184"/>
+<area shape="rect" id="node6" href="$AP__Math_8cpp.html#ab7fb2f11772d144a53f0e75d0615d715" title="rand_float" alt="" coords="337,107,415,133"/>
+<area shape="rect" id="node7" href="$classVector3.html#ac1fd5514e368a1e1c2d13f71eda18345" title="Vector3::length" alt="" coords="321,157,431,184"/>
+<area shape="rect" id="node10" href="$classVector3.html#a9b147a862a1b86ed2e5b735d19da3da1" title="Vector3::normalize" alt="" coords="311,208,441,235"/>
+<area shape="rect" id="node8" href="$AP__Math_8h.html#adc76d4a5e5c9ae8cb7ab17b55c40d636" title="norm" alt="" coords="489,157,540,184"/>
+<area shape="rect" id="node9" href="$AP__Math_8h.html#a0375e3d67fd3911cacee5c3e1408c0f2" title="sq" alt="" coords="588,157,627,184"/>
+</map>

@@ -1,0 +1,18 @@
+digraph "AC_Avoid::adjust_velocity_circle_fence"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AC_Avoid::adjust_velocity\l_circle_fence",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AC_Avoid::adjust_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#abee541d127ce0da1fe6be54f987a0779"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AC_Avoid::adjust_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#a95e227fdefd6f8c85b4d4888cad8993f"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AC_WPNav::calc_loiter\l_desired_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__WPNav.html#a3dbf7bda89b127cdc81bca29e2af25de"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AC_WPNav::update_loiter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__WPNav.html#a0a434270245fd8641352af387700dc82",tooltip="update_loiter - run the loiter controller - should be called at 10hz "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AC_WPNav::get_loiter\l_target",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__WPNav.html#ae34a88192799de8f2b96c8cd295bb971",tooltip="get_loiter_target - returns loiter target position "];
+}

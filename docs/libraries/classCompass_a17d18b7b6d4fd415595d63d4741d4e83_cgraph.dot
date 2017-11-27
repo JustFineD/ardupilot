@@ -1,0 +1,16 @@
+digraph "Compass::send_mag_cal_report"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Compass::send_mag_cal\l_report",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Compass::_get_cal_mask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompass.html#ab0afcd20922d7badce8e8b8cc04610b5"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CompassCalibrator::\lget_status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompassCalibrator.html#acf64861857a5a15fd4bd30627b04c663"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CompassCalibrator::\lget_fitness",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompassCalibrator.html#a79c6714fee48b9bf1d94969d24bce026"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CompassCalibrator::\lget_calibration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompassCalibrator.html#ad826cd209a06ce20e569ec0a8cd1940a"];
+}

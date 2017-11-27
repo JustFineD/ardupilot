@@ -1,0 +1,47 @@
+digraph "AP_Rally::calc_best_rally_or_home_location"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Rally::calc_best\l_rally_or_home_location",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_AHRS::get_home",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS.html#aea45b16e6469a3b392b8bf52fb864732"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_AHRS::set_home",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS.html#a702b6313fff141dced78533a4d258ab0"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Rally::find_nearest\l_rally_point",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Rally.html#a0b93e6b6133860929bbd7b68be633fa3"];
+  Node4 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Rally::get_rally\l_point_with_index",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Rally.html#ad47b2b3a30b69eede58ad1f79cd61f11"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="StorageAccess::read\l_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStorageAccess.html#ab2a8575d541549a15645edc360fdaa91"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_HAL::Storage::read\l_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Storage.html#a1c3b1e80b0bec7d4bacd3ecbefb3b3f3"];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_Rally::rally_location\l_to_location",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Rally.html#acbee4f7ffe79e701bd44c4c72e1c34d2"];
+  Node8 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="get_distance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$location_8cpp.html#aa825a788804b8dd4cf1e3cfb42960a8b"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="longitude_scale",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$location_8cpp.html#ad2368c582f3e0c135e2a74772f4db61a"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="constrain_float",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#ad525609d9dba6ffa556a0fbf08a3f9b4"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="constrain_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a20e8f8671c282c69c1954652b6d61585"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="constrain_value\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a37e8e901754cb9c8e53a8e3030c82c50"];
+  Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="constrain_value\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afdbe107ec1987d318a6347816fbf2b89"];
+  Node12 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="constrain_value\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ae6c621670c214da687de21d4e3a92587"];
+  Node12 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="constrain_value\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afe3990b00e9abc43fa97dfaf8e32f5c4"];
+  Node9 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="norm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#adc76d4a5e5c9ae8cb7ab17b55c40d636"];
+  Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="sq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a0375e3d67fd3911cacee5c3e1408c0f2"];
+  Node4 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="AP_Rally::is_valid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Rally.html#a155d3a1d09c89e219eaa4842e5e24638"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

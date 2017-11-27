@@ -1,0 +1,45 @@
+digraph "AP_Beacon_Marvelmind"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Beacon_Marvelmind",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Beacon_Backend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon__Backend.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _frontend" ,fontname="Helvetica"];
+  Node3 [label="AP_Beacon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" serial_manager" ,fontname="Helvetica"];
+  Node4 [label="AP_SerialManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__SerialManager.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" uart" ,fontname="Helvetica"];
+  Node5 [label="AP_HAL::UARTDriver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1UARTDriver.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_HAL::BetterStream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1BetterStream.html"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_HAL::Stream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_HAL::Print",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Print.html"];
+  Node9 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_info" ,fontname="Helvetica"];
+  Node9 [label="AP_Param::GroupInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__Param_1_1GroupInfo.html"];
+  Node9 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" group_info_ptr\ngroup_info" ,fontname="Helvetica"];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _driver" ,fontname="Helvetica"];
+  Node9 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_info" ,fontname="Helvetica"];
+  Node10 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" veh_pos_ned" ,fontname="Helvetica"];
+  Node10 [label="Vector3\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVector3.html"];
+  Node11 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" boundary" ,fontname="Helvetica"];
+  Node11 [label="Vector2\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structVector2.html"];
+  Node12 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" beacon_state" ,fontname="Helvetica"];
+  Node12 [label="AP_Beacon::BeaconState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__Beacon_1_1BeaconState.html"];
+  Node10 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" position" ,fontname="Helvetica"];
+  Node13 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cur_position" ,fontname="Helvetica"];
+  Node13 [label="AP_Beacon_Marvelmind\l::PositionValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__Beacon__Marvelmind_1_1PositionValue.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" uart" ,fontname="Helvetica"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vehicle_position_NED\l__m\nbeacon_position\l_NED__m" ,fontname="Helvetica"];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" hedge" ,fontname="Helvetica"];
+  Node14 [label="AP_Beacon_Marvelmind\l::MarvelmindHedge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__Beacon__Marvelmind_1_1MarvelmindHedge.html"];
+  Node13 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" position_buffer" ,fontname="Helvetica"];
+  Node15 -> Node14 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" positions_beacons" ,fontname="Helvetica"];
+  Node15 [label="AP_Beacon_Marvelmind\l::StationaryBeaconsPositions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__Beacon__Marvelmind_1_1StationaryBeaconsPositions.html"];
+  Node16 -> Node15 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" beacons" ,fontname="Helvetica"];
+  Node16 [label="AP_Beacon_Marvelmind\l::StationaryBeaconPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__Beacon__Marvelmind_1_1StationaryBeaconPosition.html"];
+}

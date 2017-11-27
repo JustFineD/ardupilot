@@ -1,0 +1,49 @@
+digraph "AP_BattMonitor_SMBus::get_PEC"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_BattMonitor_SMBus\l::get_PEC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_BattMonitor_SMBus\l::has_current",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus.html#a20acd1e39545dcc38e005c00edddf00c",tooltip="returns true if battery monitor instance provides current info "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_BattMonitor_SMBus\l_Solo::read_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Solo.html#aeecc0c0ca1784b6eab4cc68ead8fdf33"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_BattMonitor_SMBus\l_Solo::timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Solo.html#a2c97ca22c71a9ca709a48ce68f6914cd"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_BattMonitor_SMBus\l_Solo::AP_BattMonitor\l_SMBus_Solo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Solo.html#a461a488e2a9abe8c5fa6e078fd45452e"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_BattMonitor_SMBus\l_Maxell::read_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Maxell.html#ae7aa8451fcec519b51fd1ecfcb4b5373"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_BattMonitor_SMBus\l_Maxell::check_pec_support",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Maxell.html#a364dce600b634bff72cc4836a0505233"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_BattMonitor_SMBus\l_Maxell::timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Maxell.html#a9774b2c0d3b19a74ff3ef14be93508f0"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_BattMonitor_SMBus\l_Maxell::AP_BattMonitor\l_SMBus_Maxell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Maxell.html#a5e936d4bf53f5c77658a2af8cca9682e"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_BattMonitor_SMBus\l::read_word",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus.html#ad6887a0347f81717f8682c0b86658daa"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_BattMonitor_SMBus\l::read_full_charge_capacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus.html#a0d5ae604ac06ba9a026fd6d2fc8e789b"];
+  Node11 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_BattMonitor_SMBus\l::read_remaining_capacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus.html#abb6ff8cbfa527757eaa6042c46a69c65"];
+  Node12 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AP_BattMonitor_SMBus\l::read_temp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus.html#ad6a78e6da3da2edc1b36f2cbd119868c"];
+  Node13 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_BattMonitor_SMBus\l::read_serial_number",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus.html#aed41b0a6c571f72c87c5ea565f51f601"];
+  Node14 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,14 @@
+digraph "AP_MotorsHeli_RSC::init_servo"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_MotorsHeli_RSC::\linit_servo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_MotorsHeli_RSC::\lAP_MotorsHeli_RSC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__RSC.html#afd079223262ce6bea3c32e0c7e783aeb"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_MotorsHeli_Dual\l::init_outputs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Dual.html#af9f3d3cb5c7d59106219ad51e02df7a9"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_MotorsHeli_Single\l::init_outputs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Single.html#a018454351a5f35b808c933e3cab29a04"];
+}

@@ -1,0 +1,57 @@
+digraph "AP_Frsky_Telem::send_SPort"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Frsky_Telem::send\l_SPort",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_HAL::Stream::available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html#ae6aa935b5bbd553a2654bfec4e14961e"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_HAL::Stream::txspace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html#a1768308e013072eb91ecf0ccdc171da6"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_HAL::Stream::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html#ae42ff362cc2a7e527c22f92a3740c2ac"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Frsky_Telem::send\l_uint32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Frsky__Telem.html#ad990138e15c63b3398944af22e89844b"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Frsky_Telem::send_byte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Frsky__Telem.html#ae275bd26952ce5ba1eda5650cc7bdcd1"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_HAL::Print::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Print.html#acc65391952a43334f8f5c9bef341f501"];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_Frsky_Telem::calc_crc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Frsky__Telem.html#a276d82db4184b09f3c21934ed9a715b6"];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_Frsky_Telem::send_crc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Frsky__Telem.html#a40947bbc812b8af55d8c01e41888cc11"];
+  Node9 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_BattMonitor::capacity\l_remaining_pct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor.html#af18badc88524b2cf400fb43418daa8c9",tooltip="capacity_remaining_pct - returns the % battery capacity remaining (0 ~ 100) "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_BattMonitor_Backend\l::capacity_remaining_pct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__Backend.html#a47fe3bc306e5ff449a93b3095fb915bb",tooltip="capacity_remaining_pct - returns the % battery capacity remaining (0 ~ 100) "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_BattMonitor::voltage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor.html#ab5789eb7d45ec25b685adfaaf9167284",tooltip="voltage - returns battery voltage in millivolts "];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AP_BattMonitor::current_amps",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor.html#af73075a42b0aa50dca77e16625fb1122",tooltip="current_amps - returns the instantaneous current draw in amperes "];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_Frsky_Telem::calc\l_gps_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Frsky__Telem.html#a3c2d1507eebd46226d888b656640f3e0"];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="AP_AHRS::get_gps",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS.html#a3316284b2bf12b8db1b4a39539799efc"];
+  Node14 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="AP_GPS::status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__GPS.html#a9093c8cf1d5a78ccd8677229bb314d37",tooltip="Query GPS status. "];
+  Node14 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="AP_GPS::location",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__GPS.html#a2ca8a9bad47faad1baeb09e124979022"];
+  Node14 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="AP_Frsky_Telem::format_gps",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Frsky__Telem.html#abc4c87801d2f45cb403e304f2e94effd"];
+  Node14 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="AP_GPS::ground_speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__GPS.html#a426041563da447ec6e9cde1926a88fdb"];
+  Node1 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="AP_Frsky_Telem::calc\l_nav_alt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Frsky__Telem.html#ae1da62072144b06dbb545bfaf9e37e59"];
+  Node20 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="AP_AHRS::get_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS.html#a861802533d7f8a91efc39425ac9c724f"];
+  Node20 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="AP_AHRS::get_home",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS.html#aea45b16e6469a3b392b8bf52fb864732"];
+  Node22 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="AP_AHRS::set_home",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS.html#a702b6313fff141dced78533a4d258ab0"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="AP_GPS::num_sats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__GPS.html#af74c8da8ab7394a33b0f0e64582d8648"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

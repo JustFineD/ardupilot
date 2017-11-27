@@ -1,0 +1,28 @@
+digraph "SITL::MultiCopter::MultiCopter"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SITL::MultiCopter::\lMultiCopter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SITL::Gripper_Servo\l::set_aircraft",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Gripper__Servo.html#a9b7b04b6b8609868f7b5d828ccfc6a30"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SITL::Frame::find_frame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Frame.html#ad45481981db45618022bffc4817d09eb"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SITL::Frame::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Frame.html#ae4f2670ddee41221a8c3819e2c459e79"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SITL::MultiCopter::\lgross_mass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1MultiCopter.html#a82e4000a96f333cfca0a3e1adc24b0cc"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SITL::Aircraft::gross_mass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Aircraft.html#a6e9a5d23ddac4e511485a1b758df07e9"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SITL::Sprayer::payload_mass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Sprayer.html#a7e4500b63492da681ba9479fd412759f"];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SITL::Gripper_Servo\l::payload_mass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Gripper__Servo.html#a8c0091b642a087dc6e19e8f2f181c69c"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="SITL::Aircraft::hagl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Aircraft.html#a322e59b26d9c60eae77ef26f7330e6c0"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="SITL::Aircraft::ground\l_height_difference",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Aircraft.html#af6f88751ed3bfc60f1021f1206a01137"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="radians",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a75b14352ec1c95a8276af9a0813cfdc3"];
+}

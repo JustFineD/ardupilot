@@ -1,0 +1,25 @@
+digraph "SITL::Aircraft::Aircraft"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SITL::Aircraft::Aircraft",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Param::find_object",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Param.html#aa5d92cdeea6e6e79ab39f3adb69fc52b"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Param::get_base",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Param.html#a1dcc7820ea51e29cfb762387a9212818"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SITL::Aircraft::parse_home",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Aircraft.html#a19764d2b0071e024525d4a83d42efaeb"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Matrix3::from_euler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMatrix3.html#a62587bd216436f09f06b9e1330f84bc0"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="radians",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a75b14352ec1c95a8276af9a0813cfdc3"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SITL::Aircraft::set\l_speedup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Aircraft.html#a5c1d89e95912ade3622069a3f2cb96c0"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SITL::Aircraft::setup\l_frame_time",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Aircraft.html#a5d30abde6ff41f63d1233558d2641816"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="SITL::Aircraft::get\l_wall_time_us",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Aircraft.html#a7a3bcc97f481dd5427fc740eef5a2c4e"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

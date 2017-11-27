@@ -1,0 +1,16 @@
+digraph "OreoLED_PX4::sync_counter"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OreoLED_PX4::sync_counter",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OreoLED_PX4::send_sync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#a656fbe69fdb01fc4aad63ed924f1a396"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OreoLED_PX4::oreo_state\l::send_sync",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structOreoLED__PX4_1_1oreo__state.html#a0b6e252809555491929be472ba670f71"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OreoLED_PX4::clear\l_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html#aafa0e9ee898bc853b4860a2c201d4e77"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OreoLED_PX4::oreo_state\l::clear_state",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structOreoLED__PX4_1_1oreo__state.html#abc37426b4e17082e9ab96456c32a9950"];
+}

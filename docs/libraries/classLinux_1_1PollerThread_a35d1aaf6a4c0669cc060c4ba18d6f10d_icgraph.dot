@@ -1,0 +1,14 @@
+digraph "Linux::PollerThread::adjust_timer"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::PollerThread\l::adjust_timer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::SPIDevice::adjust\l_periodic_callback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1SPIDevice.html#a2d237213d77f656fbc868af7aa91cbbc"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Linux::I2CDevice::adjust\l_periodic_callback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1I2CDevice.html#abea794cc411cd1fea48bd30c0c1518a9"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Linux::I2CDevice::set\l_speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1I2CDevice.html#a6afbe0e47ff679a8a3f41e385def6e2e"];
+}

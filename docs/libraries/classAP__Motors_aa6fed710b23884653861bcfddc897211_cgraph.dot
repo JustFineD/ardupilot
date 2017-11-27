@@ -1,0 +1,33 @@
+digraph "AP_Motors::calc_pwm_output_1to1"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Motors::calc_pwm\l_output_1to1",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="constrain_float",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#ad525609d9dba6ffa556a0fbf08a3f9b4"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="constrain_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a20e8f8671c282c69c1954652b6d61585"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="constrain_value\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a37e8e901754cb9c8e53a8e3030c82c50"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="constrain_value\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afdbe107ec1987d318a6347816fbf2b89"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="constrain_value\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ae6c621670c214da687de21d4e3a92587"];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="constrain_value\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afe3990b00e9abc43fa97dfaf8e32f5c4"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SRV_Channel::get_reversed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channel.html#a5cad6895a86cd1f1b5e3e3dd23ebe5b0"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="SRV_Channel::get_output_max",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channel.html#a07e33259e76a6863fb56394a3891bf79"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="SRV_Channel::get_trim",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channel.html#a3ef1e8626df805e082f75d9de46cc105"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="SRV_Channel::is_motor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channel.html#a20a2ee9dab8a0aa6db2bc85f2961ae4a"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="SRV_Channel::get_output_min",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channel.html#a3a465c084225682a7bf6bd5ef78a369e"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="constrain_int16",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a68558c4f79a8582543daefde13c64abc"];
+  Node13 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

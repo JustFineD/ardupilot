@@ -1,0 +1,31 @@
+digraph "AP_RPM_SITL"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="AP_RPM_SITL",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_RPM_Backend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RPM__Backend.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" state" ,fontname="Helvetica"];
+  Node3 [label="AP_RPM::RPM_State",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__RPM_1_1RPM__State.html"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ap_rpm" ,fontname="Helvetica"];
+  Node4 [label="AP_RPM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RPM.html"];
+  Node2 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" drivers" ,fontname="Helvetica"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_info" ,fontname="Helvetica"];
+  Node5 [label="AP_Param::GroupInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__Param_1_1GroupInfo.html"];
+  Node5 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" group_info_ptr\ngroup_info" ,fontname="Helvetica"];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" state" ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sitl" ,fontname="Helvetica"];
+  Node6 [label="SITL::SITL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1SITL.html"];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_info\nvar_info2" ,fontname="Helvetica"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" state" ,fontname="Helvetica"];
+  Node7 [label="SITL::sitl_fdm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structSITL_1_1sitl__fdm.html"];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" quaternion" ,fontname="Helvetica"];
+  Node8 [label="Quaternion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQuaternion.html"];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bodyMagField\nangAccel" ,fontname="Helvetica"];
+  Node9 [label="Vector3\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVector3.html"];
+  Node10 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" home" ,fontname="Helvetica"];
+  Node10 [label="Location",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structLocation.html"];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" flags" ,fontname="Helvetica"];
+  Node11 [label="Location_Option_Flags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structLocation__Option__Flags.html"];
+}

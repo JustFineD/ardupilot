@@ -1,0 +1,12 @@
+digraph "AP_Baro::get_baro_drift_offset"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Baro::get_baro_drift\l_offset",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Baro::SimpleAtmosphere",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro.html#abbf791c5038a37c91c91849a433621ba"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Baro::set_pressure\l_correction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro.html#a61e7504bc66a005160a027a5b6dd8a13"];
+}

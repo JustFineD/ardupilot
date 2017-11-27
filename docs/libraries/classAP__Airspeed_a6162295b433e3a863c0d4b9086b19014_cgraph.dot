@@ -1,0 +1,12 @@
+digraph "AP_Airspeed::use"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Airspeed::use",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Airspeed::enabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Airspeed.html#a4721e9a79d9611e1f693d4850c07edc0"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SRV_Channels::get_output\l_scaled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channels.html#ad1738031466dbebfd16f7a2c564aeb25"];
+}

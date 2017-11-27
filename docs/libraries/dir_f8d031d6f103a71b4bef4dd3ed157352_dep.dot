@@ -1,0 +1,15 @@
+digraph "libraries/AP_HAL_Linux/qflight" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_8368ee2f250655722bce4ae7bccd6615 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="AP_HAL_Linux" fontname="Helvetica", fontsize="10", URL="dir_8368ee2f250655722bce4ae7bccd6615.html"]
+  dir_f8d031d6f103a71b4bef4dd3ed157352 [shape=box, label="qflight", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f8d031d6f103a71b4bef4dd3ed157352.html"];
+  }
+  dir_1cbc10423b2512b31103883361e0123b [shape=box label="AP_HAL" fillcolor="white" style="filled" color="red" URL="dir_1cbc10423b2512b31103883361e0123b.html"];
+  dir_df3f4256615fd4197927a84a019a8bd8 [shape=box label="AP_Common" fillcolor="white" style="filled" color="red" URL="dir_df3f4256615fd4197927a84a019a8bd8.html"];
+  dir_f8d031d6f103a71b4bef4dd3ed157352->dir_1cbc10423b2512b31103883361e0123b [headlabel="1", labeldistance=1.5 headhref="dir_000081_000057.html"];
+  dir_f8d031d6f103a71b4bef4dd3ed157352->dir_df3f4256615fd4197927a84a019a8bd8 [headlabel="1", labeldistance=1.5 headhref="dir_000081_000036.html"];
+  dir_1cbc10423b2512b31103883361e0123b->dir_df3f4256615fd4197927a84a019a8bd8 [headlabel="10", labeldistance=1.5 headhref="dir_000057_000036.html"];
+  dir_df3f4256615fd4197927a84a019a8bd8->dir_1cbc10423b2512b31103883361e0123b [headlabel="5", labeldistance=1.5 headhref="dir_000036_000057.html"];
+}

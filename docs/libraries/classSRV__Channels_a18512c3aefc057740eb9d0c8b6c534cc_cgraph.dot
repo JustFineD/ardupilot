@@ -1,0 +1,16 @@
+digraph "SRV_Channels::copy_radio_in_out"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SRV_Channels::copy\l_radio_in_out",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RC_Channels::rc_channel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__Channels.html#a6c55102c24c5a570264bf14b1bfdeb35"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RC_Channel::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__Channel.html#a80d6122b2ac8dd749ca54859ebde023d"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_HAL::RCInput::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCInput.html#a078fd7e6d2e6a899009ec674a8e03498"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RC_Channel::get_radio_in",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__Channel.html#af03023765299095f9933ac8db99cd571"];
+}

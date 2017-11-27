@@ -1,0 +1,12 @@
+digraph "Linux::Perf_Lttng::count"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::Perf_Lttng::\lcount",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::Perf::count",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Perf.html#ab21b805229c4a50078112d32ade44270"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Linux::Util::perf_count",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Util.html#a22eaa51028c258bf4b6b2e4fdd4ac0ab"];
+}

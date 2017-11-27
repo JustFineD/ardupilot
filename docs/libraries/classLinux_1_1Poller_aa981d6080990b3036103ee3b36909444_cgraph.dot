@@ -1,0 +1,16 @@
+digraph "Linux::Poller::poll"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::Poller::poll",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::Pollable::on\l_can_read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Pollable.html#ab452985fec688ce1ab5683417722eedd"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Linux::Pollable::on\l_can_write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Pollable.html#abfa1fc72c7df4f15bedc31555080a921"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Linux::Pollable::on\l_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Pollable.html#aae14818c9c1908fc98750fbc072a5950"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Linux::Pollable::on\l_hang_up",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Pollable.html#aae05cf74d76cf01fafb1463918ef7085"];
+}

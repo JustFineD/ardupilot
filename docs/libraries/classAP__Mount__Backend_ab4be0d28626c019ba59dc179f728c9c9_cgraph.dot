@@ -1,0 +1,35 @@
+digraph "AP_Mount_Backend::update_targets_from_rc"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Mount_Backend::update\l_targets_from_rc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="constrain_float",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#ad525609d9dba6ffa556a0fbf08a3f9b4"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="constrain_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a20e8f8671c282c69c1954652b6d61585"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="constrain_value\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a37e8e901754cb9c8e53a8e3030c82c50"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="constrain_value\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afdbe107ec1987d318a6347816fbf2b89"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="constrain_value\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ae6c621670c214da687de21d4e3a92587"];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="constrain_value\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afe3990b00e9abc43fa97dfaf8e32f5c4"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="radians",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a75b14352ec1c95a8276af9a0813cfdc3"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_Mount_Backend::angle\l_input_rad",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Mount__Backend.html#a7cbf9f6695f80998e1cc39b9a3a5a0ae"];
+  Node9 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_Mount_Backend::angle\l_input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Mount__Backend.html#aca1f2d5e9e859d8458772006a5e9a178"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="RC_Channel::get_reverse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__Channel.html#a34a93842b1cf847373104b682fa28cd5"];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="RC_Channel::get_radio_in",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__Channel.html#af03023765299095f9933ac8db99cd571"];
+  Node10 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="RC_Channel::get_radio_min",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__Channel.html#a28435fa792b2a6e187eb8c08d88b929c"];
+  Node10 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="RC_Channel::get_radio_max",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRC__Channel.html#a8e742b258b4b600ec69fa4c5580df20a"];
+}

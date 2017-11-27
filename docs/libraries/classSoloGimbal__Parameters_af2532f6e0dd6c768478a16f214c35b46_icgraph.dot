@@ -1,0 +1,23 @@
+digraph "SoloGimbal_Parameters::get_param_name"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SoloGimbal_Parameters\l::get_param_name",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SoloGimbal_Parameters\l::handle_param_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbal__Parameters.html#a99bb22d83bf1b33c784280a30bacab95"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SoloGimbal_Parameters\l::set_channel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbal__Parameters.html#aa0d2d86377b895821e658dcf746724a8"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SoloGimbal_Parameters\l::set_param",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbal__Parameters.html#acf614d6f401136e3b97981c0ee580105"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SoloGimbal_Parameters\l::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbal__Parameters.html#ad5aa879b69f362237e57934aa854260a"];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SoloGimbal_Parameters\l::set_accel_bias",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbal__Parameters.html#acd9215081f580cfed7b49db1d3b89385"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SoloGimbal_Parameters\l::set_accel_gain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbal__Parameters.html#ace2d0fe2a246cc82f8b82b11eda86ee5"];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SoloGimbal_Parameters\l::set_gyro_bias",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbal__Parameters.html#a7788b7d7d8a688817e3e517582ee1a1c"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

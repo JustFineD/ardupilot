@@ -1,0 +1,46 @@
+digraph "AC_Avoid::adjust_roll_pitch"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AC_Avoid::adjust_roll\l_pitch",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AC_Avoid::get_proximity\l_roll_pitch_pct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#ad27740aa416a455958dcdc914a2be63e"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Proximity::get_status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity.html#a705c8ca4f3987e3b02478bc01826a53f"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Proximity::get_object\l_count",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity.html#a71e6e75f4cd8553b3e4be332f4322c13"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Proximity_Backend\l::get_object_count",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity__Backend.html#a12a1f987c69e46e5810c21642f74dacb"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Proximity::get_object\l_angle_and_distance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity.html#a1de462db46c6da002618714ac7b8afcd"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_Proximity_Backend\l::get_object_angle_and\l_distance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity__Backend.html#a198aa06ede4f08e235df52af1bd817ae"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AC_Avoid::distance\l_to_lean_pct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#a46091671b3baa7c332251c4ce6e91210"];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="radians",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a75b14352ec1c95a8276af9a0813cfdc3"];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="MAX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a5c0b5c82749ac54970b2699d3c10ee9b"];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="MIN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a6b187a3fa1e9f663e89175e7e8e213d6"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="constrain_float",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#ad525609d9dba6ffa556a0fbf08a3f9b4"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="constrain_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a20e8f8671c282c69c1954652b6d61585"];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="constrain_value\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a37e8e901754cb9c8e53a8e3030c82c50"];
+  Node13 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="constrain_value\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afdbe107ec1987d318a6347816fbf2b89"];
+  Node13 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="constrain_value\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ae6c621670c214da687de21d4e3a92587"];
+  Node13 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="constrain_value\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afe3990b00e9abc43fa97dfaf8e32f5c4"];
+  Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="Vector2::length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structVector2.html#ad8ebafde96f43521d3647e2552387529"];
+  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="norm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#adc76d4a5e5c9ae8cb7ab17b55c40d636"];
+  Node19 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="sq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a0375e3d67fd3911cacee5c3e1408c0f2"];
+}

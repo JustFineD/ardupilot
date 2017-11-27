@@ -1,0 +1,20 @@
+digraph "AC_AttitudeControl::control_monitor_update"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AC_AttitudeControl\l::control_monitor_update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AC_AttitudeControl\l::get_rate_roll_pid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#ad300b51e0777495496adddd1770ee920"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AC_PID::get_pid_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PID.html#aac49c9e75c7bea524fab440e27c6a0fa"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AC_AttitudeControl\l::control_monitor_filter_pid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a9f960478035a8b88322dc90f32b60056"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a0375e3d67fd3911cacee5c3e1408c0f2"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AC_AttitudeControl\l::get_rate_pitch_pid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a9e10a37d28eeb3d6476ec087b3bac3df"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AC_AttitudeControl\l::get_rate_yaw_pid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a9e430ac947e0924fdc83280a4ed552bf"];
+}

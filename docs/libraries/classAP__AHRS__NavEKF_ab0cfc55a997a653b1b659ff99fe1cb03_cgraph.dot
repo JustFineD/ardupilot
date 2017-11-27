@@ -1,0 +1,18 @@
+digraph "AP_AHRS_NavEKF::getMagOffsets"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_AHRS_NavEKF::getMagOffsets",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_AHRS_NavEKF::ekf_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS__NavEKF.html#a2421598bfc909c228709f99347a5fcea"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_AHRS_NavEKF::always\l_use_EKF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS__NavEKF.html#a9af775a381a41ff78ac75a06ba7b1a05"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NavEKF2::getMagOffsets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF2.html#a9ab4e16cf0e95c0b3b907cfc1c9ac338"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="NavEKF3::getMagOffsets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF3.html#ad4f6151a9bdb754a2299758a7e8aae31"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Vector3::zero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVector3.html#adf1769d5ee5df2f8585df2f540fa5efe"];
+}

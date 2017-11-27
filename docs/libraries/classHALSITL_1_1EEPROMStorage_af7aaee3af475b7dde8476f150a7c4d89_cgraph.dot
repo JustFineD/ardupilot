@@ -1,0 +1,15 @@
+digraph "HALSITL::EEPROMStorage::init"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="HALSITL::EEPROMStorage\l::init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HALSITL::EEPROMStorage\l::read_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1EEPROMStorage.html#abfdfde84eb4362daecac5d8aff3ad5a8"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="HALSITL::EEPROMStorage\l::_eeprom_open",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1EEPROMStorage.html#aec68a6fd5f12565db4fe46fa936d3290"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="HALSITL::EEPROMStorage\l::write_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1EEPROMStorage.html#a29de960da0f1a00f9aee3ca093c5d6f0"];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

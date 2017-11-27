@@ -1,0 +1,20 @@
+digraph "SRV_Channel::pwm_from_range"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SRV_Channel::pwm_from\l_range",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SRV_Channel::calc_pwm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channel.html#a0e60517967c7ac444d0aa7ab95299b05"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SRV_Channels::calc_pwm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channels.html#ade6632e078eb500dfab7910b28513ade"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_MotorsTailsitter\l::output_to_motors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsTailsitter.html#a0854319d1b75c58348c95dc8a514b1ce"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_MotorsTailsitter\l::output_test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsTailsitter.html#a88adfdcb46c97a8fa987034c76c926d8"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SRV_Channels::disable\l_passthrough",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channels.html#a4bda9bd1d8a0c7286dcaf4cc1ac78d31"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SRV_Channels::limit\l_slew_rate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channels.html#a53b4f56472106de11579ff44246a6acb"];
+}

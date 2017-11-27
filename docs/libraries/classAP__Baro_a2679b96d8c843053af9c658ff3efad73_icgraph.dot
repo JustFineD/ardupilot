@@ -1,0 +1,35 @@
+digraph "AP_Baro::register_sensor"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Baro::register_sensor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Baro_BMP280::_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__BMP280.html#acf79b0916a52ded5a545f42f24ca391d"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Baro_BMP280::probe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__BMP280.html#af8a73b9644744972054c2ec0d6b940be"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Baro::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro.html#a942db790233528bfbb4d9a07c3454360"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$BARO__generic_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Baro_BMP280::~AP\l_Baro_BMP280",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__BMP280.html#af25f10c83b9115079ff02e1239f1ac5e"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_Baro_MS56XX::_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__MS56XX.html#a2f9fa10ace104137e6a0a0b4c8f4130c"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_Baro_MS56XX::probe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__MS56XX.html#ad4e1780fe0c684f594cc93ec96a9c876"];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_Baro_MS56XX::~AP\l_Baro_MS56XX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__MS56XX.html#a355a33a0b35cdf084ae22c85978492a2"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_Baro_BMP085::AP\l_Baro_BMP085",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__BMP085.html#a45d8bb8f36d3984f3960789b412e1c66"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_Baro_HIL::AP_Baro_HIL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__HIL.html#ae9b3ecd0168c19809a0ecad300828d1e"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_Baro_QFLIGHT::AP\l_Baro_QFLIGHT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__QFLIGHT.html#a088702786efa1ff5e97e51ad0554d45d"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AP_Baro_QURT::AP_Baro_QURT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__QURT.html#a41c288a78cd484540a4062f2d850239c"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_Baro_SITL::AP_Baro_SITL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__SITL.html#a3a04e9a90eb59001600ab669053157cc"];
+}

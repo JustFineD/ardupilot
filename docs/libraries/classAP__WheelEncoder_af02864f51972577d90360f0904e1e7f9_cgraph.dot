@@ -1,0 +1,43 @@
+digraph "AP_WheelEncoder::num_sensors"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_WheelEncoder::num\l_sensors",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_WheelEncoder::healthy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#a9b00ca583e313ebb85a99bd0fc3f6e85"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_WheelEncoder::enabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#a36f8fd9999375fcb115015aed03ba38c"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_WheelEncoder::get\l_counts_per_revolution",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#a03486a1ced94fe4c729c88405ba94cb4"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_WheelEncoder::get\l_wheel_radius",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#acb341773b6a7ad169c791e88e0e189f8"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_WheelEncoder::get\l_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#a111b8a2796d70da925844615d1bc1b90"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_WheelEncoder::get\l_delta_angle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#af14c1964e9d91982f5db02a4679603d3"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_WheelEncoder::get\l_distance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#a8da2af1ee52512b44c13dba2cbfa0d5d"];
+  Node8 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_WheelEncoder::get\l_total_count",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#a702d18ec9df5bc43f2c687701603e3b2"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_WheelEncoder::get\l_error_count",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#aacc278570f44c415f554b7196f01ec37"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_WheelEncoder::get\l_signal_quality",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#aa50c6e701598fff327038bdf3cb5760f"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="constrain_float",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#ad525609d9dba6ffa556a0fbf08a3f9b4"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="constrain_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a20e8f8671c282c69c1954652b6d61585"];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="constrain_value\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a37e8e901754cb9c8e53a8e3030c82c50"];
+  Node13 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="constrain_value\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afdbe107ec1987d318a6347816fbf2b89"];
+  Node13 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="constrain_value\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ae6c621670c214da687de21d4e3a92587"];
+  Node13 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="constrain_value\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#afe3990b00e9abc43fa97dfaf8e32f5c4"];
+  Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="AP_WheelEncoder::get\l_last_reading_ms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__WheelEncoder.html#a9f8ae7c0d1bcb3704dabceae15b73641"];
+}

@@ -1,0 +1,14 @@
+digraph "DataFlash_Class::fill_log_write_logstructure"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DataFlash_Class::fill\l_log_write_logstructure",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DataFlash_Backend::\lLog_Write_Emit_FMT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataFlash__Backend.html#a0ed8c2da3963e144758e4df2f14161f8"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DataFlash_Backend::\lnum_dropped",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataFlash__Backend.html#a944c1f573e2cd12e7ff491d48898d446"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="DataFlash_Class::num\l_dropped",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataFlash__Class.html#a3b01d9a49c319ca3995df9b1649b9249"];
+}

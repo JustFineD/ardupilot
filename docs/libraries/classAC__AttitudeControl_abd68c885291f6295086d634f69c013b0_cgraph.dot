@@ -1,0 +1,40 @@
+digraph "AC_AttitudeControl::rate_bf_yaw_target"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AC_AttitudeControl\l::rate_bf_yaw_target",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="radians",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a75b14352ec1c95a8276af9a0813cfdc3"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AC_AttitudeControl\l::max_rate_step_bf_roll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a81707c8a063a129c3025c87687b06b52"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AC_AttitudeControl\l::get_rate_roll_pid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#ad300b51e0777495496adddd1770ee920"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AC_PID::get_filt_alpha",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PID.html#ac12ffbd4fd053c6152d403b69e07b8e1"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="is_zero",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a2a12cce483e9b870da70d30406d82c60"];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_Motors::get_throttle\l_hover",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a6641c5398dea1388547dff3db5d95a86"];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AC_PID::kD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PID.html#a2d7be199fbc437ee472fad5a4308c668"];
+  Node3 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AC_PID::kP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PID.html#ac29a8c72a8618d87886599204dcb5b79"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AC_AttitudeControl\l::max_rate_step_bf_pitch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a874d7c2f98a3ad251d9f91cc936694e2"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AC_AttitudeControl\l::get_rate_pitch_pid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a9e10a37d28eeb3d6476ec087b3bac3df"];
+  Node10 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AC_AttitudeControl\l::max_rate_step_bf_yaw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a8d9a7d9bcefcac0e41adb1136cac46a6"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AC_AttitudeControl\l::get_rate_yaw_pid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a9e430ac947e0924fdc83280a4ed552bf"];
+  Node12 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

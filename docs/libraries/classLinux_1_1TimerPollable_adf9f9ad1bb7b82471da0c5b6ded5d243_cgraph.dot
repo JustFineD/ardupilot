@@ -1,0 +1,19 @@
+digraph "Linux::TimerPollable::~TimerPollable"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::TimerPollable\l::~TimerPollable",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::TimerPollable\l::on_can_read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1TimerPollable.html#a8e5f600acc00189e6d0a86b9abc8095d"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Linux::TimerPollable\l::WrapperCb::start_cb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1TimerPollable_1_1WrapperCb.html#a9c0adc39f02a56076b1f6b0705fa2efb"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Linux::TimerPollable\l::WrapperCb::end_cb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1TimerPollable_1_1WrapperCb.html#abae4af07f5f4abd092af274a59fa5d85"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Linux::TimerPollable\l::setup_timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1TimerPollable.html#aede210356b091ef11f46aa73793cee69"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Linux::TimerPollable\l::adjust_timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1TimerPollable.html#ab4fdb7c8fdea2b648bbcd11a8efb787f"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

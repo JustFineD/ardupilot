@@ -1,0 +1,18 @@
+digraph "AP_Motors::set_throttle_avg_max"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Motors::set_throttle\l_avg_max",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AC_AttitudeControl\l_Sub::set_throttle_out",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl__Sub.html#a01e89bcda33d4d292631f126b21d64fc"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AC_AttitudeControl\l_Sub::get_rate_yaw_pid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl__Sub.html#a2863a951cef77c5087777a0a64144e77"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AC_AttitudeControl\l_Multi::set_throttle_out",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl__Multi.html#a3e83f3b32e305ad977cdaadf92cc80e1"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AC_AttitudeControl\l_Multi::get_rate_yaw_pid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl__Multi.html#a6d8815f4fdfb0214cb5a5cc4a25fb026"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Motors__test_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d"];
+}

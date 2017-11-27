@@ -1,0 +1,25 @@
+digraph "AP_Beacon_Backend::correct_for_orient_yaw"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Beacon_Backend::\lcorrect_for_orient_yaw",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Beacon_Backend::\lset_beacon_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon__Backend.html#a55194b951171c21ece82dfc9099e0bfa"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Beacon_Marvelmind\l::set_stationary_beacons\l_positions_and_distances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon__Marvelmind.html#a9a5eb0587b9e2728a674c9ea98bc3d80"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Beacon_Marvelmind\l::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon__Marvelmind.html#a81cc10e242ffdd504883044204dbcdcf"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Beacon_Pozyx::parse\l_buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon__Pozyx.html#aaca9b9889a48ea1b5ec1b2fef27edc36"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Beacon_Pozyx::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon__Pozyx.html#a9b1676eb33f3f22a686cd312de1d9aa3"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_Beacon_SITL::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon__SITL.html#a3dd010c532343e10c4718060d95c0c08"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_Beacon_Backend::\lset_vehicle_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon__Backend.html#a87ef3331478a5d6c121765effef8f5eb"];
+  Node8 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

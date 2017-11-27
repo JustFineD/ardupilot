@@ -1,0 +1,19 @@
+digraph "ByteBuffer::read"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ByteBuffer::read",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ByteBuffer::peekbytes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#af34d398a28a23bf19cad598487eeb54d"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ByteBuffer::peekiovec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#a413289b6d4cc7f9550b9c75dc7e886d5"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ByteBuffer::available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#aacbc04305e267a33a431f8736f8d0d5d"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ByteBuffer::readptr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#ac8877785d9931ae293a216b46951b4a1"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ByteBuffer::advance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#a876a74665a4f4358cf2a57941543d0d6"];
+  Node6 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

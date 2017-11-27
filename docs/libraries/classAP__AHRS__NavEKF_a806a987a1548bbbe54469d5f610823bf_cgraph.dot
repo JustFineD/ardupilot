@@ -1,0 +1,41 @@
+digraph "AP_AHRS_NavEKF::getLastYawResetAngle"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_AHRS_NavEKF::getLastYaw\lResetAngle",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_AHRS_NavEKF::ekf_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS__NavEKF.html#a2421598bfc909c228709f99347a5fcea"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_AHRS_NavEKF::always\l_use_EKF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS__NavEKF.html#a9af775a381a41ff78ac75a06ba7b1a05"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NavEKF2::getLastYawReset\lAngle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF2.html#a8470dd161b8e2335fad044f47f8b4863"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="NavEKF2_core::getLastYaw\lResetAngle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF2__core.html#adc44b4956752c2836306196d59dd83e4"];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="wrap_PI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a21d0562d7b23dd9f04bc30a3611cc577"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="wrap_2PI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#aa66b7eae8d7e99247c6a2b3d2b5c7b8d"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="wrap_2PI\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a50a4ded454375642e1944882b01a1ae5"];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="wrap_2PI\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#aaf8ce7d4f9e3837bdbd5aac6545b4000"];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="wrap_2PI\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a7182302503c136742396e3057b680dc7"];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="wrap_2PI\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a0b4be48e39c65e97084146b9f1d22c00"];
+  Node6 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="wrap_PI\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a044023fcfa899d449f5a219ca7596ca4"];
+  Node6 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="wrap_PI\< short \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#ad0041912c2965b653fa9cf6854e47bc8"];
+  Node6 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="wrap_PI\< float \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a789e7d40c173a1fab6560d1b61609952"];
+  Node6 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="wrap_PI\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8cpp.html#a66b3a8191d62a34f4d673d5c62d8d1cf"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="NavEKF3::getLastYawReset\lAngle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF3.html#a0dfa237b7b3cf14f0f99eb91fe539cea"];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="NavEKF3_core::getLastYaw\lResetAngle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF3__core.html#acde0c12b9949d845c646bca6b11c1c8f"];
+  Node16 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

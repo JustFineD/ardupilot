@@ -1,0 +1,8 @@
+<map id="AC_AttitudeControl::shift_ef_yaw_target" name="AC_AttitudeControl::shift_ef_yaw_target">
+<area shape="rect" id="node2" href="$AP__Math_8h.html#a75b14352ec1c95a8276af9a0813cfdc3" title="radians" alt="" coords="241,5,305,32"/>
+<area shape="rect" id="node3" href="$classQuaternion.html#a6c21fe33378aa16a33cba869ba4af5dc" title="Quaternion::from_axis\l_angle" alt="" coords="197,57,348,98"/>
+<area shape="rect" id="node4" href="$classVector3.html#ac1fd5514e368a1e1c2d13f71eda18345" title="Vector3::length" alt="" coords="396,39,507,65"/>
+<area shape="rect" id="node7" href="$AP__Math_8h.html#a2a12cce483e9b870da70d30406d82c60" title="is_zero" alt="" coords="419,89,483,116"/>
+<area shape="rect" id="node5" href="$AP__Math_8h.html#adc76d4a5e5c9ae8cb7ab17b55c40d636" title="norm" alt="" coords="555,39,605,65"/>
+<area shape="rect" id="node6" href="$AP__Math_8h.html#a0375e3d67fd3911cacee5c3e1408c0f2" title="sq" alt="" coords="653,39,692,65"/>
+</map>

@@ -1,0 +1,10 @@
+digraph "Linux::UARTDriver::_allocate_buffers"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::UARTDriver::\l_allocate_buffers",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ByteBuffer::set_size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#a4279e626cb21779cc92f7cf63b9cb3f7"];
+}

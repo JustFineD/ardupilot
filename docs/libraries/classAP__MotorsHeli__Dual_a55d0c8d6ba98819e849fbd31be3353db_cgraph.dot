@@ -1,0 +1,42 @@
+digraph "AP_MotorsHeli_Dual::AP_MotorsHeli_Dual"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_MotorsHeli_Dual\l::AP_MotorsHeli_Dual",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Param::setup_object\l_defaults",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Param.html#a5f6dcfce1c0a79cf5bd81283e22f3201"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Param::set_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Param.html#acd4b14f793c37f162e298761d2155ca6"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Param::get_default\l_value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Param.html#a7535a9b529dae326dcebb6be33dbbe9a"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_MotorsHeli_Dual\l::set_update_rate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Dual.html#aa02b6d52fbd392d8e50c6feb79fef768"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Motors::rc_set_freq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a3d84a895c644d34e7fe78d7301ccf534"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_Motors::rc_map_mask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#ac3abe2484a90e4717f50b63613e05ba6"];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_HAL::RCOutput::set_freq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCOutput.html#ae7903398aa18e2472dd34081e626dcb7"];
+  Node6 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_HAL::RCOutput::set\l_output_mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCOutput.html#a2750a3caebe138a66da523e78502d51c"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_MotorsHeli_Dual\l::enable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Dual.html#ac1ba74732be86ef690df5a00947ff368"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_Motors::rc_enable_ch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a91e69152a30b5e1020f3e49271b9d054"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_HAL::RCOutput::enable_ch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCOutput.html#a25196bb820266d4afcae14d0acdb7e1c"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AP_MotorsHeli_Dual\l::output_test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Dual.html#a6b6f4f48778877ea33646fcca3630d30"];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_Motors::armed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#abb781661db2b685644795dfe8f5a655f"];
+  Node13 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="AP_Motors::rc_write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#aaa7607c19a1ce444330aee972dd925ef"];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="AP_HAL::RCOutput::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCOutput.html#ade509cf82dfb1f6fab3eba0c026c5d60"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="AP_MotorsHeli_Dual\l::set_desired_rotor_speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Dual.html#a627af26329f33db4a070b9c1525eea79"];
+  Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="AP_MotorsHeli_RSC::\lset_desired_speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__RSC.html#ad42108be3ceab3461850ec4ad4b5519d"];
+}

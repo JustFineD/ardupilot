@@ -1,0 +1,38 @@
+digraph "AP_HAL::init"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_HAL::init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HALSITL::AnalogIn::\lAnalogIn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1AnalogIn.html#af10bf76b60a58d86ec2d0675baf072aa"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="VRBRAIN::VRBRAIN_I2C\l::do_transfer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAIN__I2C.html#a1873817ca177d3d99d679f438f6ed652"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="VRBRAIN::I2CDevice\l::transfer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1I2CDevice.html#a0fdbf058ddfdb0f92b18d4c9b454e470"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="VRBRAIN::I2CDevice\l::set_speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1I2CDevice.html#ac0c498b703533a8f1c0074b5b52dbe87"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="VRBRAIN::VRBRAIN_I2C\l::VRBRAIN_I2C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAIN__I2C.html#a912f551f8099630d1794d72d4ff3e3c8"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PX4::PX4_I2C::do_transfer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPX4_1_1PX4__I2C.html#a312d287ae916ef78864d7566f00d29fb"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PX4::I2CDevice::transfer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPX4_1_1I2CDevice.html#a9e3db3e9ed12135bd8a5f5e207befade"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PX4::I2CDevice::set\l_speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPX4_1_1I2CDevice.html#a16dd1d3f0aa0a6718f32f9da3a5b949d"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Linux::GPIO_Sysfs::from",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1GPIO__Sysfs.html#a0c235d2bcf738fa71b41d48384e32aec"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Linux::RCOutput_Bebop\l::from",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1RCOutput__Bebop.html#a6f3aa51451811799f099d4b0cd55d4c0"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_BattMonitor_Bebop\l::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__Bebop.html#a21f5d7fd4482fff9ca7d42b91770871b"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AP_BattMonitor_Bebop\l::~AP_BattMonitor_Bebop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__Bebop.html#ae3bddd45e54f95f4641bf52fa8d32f8a"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_HAL::GPIO::GPIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1GPIO.html#aa2b703d6e1782e2290ff2267762af7cd"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="AP_HAL::HAL::HAL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1HAL.html#a5ba83fd0d64ef8b10e630ce9322fb9cb"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PX4::PX4CAN::PX4CAN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPX4_1_1PX4CAN.html#ac8c8e416bd632240d3c63fc9a03eab92"];
+}

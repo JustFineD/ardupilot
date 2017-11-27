@@ -1,0 +1,14 @@
+digraph "AP_AHRS_DCM::airspeed_estimate"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_AHRS_DCM::airspeed\l_estimate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_AHRS_NavEKF::airspeed\l_estimate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS__NavEKF.html#aaac1da7ac9256fdbd1260a9c9cd93ce8"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_AHRS_DCM::wind_estimate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS__DCM.html#a436f1fa2ecf028ab6bcf5e344e5fddb9"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_AHRS_NavEKF::wind\l_estimate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS__NavEKF.html#a26168a6f7f3da768ae76083b5edc05b0"];
+}

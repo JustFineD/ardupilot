@@ -1,0 +1,19 @@
+digraph "AP_AHRS_NavEKF::get_mag_field_NED"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_AHRS_NavEKF::get\l_mag_field_NED",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SoloGimbalEKF::calcMagHeading\lInnov",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbalEKF.html#a84f878df87ed6057c63306b2c16e8c22"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SoloGimbalEKF::fuseCompass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbalEKF.html#af7f8f4cca1a21c25d200b9360d669578"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SoloGimbalEKF::RunEKF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbalEKF.html#a3be12acb5c78532662967b12d611800b"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SoloGimbalEKF::alignHeading",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoloGimbalEKF.html#ae3a2e7a2ef3021289c6919ab9613fe14"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_AHRS_NavEKF::get\l_NavEKF3_const",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS__NavEKF.html#add98225e5350abab51cccd311f5496c3"];
+}

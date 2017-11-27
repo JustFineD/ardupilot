@@ -1,0 +1,5 @@
+<map id="rand_vec3f" name="rand_vec3f">
+<area shape="rect" id="node2" href="$classAP__Compass__SITL.html#a3f5d4867cc2b98a8150eed773c70f28d" title="AP_Compass_SITL::_timer" alt="" coords="140,13,323,39"/>
+<area shape="rect" id="node4" href="$AP__Math_8h.html#aa0be5300072748654c9e37d66d08f593" title="usec_to_hz" alt="" coords="187,63,276,90"/>
+<area shape="rect" id="node3" href="$classAP__Compass__SITL.html#aa94d46745ebe99b17efa0a58dfaf4fa9" title="AP_Compass_SITL::AP\l_Compass_SITL" alt="" coords="371,5,535,47"/>
+</map>

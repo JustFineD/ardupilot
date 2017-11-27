@@ -1,0 +1,13 @@
+digraph "AP_MotorsHeli_Single::calculate_armed_scalars"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_MotorsHeli_Single\l::calculate_armed_scalars",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_MotorsHeli_Single\l::calculate_scalars",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Single.html#a7b5237d9ac4b926d7d84e1e34b18ee4f"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_MotorsHeli_Single\l::rotor_speed_above_critical",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Single.html#ac58406ec975c076b307c6382064e89b8"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

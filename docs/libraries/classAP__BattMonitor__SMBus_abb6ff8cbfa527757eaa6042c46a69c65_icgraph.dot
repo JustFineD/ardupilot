@@ -1,0 +1,18 @@
+digraph "AP_BattMonitor_SMBus::read_remaining_capacity"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_BattMonitor_SMBus\l::read_remaining_capacity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_BattMonitor_SMBus\l::has_current",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus.html#a20acd1e39545dcc38e005c00edddf00c",tooltip="returns true if battery monitor instance provides current info "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_BattMonitor_SMBus\l_Solo::timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Solo.html#a2c97ca22c71a9ca709a48ce68f6914cd"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_BattMonitor_SMBus\l_Solo::AP_BattMonitor\l_SMBus_Solo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Solo.html#a461a488e2a9abe8c5fa6e078fd45452e"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_BattMonitor_SMBus\l_Maxell::timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Maxell.html#a9774b2c0d3b19a74ff3ef14be93508f0"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_BattMonitor_SMBus\l_Maxell::AP_BattMonitor\l_SMBus_Maxell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus__Maxell.html#a5e936d4bf53f5c77658a2af8cca9682e"];
+}

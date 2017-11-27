@@ -1,0 +1,18 @@
+digraph "Linux::Scheduler::teardown"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::Scheduler::teardown",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::PeriodicThread\l::stop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1PeriodicThread.html#a136aaf6e713f63b246fc4a2905e6e9a1"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Linux::Thread::is_started",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#a240d7b48a9a8eb43638f67295a1819e5"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Linux::Thread::get\l_stack_usage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#a6884970a0811ae21953c57fb98aa6e96"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Linux::Thread::set\l_stack_size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#a8d3282b714faaf68eae534e9276419f0"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Linux::Thread::join",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html#a32b7d184279634922e2f3b23b584fbcd"];
+}

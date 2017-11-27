@@ -1,0 +1,45 @@
+<map id="test_rotation_accuracy" name="test_rotation_accuracy">
+<area shape="rect" id="node2" href="$classAP__HAL_1_1UARTDriver.html#a6ceedc792594e59fc7d80b39a435f027" title="AP_HAL::UARTDriver\l::printf" alt="" coords="944,133,1097,174"/>
+<area shape="rect" id="node10" href="$classMatrix3.html#a62587bd216436f09f06b9e1330f84bc0" title="Matrix3::from_euler" alt="" coords="399,43,533,69"/>
+<area shape="rect" id="node11" href="$classMatrix3.html#a6f044e8d64f6f10e054af962487399b9" title="Matrix3::rotate" alt="" coords="413,93,519,120"/>
+<area shape="rect" id="node12" href="$classMatrix3.html#a893c6a712d52e47dbb7ed2d7a548046e" title="Matrix3::to_euler" alt="" coords="407,144,525,171"/>
+<area shape="rect" id="node18" href="$classMatrix3.html#a69d23fe802118124235bd5542b279259" title="Matrix3::from_axis\l_angle" alt="" coords="208,365,339,406"/>
+<area shape="rect" id="node3" href="$classAP__HAL_1_1UARTDriver.html#aa8abfb6d6641299472c29ac1edde559f" title="AP_HAL::UARTDriver\l::vprintf" alt="" coords="1145,133,1299,174"/>
+<area shape="rect" id="node4" href="$print__vprintf_8cpp.html#a1534eaeab54696df96975b56d9f49212" title="print_vprintf" alt="" coords="1347,140,1437,167"/>
+<area shape="rect" id="node5" href="$classAP__HAL_1_1Print.html#acc65391952a43334f8f5c9bef341f501" title="AP_HAL::Print::write" alt="" coords="1485,39,1629,65"/>
+<area shape="rect" id="node6" href="$ftoa__engine_8cpp.html#a1c28234da8f20b43c85890d4bb452947" title="ftoa_engine" alt="" coords="1513,89,1602,116"/>
+<area shape="rect" id="node7" href="$replace_8cpp.html#a880bcc7b85a09e6254691bebd5344b51" title="strnlen" alt="" coords="1527,140,1588,167"/>
+<area shape="rect" id="node8" href="$utoa__invert_8cpp.html#a34926f552460b47c414ec4d83b32815c" title="ulltoa_invert" alt="" coords="1511,191,1603,217"/>
+<area shape="rect" id="node9" href="$utoa__invert_8cpp.html#a5d99bba8e697c1e11da489d88fca8559" title="ultoa_invert" alt="" coords="1513,241,1602,268"/>
+<area shape="rect" id="node13" href="$AP__Math_8cpp.html#a3370ada2588e54722319d65e00d8545c" title="safe_asin" alt="" coords="611,144,690,171"/>
+<area shape="rect" id="node14" href="$AP__Math_8cpp.html#acde8e5813f30717986b84509948bf530" title="safe_asin\&lt; int \&gt;" alt="" coords="768,169,884,196"/>
+<area shape="rect" id="node15" href="$AP__Math_8cpp.html#a6baeda4985886aba9f6d5d5008ac2b10" title="safe_asin\&lt; short \&gt;" alt="" coords="761,220,891,247"/>
+<area shape="rect" id="node16" href="$AP__Math_8cpp.html#a48612e903b0ef12fa5653056a6d5b3f7" title="safe_asin\&lt; float \&gt;" alt="" coords="763,68,889,95"/>
+<area shape="rect" id="node17" href="$AP__Math_8cpp.html#a9f2aae5b5adb09329c1a64b433d148dd" title="safe_asin\&lt; double \&gt;" alt="" coords="756,119,896,145"/>
+<area shape="rect" id="node19" href="$classVector3.html#a4623c9d95850aec72ba56cb9ceea2cdf" title="Vector3::normalized" alt="" coords="397,499,535,525"/>
+<area shape="rect" id="node20" href="$classMatrix3.html#a90cfd0bec53253429603b5600dcdce81" title="Matrix3::zero" alt="" coords="417,549,515,576"/>
+<area shape="rect" id="node21" href="$classMatrix3.html#a79b6de6d1beda5938087dec7fa225702" title="Matrix3::normalize" alt="" coords="401,600,531,627"/>
+<area shape="rect" id="node25" href="$classMatrix3.html#ac40446799dccb00a1a0098decf876d7b" title="Matrix3::from_euler312" alt="" coords="389,651,543,677"/>
+<area shape="rect" id="node26" href="$classMatrix3.html#abd9cba5416890b2470e3e0f44c314c2a" title="Matrix3::to_euler312" alt="" coords="396,701,536,728"/>
+<area shape="rect" id="node27" href="$classMatrix3.html#aeb696742e5106f027fbd67da9f806c03" title="Matrix3::operator*" alt="" coords="403,752,529,779"/>
+<area shape="rect" id="node28" href="$classMatrix3.html#a3705734aec6b67d729011cd792d7398a" title="Matrix3::mul_transpose" alt="" coords="387,195,545,221"/>
+<area shape="rect" id="node29" href="$classMatrix3.html#a18e2df03dec4abdf11fc9fb60ed7c226" title="Matrix3::transposed" alt="" coords="397,245,535,272"/>
+<area shape="rect" id="node30" href="$classMatrix3.html#a5a629739527e44be792db27f689b541c" title="Matrix3::det" alt="" coords="421,296,511,323"/>
+<area shape="rect" id="node31" href="$classMatrix3.html#a87dab1ef4c76ce536dfd00cfd2c22320" title="Matrix3::inverse" alt="" coords="593,397,708,424"/>
+<area shape="rect" id="node33" href="$classMatrix3.html#ae4054ff80c892e6b21cd970a4c3653b6" title="Matrix3::invert" alt="" coords="413,347,519,373"/>
+<area shape="rect" id="node44" href="$classMatrix3.html#a4a7bc2c8ec460484472f14298dfec7bf" title="Matrix3::mulXY" alt="" coords="410,448,522,475"/>
+<area shape="rect" id="node22" href="$classVector3.html#ac1fd5514e368a1e1c2d13f71eda18345" title="Vector3::length" alt="" coords="595,600,706,627"/>
+<area shape="rect" id="node23" href="$AP__Math_8h.html#adc76d4a5e5c9ae8cb7ab17b55c40d636" title="norm" alt="" coords="801,600,851,627"/>
+<area shape="rect" id="node24" href="$AP__Math_8h.html#a0375e3d67fd3911cacee5c3e1408c0f2" title="sq" alt="" coords="1001,600,1040,627"/>
+<area shape="rect" id="node32" href="$AP__Math_8h.html#a2a12cce483e9b870da70d30406d82c60" title="is_zero" alt="" coords="989,347,1053,373"/>
+<area shape="rect" id="node34" href="$AP__Math_8h.html#adfb798dabbcb4c7a82b3a08978bd8738" title="inverse" alt="" coords="619,347,683,373"/>
+<area shape="rect" id="node35" href="$matrix__alg_8cpp.html#a3aede2abf8bd30869b72dadaeb9e2c17" title="inverse3x3" alt="" coords="783,347,869,373"/>
+<area shape="rect" id="node36" href="$matrix__alg_8cpp.html#a5b0d60d12edb0ce4c1ed6599acccc6db" title="inverse4x4" alt="" coords="783,296,869,323"/>
+<area shape="rect" id="node37" href="$matrix__alg_8cpp.html#aec3cfc51b8c044f4faa4ab1d3a146435" title="mat_inverse" alt="" coords="779,448,873,475"/>
+<area shape="rect" id="node38" href="$matrix__alg_8cpp.html#a71120309d433abdf23de6c2d78440b1c" title="mat_LU_decompose" alt="" coords="949,549,1092,576"/>
+<area shape="rect" id="node41" href="$matrix__alg_8cpp.html#a9e2d939e8250f6c633d3b87661b04d45" title="mat_mul" alt="" coords="1186,448,1258,475"/>
+<area shape="rect" id="node42" href="$matrix__alg_8cpp.html#ae99d89fadc41e4ff699c74822490a71e" title="mat_forward_sub" alt="" coords="959,448,1082,475"/>
+<area shape="rect" id="node43" href="$matrix__alg_8cpp.html#a5f5a54d345886bbaf464910d3a1cf139" title="mat_back_sub" alt="" coords="967,499,1074,525"/>
+<area shape="rect" id="node39" href="$matrix__alg_8cpp.html#a7a49fc8b7a650e05045994ffba7c1dbc" title="mat_pivot" alt="" coords="1183,549,1261,576"/>
+<area shape="rect" id="node40" href="$matrix__alg_8cpp.html#a4ae7bd9da0bae1b05a7c352df26008ff" title="swap" alt="" coords="1365,549,1419,576"/>
+</map>

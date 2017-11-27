@@ -1,0 +1,22 @@
+digraph "AC_PolyFence_loader::load_point_from_eeprom"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AC_PolyFence_loader\l::load_point_from_eeprom",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AC_Fence::handle_msg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Fence.html#a9e7499c3b42f4ef5cc120bf103d17fe3",tooltip="handler for polygon fence messages with GCS "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AC_Fence::set_home\l_distance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Fence.html#ae37cf33a4fd250b66386253720fddbc9",tooltip="set_home_distance - update vehicle&#39;s distance from home in meters - required for circular horizontal ..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Proximity_SITL::\lload_fence",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity__SITL.html#a64912db994fb73e63f21adc0fa1eb6c5"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Proximity_SITL::\lupdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity__SITL.html#a6d9f228a0ae41c802bda9b6aff5f00dd"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AC_Fence::load_polygon\l_from_eeprom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Fence.html#a4064af0cdae32b2fa68e8f85ea40c384",tooltip="load polygon points stored in eeprom into boundary array and perform validation. returns true if load..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AC_Fence::check_fence",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Fence.html#a730e2005dc74a0a70ee16bfb9569baeb"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AC_Fence::enabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Fence.html#acdc600f19a3e4eb6de655c26f52e0968",tooltip="enabled - returns true if fence is enabled "];
+}

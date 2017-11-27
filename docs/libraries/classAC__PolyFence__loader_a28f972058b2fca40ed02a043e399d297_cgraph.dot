@@ -1,0 +1,20 @@
+digraph "AC_PolyFence_loader::load_point_from_eeprom"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AC_PolyFence_loader\l::load_point_from_eeprom",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AC_PolyFence_loader\l::max_points",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PolyFence__loader.html#a67055066bbd2e25a6a22a4978a837a5d"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MIN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Math_8h.html#a6b187a3fa1e9f663e89175e7e8e213d6"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="StorageAccess::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStorageAccess.html#a82088aa568b13d18acc9e41a01fd1f19"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="StorageAccess::read\l_uint32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStorageAccess.html#af10e9fa6cda0cb973243e4852c9d16c6"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="StorageAccess::read\l_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classStorageAccess.html#ab2a8575d541549a15645edc360fdaa91"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_HAL::Storage::read\l_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Storage.html#a1c3b1e80b0bec7d4bacd3ecbefb3b3f3"];
+}

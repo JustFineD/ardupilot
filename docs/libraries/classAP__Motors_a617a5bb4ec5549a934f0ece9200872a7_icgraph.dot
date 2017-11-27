@@ -1,0 +1,22 @@
+digraph "AP_Motors::output_armed_stabilizing"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Motors::output_armed\l_stabilizing",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Motors::get_pwm_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a03665c7df835ae4b22a34c650819ce27"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_MotorsMulticopter\l::output",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsMulticopter.html#aaf6c07b5dc56f5a91988bf7cccbbe067"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_MotorsMulticopter\l::output_min",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsMulticopter.html#a8224118e98eb9f6b41570df3a1dd2bc1"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Motors__test_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="update_motors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Motors__test_8cpp.html#a1f08b35b02317dc83a8acfc5e1861364"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="stability_test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Motors__test_8cpp.html#a7f47bb79f883994514efee9d8de3ec0c"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="loop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Motors__test_8cpp.html#afe461d27b9c48d5921c00d521181f12f"];
+}

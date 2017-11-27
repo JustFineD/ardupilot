@@ -1,0 +1,17 @@
+digraph "TSYS01::_timer"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TSYS01::_timer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TSYS01::_read_adc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTSYS01.html#a8bef52f9dd008a2c33a71394a075a1cc"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_HAL::Device::transfer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Device.html#a2af24b5f93b678af718b65a606e538b0"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TSYS01::_calculate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTSYS01.html#a68d06e6764c51c5adb10a6ff6136ab14"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="TSYS01::_convert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTSYS01.html#a7fb11e6510b8b43849c973d2f538f11e"];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

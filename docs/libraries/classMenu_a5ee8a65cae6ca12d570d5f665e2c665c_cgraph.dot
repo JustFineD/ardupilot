@@ -1,0 +1,32 @@
+digraph "Menu::check_input"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Menu::check_input",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Menu::_allocate_buffers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMenu.html#aabb1fe3857c7cc4eb62b9589b9d5999a"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Menu::_check_for_input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMenu.html#a3d751cb74f8f3d7a3e18218bc0c5ca0a"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_HAL::Stream::available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html#ae6aa935b5bbd553a2654bfec4e14961e"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_HAL::Stream::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Stream.html#ae42ff362cc2a7e527c22f92a3740c2ac"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_HAL::Print::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Print.html#acc65391952a43334f8f5c9bef341f501"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Menu::_run_command",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMenu.html#a95896e17c24c512b0ffded9661204cc9"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Menu::_display_prompt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMenu.html#a699be10deb0934068da64f22ef6a92ee"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_HAL::BetterStream\l::printf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1BetterStream.html#a1042d8b81aea5fb096d1b7431d7a9484"];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Menu::_call",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMenu.html#a17dd36a8c1c12a4fa1e99e1df29dac72"];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Menu::_help",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMenu.html#abdbbcbf943aef6f367b181cdf5df58ec",tooltip="implements the &#39;help&#39; command "];
+  Node11 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_HAL::Scheduler::\ldelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html#ab3175e2e6223ccfe82f957e41cc12b26"];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

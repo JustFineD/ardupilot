@@ -1,0 +1,9 @@
+<map id="setup" name="setup">
+<area shape="rect" id="node2" href="$AP__Marvelmind__test_8cpp.html#aa75d3e9090052d8860d1a6f898b021c6" title="set_object_value_and\l_report" alt="" coords="111,9,259,51"/>
+<area shape="rect" id="node5" href="$classAP__SerialManager.html#a4f6d491b1538d6d2513af7375825f35e" title="AP_SerialManager::init" alt="" coords="108,78,263,105"/>
+<area shape="rect" id="node8" href="$classAP__Beacon.html#a4369f36c0cb1f855b7cabf63c26b7831" title="AP_Beacon::init" alt="" coords="127,129,243,155"/>
+<area shape="rect" id="node3" href="$classAP__Param.html#a072dc7b90b285f8905f9d6be909e2caf" title="AP_Param::set_object\l_value" alt="" coords="315,5,469,47"/>
+<area shape="rect" id="node4" href="$classAP__Param.html#acd4b14f793c37f162e298761d2155ca6" title="AP_Param::set_value" alt="" coords="521,13,671,39"/>
+<area shape="rect" id="node6" href="$classAP__SerialManager.html#ad3edff9a0756afd0c4753bf9f1698355" title="AP_SerialManager::init\l_console" alt="" coords="315,71,469,112"/>
+<area shape="rect" id="node7" href="$classAP__SerialManager.html#aa445402c0b13741d3d67ad2685e8eab5" title="AP_SerialManager::map\l_baudrate" alt="" coords="311,136,473,177"/>
+</map>

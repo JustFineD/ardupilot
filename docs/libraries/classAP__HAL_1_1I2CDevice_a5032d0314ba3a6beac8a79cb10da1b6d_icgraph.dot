@@ -1,0 +1,19 @@
+digraph "AP_HAL::I2CDevice::set_speed"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_HAL::I2CDevice::\lset_speed",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Baro_BMP085::_read\l_pressure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__BMP085.html#a430b610d8995dd5d437f576283586f75"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Baro_BMP085::_timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__BMP085.html#aaa475de8a84bd818e577ae7f3c1e2d29"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Baro_BMP085::AP\l_Baro_BMP085",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__BMP085.html#a45d8bb8f36d3984f3960789b412e1c66"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Baro_BMP085::_read_temp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__BMP085.html#a5eaad67076700e2cfcd6db49ae399bf4"];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_HAL::I2CDevice::\l~I2CDevice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1I2CDevice.html#aea243246a4817f5f57a7f1615880d95c"];
+}

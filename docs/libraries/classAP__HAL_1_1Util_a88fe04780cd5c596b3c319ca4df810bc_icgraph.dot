@@ -1,0 +1,28 @@
+digraph "AP_HAL::Util::new_semaphore"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_HAL::Util::new_semaphore",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Airspeed_Backend\l::AP_Airspeed_Backend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Airspeed__Backend.html#ac1a6732ba3a41299771df6eec86d3db5"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Baro_Backend::AP\l_Baro_Backend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Baro__Backend.html#a0198a3d7bfaeacd9dccb82c4362128f3"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Compass_Backend\l::AP_Compass_Backend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Compass__Backend.html#a0f41548bb4f96c2eecde9bdb2d74c4ee"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_InertialSensor_Backend\l::AP_InertialSensor_Backend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__InertialSensor__Backend.html#a37944ebae7617573213f57b0496d7f70"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_RangeFinder_Backend\l::AP_RangeFinder_Backend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__Backend.html#a9637181068d6ceedcad39bf17abe915f"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_IRLock_I2C::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__IRLock__I2C.html#ac17dfda20ea40935b680596455ac1a0a"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AC_PrecLand_IRLock\l::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PrecLand__IRLock.html#ace1622d10ca91167e38db33d847b0226"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="DataFlash_MAVLink::Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataFlash__MAVLink.html#af592d8475ad88af8fb4246a4fdfcdb60"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="DataFlash_MAVLink::\lDataFlash_MAVLink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataFlash__MAVLink.html#a48cca0935063bb4c4ab826e2e0f7ac14"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="OpticalFlow_backend\l::OpticalFlow_backend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpticalFlow__backend.html#a12a57891aa4b70fdf0f51c4742930f63"];
+}

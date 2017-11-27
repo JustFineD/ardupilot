@@ -1,0 +1,27 @@
+<map id="AC_Avoid::adjust_velocity_proximity" name="AC_Avoid::adjust_velocity_proximity">
+<area shape="rect" id="node2" href="$classAP__Proximity.html#a705c8ca4f3987e3b02478bc01826a53f" title="AP_Proximity::get_status" alt="" coords="238,5,409,32"/>
+<area shape="rect" id="node3" href="$structVector2.html#a7027a23fe57300a1142fdb9e28d6e3da" title="Vector2::is_zero" alt="" coords="265,56,382,83"/>
+<area shape="rect" id="node4" href="$classAP__Proximity.html#afb59cefa0abc90cb0d8a89754f8601bd" title="AP_Proximity::get_boundary\l_points" alt="" coords="229,107,417,149"/>
+<area shape="rect" id="node6" href="$classAC__Avoid.html#a7e9a8c28e3f61c7e7ee3bf5afe986e4f" title="AC_Avoid::adjust_velocity\l_polygon" alt="" coords="235,285,411,326"/>
+<area shape="rect" id="node5" href="$classAP__Proximity__Backend.html#a0285564537ba74f044b6a6f7b2179a46" title="AP_Proximity_Backend\l::get_boundary_points" alt="" coords="469,19,629,61"/>
+<area shape="rect" id="node7" href="$classAP__InertialNav.html#a39348dd51a8c32fe16d01dfef284e31a" title="AP_InertialNav::get\l_position" alt="" coords="481,85,617,126"/>
+<area shape="rect" id="node8" href="$classAC__Fence.html#a9ab2e92431697e0f47896edce9e87cf9" title="returns true if we&#39;ve breached the polygon boundary. simple passthrough to underlying _poly_loader ob..." alt="" coords="476,150,621,191"/>
+<area shape="rect" id="node11" href="$classAP__AHRS.html#ae559b9d6fdd1e8ed3001258f58c98c39" title="AP_AHRS::sin_yaw" alt="" coords="478,216,619,243"/>
+<area shape="rect" id="node12" href="$classAP__AHRS.html#a1aaffcffc239930cb651fad539362fa0" title="AP_AHRS::cos_yaw" alt="" coords="476,267,621,293"/>
+<area shape="rect" id="node13" href="$AP__Math_8h.html#a5c0b5c82749ac54970b2699d3c10ee9b" title="MAX" alt="" coords="523,317,574,344"/>
+<area shape="rect" id="node14" href="$structVector2.html#a6dbbf670e7cdee42222de3aacb63d56a" title="Vector2\&lt; float \&gt;::closest\l_point" alt="" coords="465,369,632,410"/>
+<area shape="rect" id="node15" href="$structVector2.html#ad8ebafde96f43521d3647e2552387529" title="Vector2::length" alt="" coords="493,435,604,461"/>
+<area shape="rect" id="node18" href="$AP__Math_8h.html#a2a12cce483e9b870da70d30406d82c60" title="is_zero" alt="" coords="1098,540,1162,567"/>
+<area shape="rect" id="node19" href="$classAC__Avoid.html#a888f3551abae1ca6982f69ee8a42d09a" title="AC_Avoid::limit_velocity" alt="" coords="466,485,631,512"/>
+<area shape="rect" id="node9" href="$classAC__PolyFence__loader.html#a91a6b4c5611590d524eacac2c2aeec3a" title="AC_PolyFence_loader\l::boundary_breached" alt="" coords="695,150,847,191"/>
+<area shape="rect" id="node10" href="$polygon_8cpp.html#a69c7755ab39f2ede645c4542b3aed07c" title="Polygon_outside" alt="" coords="917,157,1036,184"/>
+<area shape="rect" id="node16" href="$AP__Math_8h.html#adc76d4a5e5c9ae8cb7ab17b55c40d636" title="norm" alt="" coords="951,427,1002,453"/>
+<area shape="rect" id="node17" href="$AP__Math_8h.html#a0375e3d67fd3911cacee5c3e1408c0f2" title="sq" alt="" coords="1111,431,1149,457"/>
+<area shape="rect" id="node20" href="$classAC__Avoid.html#a2ba87fd18a092d9f11ba197255064d16" title="AC_Avoid::get_max_speed" alt="" coords="680,485,861,512"/>
+<area shape="rect" id="node21" href="$classAC__AttitudeControl.html#a1788967db1aa0dfe68fad24da23947f9" title="AC_AttitudeControl\l::sqrt_controller" alt="" coords="909,478,1044,519"/>
+<area shape="rect" id="node22" href="$AP__Math_8cpp.html#ac89eb1832d8e4d67fcf1ac07e3c25184" title="safe_sqrt" alt="" coords="1092,485,1168,512"/>
+<area shape="rect" id="node23" href="$AP__Math_8cpp.html#aa5cb9421d48def32eb7574adb1b152b0" title="safe_sqrt\&lt; int \&gt;" alt="" coords="1228,409,1343,436"/>
+<area shape="rect" id="node24" href="$AP__Math_8cpp.html#a6952300e3d03222491051d674312b67d" title="safe_sqrt\&lt; short \&gt;" alt="" coords="1221,460,1350,487"/>
+<area shape="rect" id="node25" href="$AP__Math_8cpp.html#a40ae6cfccff676d9d2ff57e2e9ca549c" title="safe_sqrt\&lt; float \&gt;" alt="" coords="1223,511,1348,537"/>
+<area shape="rect" id="node26" href="$AP__Math_8cpp.html#acf6795fb73b8b915b53126f71cd2712a" title="safe_sqrt\&lt; double \&gt;" alt="" coords="1216,561,1355,588"/>
+</map>

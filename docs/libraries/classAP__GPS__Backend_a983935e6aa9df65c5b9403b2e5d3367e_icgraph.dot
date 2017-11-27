@@ -1,0 +1,18 @@
+digraph "AP_GPS_Backend::broadcast_configuration_failure_reason"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_GPS_Backend::broadcast\l_configuration_failure_reason",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_GPS::broadcast_first\l_configuration_failure\l_reason",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__GPS.html#a04a660c6aeee0add4d4d6ebac74c2944"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_GPS::get_lag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__GPS.html#a6e74a89971cdb43f9d24e5dd9a36a090"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Arming::gps_checks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Arming.html#a3e31fe40e0d7d0e6befd2f82dd6b5a6d"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Arming::pre_arm\l_checks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Arming.html#a73c03baf7f22b7124a2ac9e9286a850a"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Arming::arm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Arming.html#a47b859d9929a736df2f08a1cad03efcb"];
+}

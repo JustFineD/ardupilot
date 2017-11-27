@@ -1,0 +1,14 @@
+digraph "NavEKF3::updateLaneSwitchPosDownResetData"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="NavEKF3::updateLaneSwitch\lPosDownResetData",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="NavEKF3::getLastPosDownReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF3.html#af8f633712a464fdef83c39ed1baf84cd"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NavEKF3_core::getLastPos\lDownReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF3__core.html#a5b93c69eab4799ee20470a0843f908a1"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NavEKF3_core::getPosD",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF3__core.html#a6c9d4cd0c744a753d8caaaf63b13a9f0"];
+}

@@ -1,0 +1,14 @@
+digraph "AP_BattMonitor_SMBus_Solo::read_block"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_BattMonitor_SMBus\l_Solo::read_block",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_HAL::Device::read\l_registers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Device.html#a66215f964cfb5c7421effdb88a749550"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_HAL::Device::transfer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Device.html#a2af24b5f93b678af718b65a606e538b0"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_BattMonitor_SMBus\l::get_PEC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BattMonitor__SMBus.html#ad88fac9cbc1513d8cf15dfde6047c2eb",tooltip="get_PEC - calculate packet error correction code of buffer "];
+}

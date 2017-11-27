@@ -1,0 +1,19 @@
+digraph "Display_SH1106_I2C"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Display_SH1106_I2C",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Display_Backend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDisplay__Backend.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _dev" ,fontname="Helvetica"];
+  Node3 [label="AP_HAL::OwnPtr\< AP\l_HAL::Device \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1OwnPtr.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _ptr" ,fontname="Helvetica"];
+  Node4 [label="AP_HAL::Device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Device.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" regs" ,fontname="Helvetica"];
+  Node5 [label="AP_HAL::Device::checkreg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__HAL_1_1Device_1_1checkreg.html"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _bus_id" ,fontname="Helvetica"];
+  Node6 [label="AP_HAL::Device::DeviceId",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionAP__HAL_1_1Device_1_1DeviceId.html"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" devid_s" ,fontname="Helvetica"];
+  Node7 [label="AP_HAL::Device::DeviceStructure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__HAL_1_1Device_1_1DeviceStructure.html"];
+}

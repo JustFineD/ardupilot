@@ -1,0 +1,18 @@
+digraph "DataFlash_Backend::PrepForArming"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DataFlash_Backend::\lPrepForArming",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DataFlash_Backend::\lstart_new_log",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataFlash__Backend.html#a5ff05c4c6461f5bfe61798adb4205a38"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DataFlash_Backend::\lstop_logging",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataFlash__Backend.html#a2b372ffaf21bd72cdde9135148b86b2c"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="DataFlash_Backend::\lLog_Fill_Format",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataFlash__Backend.html#a7078443c13464225a9368f782451ea1f"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="DataFlash_Backend::\lstructure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataFlash__Backend.html#a78d9206fcf7192ea90e1dd4a281116b3"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="DataFlash_Class::structure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDataFlash__Class.html#a7ac0e748bbc5c6e72645bb6245257600"];
+}

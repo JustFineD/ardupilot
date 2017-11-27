@@ -1,0 +1,24 @@
+digraph "Linux::Scheduler::SchedulerThread"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Linux::Scheduler::Scheduler\lThread",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::PeriodicThread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1PeriodicThread.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Linux::Thread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Thread.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _stack_debug" ,fontname="Helvetica"];
+  Node4 [label="Linux::Thread::stack\l_debug",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structLinux_1_1Thread_1_1stack__debug.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _sched" ,fontname="Helvetica"];
+  Node5 [label="Linux::Scheduler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Scheduler.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_HAL::Scheduler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html"];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _io_semaphore\n_timer_semaphore" ,fontname="Helvetica"];
+  Node7 [label="Linux::Semaphore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1Semaphore.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_HAL::Semaphore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Semaphore.html"];
+  Node9 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _timesliced_proc" ,fontname="Helvetica"];
+  Node9 [label="Linux::Scheduler::timesliced_proc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structLinux_1_1Scheduler_1_1timesliced__proc.html"];
+  Node1 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _uart_thread\n_io_thread\n_rcin_thread\n_timer_thread\n_tonealarm_thread" ,fontname="Helvetica"];
+}

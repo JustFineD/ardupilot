@@ -1,0 +1,21 @@
+<map id="loop" name="loop">
+<area shape="rect" id="node2" href="$classAP__HAL_1_1UARTDriver.html#a6ceedc792594e59fc7d80b39a435f027" title="AP_HAL::UARTDriver\l::printf" alt="" coords="351,99,505,141"/>
+<area shape="rect" id="node10" href="$BusTest_8cpp.html#ad6c2f366812485125a4a0fab57ae2a09" title="get_device" alt="" coords="149,237,234,264"/>
+<area shape="rect" id="node12" href="$classAP__HAL_1_1Scheduler.html#ab3175e2e6223ccfe82f957e41cc12b26" title="AP_HAL::Scheduler::\ldelay" alt="" coords="355,361,501,402"/>
+<area shape="rect" id="node15" href="$classAP__HAL_1_1Device.html#a0e51c1247cf5f1ed2d689263d9c48eae" title="AP_HAL::Device::bus_type" alt="" coords="100,339,283,365"/>
+<area shape="rect" id="node16" href="$classAP__HAL_1_1Device.html#a9cfca3d6c720115b4c77b21b64a2b8af" title="AP_HAL::Device::get\l_semaphore" alt="" coords="117,390,265,431"/>
+<area shape="rect" id="node17" href="$classAP__HAL_1_1Semaphore.html#abd3a0affad8bb211981a979f30386589" title="AP_HAL::Semaphore::take" alt="" coords="101,456,281,483"/>
+<area shape="rect" id="node18" href="$classAP__HAL_1_1Device.html#a2af24b5f93b678af718b65a606e538b0" title="AP_HAL::Device::transfer" alt="" coords="104,507,279,533"/>
+<area shape="rect" id="node19" href="$classAP__HAL_1_1Semaphore.html#afcdbf03d5bea9d83037acc93bfaea7ce" title="AP_HAL::Semaphore::give" alt="" coords="102,557,281,584"/>
+<area shape="rect" id="node20" href="$BusTest_8cpp.html#aa754b8f19697c092a3eb48905d6561e3" title="AP_HAL_MAIN" alt="" coords="134,608,249,635"/>
+<area shape="rect" id="node3" href="$classAP__HAL_1_1UARTDriver.html#aa8abfb6d6641299472c29ac1edde559f" title="AP_HAL::UARTDriver\l::vprintf" alt="" coords="573,99,727,141"/>
+<area shape="rect" id="node4" href="$print__vprintf_8cpp.html#a1534eaeab54696df96975b56d9f49212" title="print_vprintf" alt="" coords="775,107,865,133"/>
+<area shape="rect" id="node5" href="$classAP__HAL_1_1Print.html#acc65391952a43334f8f5c9bef341f501" title="AP_HAL::Print::write" alt="" coords="913,5,1057,32"/>
+<area shape="rect" id="node6" href="$ftoa__engine_8cpp.html#a1c28234da8f20b43c85890d4bb452947" title="ftoa_engine" alt="" coords="941,56,1030,83"/>
+<area shape="rect" id="node7" href="$replace_8cpp.html#a880bcc7b85a09e6254691bebd5344b51" title="strnlen" alt="" coords="955,107,1016,133"/>
+<area shape="rect" id="node8" href="$utoa__invert_8cpp.html#a34926f552460b47c414ec4d83b32815c" title="ulltoa_invert" alt="" coords="939,157,1031,184"/>
+<area shape="rect" id="node9" href="$utoa__invert_8cpp.html#a5d99bba8e697c1e11da489d88fca8559" title="ultoa_invert" alt="" coords="941,208,1030,235"/>
+<area shape="rect" id="node11" href="$classAP__HAL_1_1SPIDeviceManager.html#a934f05385b87bfbdfc912162028867fc" title="AP_HAL::SPIDeviceManager\l::get_device_name" alt="" coords="331,165,525,206"/>
+<area shape="rect" id="node13" href="$classAP__HAL_1_1SPIDeviceManager.html#af0b7857bf18d0f5aa9d71cca6278dfa2" title="AP_HAL::SPIDeviceManager\l::get_count" alt="" coords="331,230,525,271"/>
+<area shape="rect" id="node14" href="$classAP__HAL_1_1SPIDeviceManager.html#a84c4a9ff2ae0cdaa9a0bc8a3f0939893" title="AP_HAL::SPIDeviceManager\l::get_device" alt="" coords="331,295,525,337"/>
+</map>

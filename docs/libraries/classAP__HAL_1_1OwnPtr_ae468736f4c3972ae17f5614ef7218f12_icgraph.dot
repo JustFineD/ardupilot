@@ -1,0 +1,16 @@
+digraph "AP_HAL::OwnPtr::get"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_HAL::OwnPtr::get",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::UARTDriver::\lbegin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1UARTDriver.html#a3c0680a281a3832fe9bae399ef9b8854"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_HAL::operator!=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceAP__HAL.html#a423589eedc096647d0ec9415386f1749"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_HAL::operator==",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceAP__HAL.html#ae9c23217c103e993785687452cfc86c7"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="TEST",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test__own__ptr_8cpp.html#a469546dc847cc744d280021bed986fe2"];
+}

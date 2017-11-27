@@ -1,0 +1,14 @@
+digraph "CompassCalibrator::set_tolerance"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CompassCalibrator::\lset_tolerance",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CompassCalibrator::\lget_calibration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompassCalibrator.html#ad826cd209a06ce20e569ec0a8cd1940a"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CompassCalibrator::\lget_completion_percent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompassCalibrator.html#a459e32216672229a3592e2e0fc4a1f1d"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CompassCalibrator::\lget_completion_mask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompassCalibrator.html#a8e697a946794232eaf9fbf75a5f1482b"];
+}

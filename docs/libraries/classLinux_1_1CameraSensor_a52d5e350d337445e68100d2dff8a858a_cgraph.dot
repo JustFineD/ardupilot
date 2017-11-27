@@ -1,0 +1,12 @@
+digraph "Linux::CameraSensor::CameraSensor"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::CameraSensor\l::CameraSensor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::CameraSensor\l::set_format",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1CameraSensor.html#a20202ffba35a9f0f75c9e20aa07a15c9"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Linux::CameraSensor\l::set_crop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1CameraSensor.html#a7e5bb0e00db2db122ea2069922f5e566"];
+}

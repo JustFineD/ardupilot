@@ -1,0 +1,38 @@
+digraph "Linux::I2CDevice::~I2CDevice"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::I2CDevice::\l~I2CDevice",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::I2CDeviceManager\l::from",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1I2CDeviceManager.html#a504d5f354f69ed8eb80aa2a59208d7d9"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="get_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$BusTest_8cpp.html#ad6c2f366812485125a4a0fab57ae2a09"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_HAL::SPIDeviceManager\l::get_device_name",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1SPIDeviceManager.html#a934f05385b87bfbdfc912162028867fc"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_HAL::UARTDriver\l::printf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1UARTDriver.html#a6ceedc792594e59fc7d80b39a435f027"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_HAL::UARTDriver\l::vprintf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1UARTDriver.html#aa8abfb6d6641299472c29ac1edde559f"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="print_vprintf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$print__vprintf_8cpp.html#a1534eaeab54696df96975b56d9f49212"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_HAL::Print::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Print.html#acc65391952a43334f8f5c9bef341f501"];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ftoa_engine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ftoa__engine_8cpp.html#a1c28234da8f20b43c85890d4bb452947"];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="strnlen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$replace_8cpp.html#a880bcc7b85a09e6254691bebd5344b51"];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="ulltoa_invert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$utoa__invert_8cpp.html#a34926f552460b47c414ec4d83b32815c"];
+  Node7 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="ultoa_invert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$utoa__invert_8cpp.html#a5d99bba8e697c1e11da489d88fca8559"];
+  Node3 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AP_HAL::Scheduler::\ldelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html#ab3175e2e6223ccfe82f957e41cc12b26"];
+  Node3 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_HAL::SPIDeviceManager\l::get_count",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1SPIDeviceManager.html#af0b7857bf18d0f5aa9d71cca6278dfa2"];
+  Node3 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="AP_HAL::SPIDeviceManager\l::get_device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1SPIDeviceManager.html#a84c4a9ff2ae0cdaa9a0bc8a3f0939893"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Linux::I2CDeviceManager\l::_unregister",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1I2CDeviceManager.html#a39063d8b7305b5f0473a070c9bf0c463"];
+}

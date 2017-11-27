@@ -1,0 +1,50 @@
+digraph "VRBRAIN::VRBRAINStorage::init"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VRBRAIN::VRBRAINStorage\l::init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="VRBRAIN::VRBRAINStorage\l::read_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINStorage.html#a057fdfe4116e97dc7215d8e609399ab6"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="VRBRAIN::VRBRAINStorage\l::_storage_open",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINStorage.html#a199499086a60ba9fe48108bb86658c76"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_HAL::panic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceAP__HAL.html#a71832f03d849a0c088f04fc98d3c8143"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_HAL::RCInput::teardown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCInput.html#a2bea13d38f2b9ae8bf5193a3a69f0a31"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_HAL::RCInput::new\l_input",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCInput.html#aee1fade33080edef83dd7db0fad0f7da"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_HAL::RCInput::num\l_channels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCInput.html#ae55f959c6115c1f41783af3a2b6c4fcd"];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_HAL::RCInput::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCInput.html#a078fd7e6d2e6a899009ec674a8e03498"];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_HAL::Scheduler::\ldelay_microseconds",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html#a78c4f1b1f192ac1c99544b6cc8f099b0"];
+  Node3 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="VRBRAIN::VRBRAINStorage\l::_mtd_signature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINStorage.html#aaccbdf62aae457c36359ad169fa45697"];
+  Node10 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="lseek",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$replace_8h.html#a5be409c8d98c21628b77dfb6b2b8f1e9"];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="VRBRAIN::VRBRAINStorage\l::bus_lock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINStorage.html#aad70e18bd11ba94c698dbeec3f9bcc25"];
+  Node3 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="VRBRAIN::VRBRAINStorage\l::_upgrade_to_mtd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINStorage.html#a649123a2f76269f7cf7eeda0d03aa097"];
+  Node13 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="VRBRAIN::VRBRAINStorage\l::_mtd_write_signature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINStorage.html#a52bfd09952ba4b350b995201b61440a3"];
+  Node14 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="VRBRAIN::VRBRAINStorage\l::write_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINStorage.html#a5143ebfc6b4010f1aab0676c8195bf6e"];
+  Node15 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="VRBRAIN::VRBRAINStorage\l::_mark_dirty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINStorage.html#a9de3b497e7352268902535e8211b5235"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="VRBRAIN::VRBRAINStorage\l::_timer_tick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINStorage.html#a5a674d8edd94a154899975f28aff5b53"];
+  Node17 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

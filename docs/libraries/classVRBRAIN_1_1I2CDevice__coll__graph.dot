@@ -1,0 +1,25 @@
+digraph "VRBRAIN::I2CDevice"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="VRBRAIN::I2CDevice",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_HAL::I2CDevice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1I2CDevice.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_HAL::Device",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Device.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" regs" ,fontname="Helvetica"];
+  Node4 [label="AP_HAL::Device::checkreg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__HAL_1_1Device_1_1checkreg.html"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _bus_id" ,fontname="Helvetica"];
+  Node5 [label="AP_HAL::Device::DeviceId",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionAP__HAL_1_1Device_1_1DeviceId.html"];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" devid_s" ,fontname="Helvetica"];
+  Node6 [label="AP_HAL::Device::DeviceStructure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__HAL_1_1Device_1_1DeviceStructure.html"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _bus" ,fontname="Helvetica"];
+  Node7 [label="VRBRAIN::VRBRAIN_I2C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAIN__I2C.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="device::I2C",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" semaphore" ,fontname="Helvetica"];
+  Node9 [label="Empty::Semaphore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEmpty_1_1Semaphore.html"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_HAL::Semaphore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Semaphore.html"];
+}

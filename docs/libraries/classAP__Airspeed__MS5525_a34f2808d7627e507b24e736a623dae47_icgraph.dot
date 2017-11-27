@@ -1,0 +1,10 @@
+digraph "AP_Airspeed_MS5525::get_temperature"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Airspeed_MS5525\l::get_temperature",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Airspeed_MS5525\l::~AP_Airspeed_MS5525",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Airspeed__MS5525.html#a912d32f3429f683271ab10f3768122ab"];
+}

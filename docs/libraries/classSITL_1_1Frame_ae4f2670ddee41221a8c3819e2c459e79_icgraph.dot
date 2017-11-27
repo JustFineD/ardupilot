@@ -1,0 +1,18 @@
+digraph "SITL::Frame::init"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SITL::Frame::init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SITL::Frame::Frame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Frame.html#a326ecc99ce3c71ca671585884cb69b7b"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SITL::MultiCopter::\lMultiCopter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1MultiCopter.html#a1b3a52d1ac484ae1560e389025b3aaa3"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SITL::MultiCopter::\lcreate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1MultiCopter.html#a9f90e1aa754f77fc472e461ec526c5a4"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SITL::QuadPlane::QuadPlane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1QuadPlane.html#a7ce13b89d96ad3cda813ef29604e1e76"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SITL::QuadPlane::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1QuadPlane.html#ac95d31438a348850fc7eb983fd702d0a"];
+}

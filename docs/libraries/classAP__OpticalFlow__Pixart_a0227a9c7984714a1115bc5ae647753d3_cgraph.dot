@@ -1,0 +1,18 @@
+digraph "AP_OpticalFlow_Pixart::reg_read16s"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_OpticalFlow_Pixart\l::reg_read16s",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_OpticalFlow_Pixart\l::reg_read16u",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__OpticalFlow__Pixart.html#aa2fed79c8083e1df4e0a608cf8ef3bec"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_OpticalFlow_Pixart\l::reg_read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__OpticalFlow__Pixart.html#a7fc9c8f6150b243680a060d927eca830"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_HAL::Device::set\l_chip_select",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Device.html#ad5839d4deb725e38ed568e8516ed43fe"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_HAL::SPIDevice::\ltransfer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1SPIDevice.html#a57f3011db8365847b675246cbd0ccc7f"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_HAL::Scheduler::\ldelay_microseconds",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html#a78c4f1b1f192ac1c99544b6cc8f099b0"];
+}

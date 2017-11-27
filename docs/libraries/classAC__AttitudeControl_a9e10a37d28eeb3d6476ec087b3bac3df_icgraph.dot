@@ -1,0 +1,41 @@
+digraph "AC_AttitudeControl::get_rate_pitch_pid"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AC_AttitudeControl\l::get_rate_pitch_pid",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AC_AttitudeControl\l::control_monitor_update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a487553ac1448b6ba791d029c9cf18dac"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AC_AttitudeControl\l_Sub::rate_controller_run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl__Sub.html#a448de11eb6f1caa81c9195c8e958ca37"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AC_AttitudeControl\l_Sub::is_throttle_mix_min",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl__Sub.html#a5d384f89e97c92b0c0d62277b2de982e"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AC_AttitudeControl\l_Multi::rate_controller_run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl__Multi.html#a5b0f032a592442fb04a83ac254442b4c"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AC_AttitudeControl\l_Multi::is_throttle\l_mix_min",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl__Multi.html#a6318b45690210c7514bb5aae5dfd0904"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AC_AttitudeControl\l::get_angle_yaw_p",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#ab0c18224d65a40e039632291cdbd3fd6"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AC_AttitudeControl\l::max_rate_step_bf_pitch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a874d7c2f98a3ad251d9f91cc936694e2"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AC_AttitudeControl\l::rate_bf_yaw_target",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#abd68c885291f6295086d634f69c013b0"];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AC_AttitudeControl\l::max_angle_step_bf_pitch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a18ad3ea19760b7a23f3980ca96e93c22"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AC_AttitudeControl\l::rate_target_to_motor_pitch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#af828fefadbe69fe4b05db836886ffca5"];
+  Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AC_AttitudeControl\l::relax_attitude_controllers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#ad5f06ff5ba37d9af1afdb1ab18827a06"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AC_AttitudeControl\l::set_throttle_out_unstabilized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a76dacd70bc0485c1046bf0c948bc0156"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AC_AttitudeControl\l::get_bf_feedforward",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a4b0e45d449268c319b63534dccebe134"];
+  Node12 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="AC_AttitudeControl\l::save_accel_yaw_max",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#a4d838134584cd11d89b7e65848624d58"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="AC_AttitudeControl\l::reset_rate_controller\l_I_terms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__AttitudeControl.html#af1ad60b3bcec6ab34e77248a6755da4e"];
+  Node16 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

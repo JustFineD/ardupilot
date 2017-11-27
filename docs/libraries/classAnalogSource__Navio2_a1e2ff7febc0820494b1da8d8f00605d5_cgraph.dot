@@ -1,0 +1,12 @@
+digraph "AnalogSource_Navio2::read_average"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AnalogSource_Navio2\l::read_average",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AnalogSource_Navio2\l::read_latest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__Navio2.html#af17d76cdc320171fbafec8dc876e2392"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AnalogSource_Navio2\l::voltage_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__Navio2.html#afc06395cb62012f8f0d04171b3b5b479"];
+}

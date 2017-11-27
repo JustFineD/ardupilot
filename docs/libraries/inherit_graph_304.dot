@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ISystemClock",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_UAVCAN::SystemClock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__UAVCAN_1_1SystemClock.html"];
+  Node3 [label="Noncopyable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node4 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PX4::BusEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPX4_1_1BusEvent.html"];
+}

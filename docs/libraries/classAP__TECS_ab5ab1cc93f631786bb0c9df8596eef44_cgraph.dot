@@ -1,0 +1,14 @@
+digraph "AP_TECS::_detect_bad_descent"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_TECS::_detect_bad\l_descent",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SoaringController::\lis_active",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoaringController.html#a7e9d112cae5471cd6650be2540c07576"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_HAL::RCInput::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCInput.html#a078fd7e6d2e6a899009ec674a8e03498"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SoaringController::\lget_throttle_suppressed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSoaringController.html#ab70e3baddf2a654a84f7d6974f41b0ad"];
+}

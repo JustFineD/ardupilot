@@ -1,0 +1,26 @@
+<map id="libraries/SITL/SIM_Gimbal.h" name="libraries/SITL/SIM_Gimbal.h">
+<area shape="rect" id="node2" href="$SITL__State_8h.html" title="libraries/AP_HAL_SITL\l/SITL_State.h" alt="" coords="1232,95,1389,136"/>
+<area shape="rect" id="node25" href="$SIM__Gimbal_8cpp.html" title="libraries/SITL/SIM\l_Gimbal.cpp" alt="" coords="1414,95,1541,136"/>
+<area shape="rect" id="node3" href="$HAL__SITL__Class_8h.html" title="libraries/AP_HAL_SITL\l/HAL_SITL_Class.h" alt="" coords="1471,184,1628,225"/>
+<area shape="rect" id="node7" href="$HAL__SITL__Class_8cpp.html" title="libraries/AP_HAL_SITL\l/HAL_SITL_Class.cpp" alt="" coords="735,541,892,583"/>
+<area shape="rect" id="node10" href="$AP__HAL__SITL__Private_8h.html" title="libraries/AP_HAL_SITL\l/AP_HAL_SITL_Private.h" alt="" coords="308,452,479,493"/>
+<area shape="rect" id="node19" href="$sitl__airspeed_8cpp.html" title="libraries/AP_HAL_SITL\l/sitl_airspeed.cpp" alt="" coords="275,363,432,404"/>
+<area shape="rect" id="node22" href="$sitl__rangefinder_8cpp.html" title="libraries/AP_HAL_SITL\l/sitl_rangefinder.cpp" alt="" coords="2139,363,2296,404"/>
+<area shape="rect" id="node24" href="$SITL_2UARTDriver_8cpp.html" title="libraries/AP_HAL_SITL\l/UARTDriver.cpp" alt="" coords="2337,184,2495,225"/>
+<area shape="rect" id="node4" href="$AP__HAL__SITL_8h.html" title="libraries/AP_HAL_SITL\l/AP_HAL_SITL.h" alt="" coords="1232,273,1389,315"/>
+<area shape="rect" id="node20" href="$SITL__cmdline_8cpp.html" title="libraries/AP_HAL_SITL\l/SITL_cmdline.cpp" alt="" coords="1776,363,1933,404"/>
+<area shape="rect" id="node21" href="$sitl__gps_8cpp.html" title="libraries/AP_HAL_SITL\l/sitl_gps.cpp" alt="" coords="1957,363,2115,404"/>
+<area shape="rect" id="node23" href="$SITL__State_8cpp.html" title="libraries/AP_HAL_SITL\l/SITL_State.cpp" alt="" coords="1595,363,1752,404"/>
+<area shape="rect" id="node5" href="$SITL_2AnalogIn_8cpp.html" title="libraries/AP_HAL_SITL\l/AnalogIn.cpp" alt="" coords="456,363,613,404"/>
+<area shape="rect" id="node6" href="$SITL_2RCInput_8h.html" title="libraries/AP_HAL_SITL\l/RCInput.h" alt="" coords="43,363,200,404"/>
+<area shape="rect" id="node9" href="$SITL_2Semaphores_8h.html" title="libraries/AP_HAL_SITL\l/Semaphores.h" alt="" coords="688,363,845,404"/>
+<area shape="rect" id="node13" href="$SITL_2CAN_8h.html" title="libraries/AP_HAL_SITL\l/CAN.h" alt="" coords="1232,363,1389,404"/>
+<area shape="rect" id="node14" href="$SITL_2GPIO_8h.html" title="libraries/AP_HAL_SITL\l/GPIO.h" alt="" coords="869,363,1027,404"/>
+<area shape="rect" id="node16" href="$SITL_2RCOutput_8h.html" title="libraries/AP_HAL_SITL\l/RCOutput.h" alt="" coords="1051,363,1208,404"/>
+<area shape="rect" id="node18" href="$AP__HAL__SITL_2Scheduler_8cpp.html" title="libraries/AP_HAL_SITL\l/Scheduler.cpp" alt="" coords="1413,363,1571,404"/>
+<area shape="rect" id="node8" href="$SITL_2RCInput_8cpp.html" title="libraries/AP_HAL_SITL\l/RCInput.cpp" alt="" coords="127,452,284,493"/>
+<area shape="rect" id="node11" href="$SITL_2Util_8h.html" title="libraries/AP_HAL_SITL\l/Util.h" alt="" coords="735,452,892,493"/>
+<area shape="rect" id="node12" href="$AP__HAL__SITL_2Semaphores_8cpp.html" title="libraries/AP_HAL_SITL\l/Semaphores.cpp" alt="" coords="553,452,711,493"/>
+<area shape="rect" id="node15" href="$AP__HAL__SITL_2GPIO_8cpp.html" title="libraries/AP_HAL_SITL\l/GPIO.cpp" alt="" coords="916,452,1073,493"/>
+<area shape="rect" id="node17" href="$SITL_2RCOutput_8cpp.html" title="libraries/AP_HAL_SITL\l/RCOutput.cpp" alt="" coords="1148,452,1305,493"/>
+</map>

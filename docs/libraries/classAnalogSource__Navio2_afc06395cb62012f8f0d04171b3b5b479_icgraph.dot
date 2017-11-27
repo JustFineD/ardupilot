@@ -1,0 +1,20 @@
+digraph "AnalogSource_Navio2::voltage_average"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AnalogSource_Navio2\l::voltage_average",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AnalogSource_Navio2\l::read_latest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__Navio2.html#af17d76cdc320171fbafec8dc876e2392"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AnalogSource_Navio2\l::read_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__Navio2.html#a1e2ff7febc0820494b1da8d8f00605d5"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AnalogSource_Navio2\l::voltage_latest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__Navio2.html#a2ed615d61e111252f1192fc4c8696675"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AnalogSource_Navio2\l::set_settle_time",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__Navio2.html#a4199c0160e69378a634d7a23dc38de5f"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AnalogSource_Navio2\l::voltage_average_ratiometric",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__Navio2.html#aafc4e458d6d2436e849608e95aad4c58"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

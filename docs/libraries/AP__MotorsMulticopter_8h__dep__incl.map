@@ -1,0 +1,201 @@
+<map id="libraries/AP_Motors/AP_MotorsMulticopter.h" name="libraries/AP_Motors/AP_MotorsMulticopter.h">
+<area shape="rect" id="node2" href="$AC__AttitudeControl__Multi_8h.html" title="ArduCopter attitude control library. " alt="" coords="21,653,207,694"/>
+<area shape="rect" id="node4" href="$AC__AttitudeControl__Sub_8h.html" title="ArduSub attitude control library. " alt="" coords="16345,653,16529,694"/>
+<area shape="rect" id="node6" href="$AP__Motors_8h.html" title="libraries/AP_Motors\l/AP_Motors.h" alt="" coords="10566,273,10702,315"/>
+<area shape="rect" id="node192" href="$AP__MotorsMatrix_8h.html" title="Motor control class for Matrixcopters. " alt="" coords="10709,95,10847,136"/>
+<area shape="rect" id="node196" href="$AP__MotorsTri_8h.html" title="Motor control class for Tricopters. " alt="" coords="10215,184,10351,225"/>
+<area shape="rect" id="node197" href="$AP__MotorsSingle_8h.html" title="Motor and Servo control class for Singlecopters. " alt="" coords="10375,184,10514,225"/>
+<area shape="rect" id="node198" href="$AP__MotorsCoax_8h.html" title="Motor and Servo control class for Co&#45;axial helicopters with two motors and two flaps. " alt="" coords="10978,184,11114,225"/>
+<area shape="rect" id="node199" href="$AP__MotorsTailsitter_8h.html" title="Motor control class for tailsitters. " alt="" coords="11138,184,11290,225"/>
+<area shape="rect" id="node200" href="$AP__MotorsMulticopter_8cpp.html" title="libraries/AP_Motors\l/AP_MotorsMulticopter.cpp" alt="" coords="18912,95,19092,136"/>
+<area shape="rect" id="node3" href="$AC__AttitudeControl__Multi_8cpp.html" title="libraries/AC_AttitudeControl\l/AC_AttitudeControl_Multi.cpp" alt="" coords="5,757,204,798"/>
+<area shape="rect" id="node5" href="$AC__AttitudeControl__Sub_8cpp.html" title="libraries/AC_AttitudeControl\l/AC_AttitudeControl_Sub.cpp" alt="" coords="16334,757,16529,798"/>
+<area shape="rect" id="node7" href="$AC__AttitudeControl_8h.html" title="ArduCopter attitude control library. " alt="" coords="931,549,1115,590"/>
+<area shape="rect" id="node11" href="$AC__PosControl_8h.html" title="libraries/AC_AttitudeControl\l/AC_PosControl.h" alt="" coords="931,653,1115,694"/>
+<area shape="rect" id="node19" href="$LogFile_8cpp.html" title="libraries/DataFlash\l/LogFile.cpp" alt="" coords="2719,757,2850,798"/>
+<area shape="rect" id="node23" href="$AP__Motors__test_8cpp.html" title="libraries/AP_Motors\l/examples/AP_Motors\l_test/AP_Motors_test.cpp" alt="" coords="2979,541,3153,597"/>
+<area shape="rect" id="node24" href="$DataFlash_8h.html" title="libraries/DataFlash\l/DataFlash.h" alt="" coords="10722,363,10853,404"/>
+<area shape="rect" id="node159" href="$SIM__Frame_8cpp.html" title="libraries/SITL/SIM\l_Frame.cpp" alt="" coords="20067,853,20193,895"/>
+<area shape="rect" id="node161" href="$SIM__Motor_8cpp.html" title="libraries/SITL/SIM\l_Motor.cpp" alt="" coords="20017,757,20144,798"/>
+<area shape="rect" id="node167" href="$SIM__SingleCopter_8h.html" title="libraries/SITL/SIM\l_SingleCopter.h" alt="" coords="20208,653,20335,694"/>
+<area shape="rect" id="node190" href="$SIM__Multicopter_8cpp.html" title="libraries/SITL/SIM\l_Multicopter.cpp" alt="" coords="10420,363,10547,404"/>
+<area shape="rect" id="node191" href="$SIM__Submarine_8cpp.html" title="libraries/SITL/SIM\l_Submarine.cpp" alt="" coords="10571,363,10697,404"/>
+<area shape="rect" id="node8" href="$AC__AttitudeControl_8cpp.html" title="libraries/AC_AttitudeControl\l/AC_AttitudeControl.cpp" alt="" coords="723,653,907,694"/>
+<area shape="rect" id="node9" href="$AC__AttitudeControl__Heli_8h.html" title="ArduCopter attitude control library for traditional helicopters. " alt="" coords="1139,653,1323,694"/>
+<area shape="rect" id="node17" href="$AC__WPNav_8h.html" title="libraries/AC_WPNav\l/AC_WPNav.h" alt="" coords="411,757,553,798"/>
+<area shape="rect" id="node20" href="$ControlMonitor_8cpp.html" title="libraries/AC_AttitudeControl\l/ControlMonitor.cpp" alt="" coords="515,653,699,694"/>
+<area shape="rect" id="node21" href="$AC__Avoid_8h.html" title="libraries/AC_Avoidance\l/AC_Avoid.h" alt="" coords="231,653,389,694"/>
+<area shape="rect" id="node10" href="$AC__AttitudeControl__Heli_8cpp.html" title="libraries/AC_AttitudeControl\l/AC_AttitudeControl_Heli.cpp" alt="" coords="1237,757,1431,798"/>
+<area shape="rect" id="node12" href="$AC__PosControl_8cpp.html" title="libraries/AC_AttitudeControl\l/AC_PosControl.cpp" alt="" coords="861,757,1045,798"/>
+<area shape="rect" id="node13" href="$AC__PosControl__Sub_8h.html" title="libraries/AC_AttitudeControl\l/AC_PosControl_Sub.h" alt="" coords="653,757,837,798"/>
+<area shape="rect" id="node15" href="$AC__Circle_8h.html" title="libraries/AC_WPNav\l/AC_Circle.h" alt="" coords="1069,757,1212,798"/>
+<area shape="rect" id="node14" href="$AC__PosControl__Sub_8cpp.html" title="libraries/AC_AttitudeControl\l/AC_PosControl_Sub.cpp" alt="" coords="653,853,837,895"/>
+<area shape="rect" id="node16" href="$AC__Circle_8cpp.html" title="libraries/AC_WPNav\l/AC_Circle.cpp" alt="" coords="1069,853,1212,895"/>
+<area shape="rect" id="node18" href="$AC__WPNav_8cpp.html" title="libraries/AC_WPNav\l/AC_WPNav.cpp" alt="" coords="411,853,553,895"/>
+<area shape="rect" id="node22" href="$AC__Avoid_8cpp.html" title="libraries/AC_Avoidance\l/AC_Avoid.cpp" alt="" coords="228,757,387,798"/>
+<area shape="rect" id="node25" href="$AC__PID_8h.html" title="Generic PID algorithm, with EEPROM&#45;backed storage of constants. " alt="" coords="2141,452,2284,493"/>
+<area shape="rect" id="node36" href="$AP__Compass__MMC3416_8cpp.html" title="libraries/AP_Compass\l/AP_Compass_MMC3416.cpp" alt="" coords="4785,452,4984,493"/>
+<area shape="rect" id="node37" href="$AP__GPS__GSOF_8cpp.html" title="libraries/AP_GPS/AP\l_GPS_GSOF.cpp" alt="" coords="5009,452,5155,493"/>
+<area shape="rect" id="node38" href="$AP__GPS__NOVA_8cpp.html" title="libraries/AP_GPS/AP\l_GPS_NOVA.cpp" alt="" coords="5179,452,5326,493"/>
+<area shape="rect" id="node39" href="$AP__GPS__SBF_8cpp.html" title="libraries/AP_GPS/AP\l_GPS_SBF.cpp" alt="" coords="17057,653,17203,694"/>
+<area shape="rect" id="node40" href="$AP__GPS__SBP_8cpp.html" title="libraries/AP_GPS/AP\l_GPS_SBP.cpp" alt="" coords="3193,452,3339,493"/>
+<area shape="rect" id="node41" href="$AP__GPS__SBP2_8cpp.html" title="libraries/AP_GPS/AP\l_GPS_SBP2.cpp" alt="" coords="4855,653,5002,694"/>
+<area shape="rect" id="node42" href="$AP__GPS__UBLOX_8cpp.html" title="libraries/AP_GPS/AP\l_GPS_UBLOX.cpp" alt="" coords="5026,653,5173,694"/>
+<area shape="rect" id="node43" href="$GPS__AUTO__test_8cpp.html" title="libraries/AP_GPS/examples\l/GPS_AUTO_test/GPS_AUTO\l_test.cpp" alt="" coords="17383,541,17586,597"/>
+<area shape="rect" id="node44" href="$GPS__UBLOX__passthrough_8cpp.html" title="libraries/AP_GPS/examples\l/GPS_UBLOX_passthrough\l/GPS_UBLOX_passthrough.cpp" alt="" coords="18373,541,18583,597"/>
+<area shape="rect" id="node45" href="$AP__InertialSensor__Backend_8cpp.html" title="libraries/AP_InertialSensor\l/AP_InertialSensor_Backend.cpp" alt="" coords="3364,452,3579,493"/>
+<area shape="rect" id="node46" href="$VibTest_8cpp.html" title="libraries/AP_InertialSensor\l/examples/VibTest/VibTest.cpp" alt="" coords="17154,549,17359,590"/>
+<area shape="rect" id="node47" href="$AP__Mount_8h.html" title="libraries/AP_Mount\l/AP_Mount.h" alt="" coords="4288,452,4420,493"/>
+<area shape="rect" id="node56" href="$trivial__AP__Mount_8cpp.html" title="libraries/AP_Mount\l/examples/trivial_AP\l_Mount/trivial_AP_Mount.cpp" alt="" coords="16733,541,16927,597"/>
+<area shape="rect" id="node57" href="$GCS_8h.html" title="Interface definition for the various Ground Control System. " alt="" coords="10581,549,10741,590"/>
+<area shape="rect" id="node80" href="$AP__TECS_8h.html" title="Combined Total Energy Speed &amp; Height Control. This is a instance of an AP_SpdHgtControl class..." alt="" coords="15486,853,15641,895"/>
+<area shape="rect" id="node90" href="$AP__NavEKF2_8cpp.html" title="libraries/AP_NavEKF2\l/AP_NavEKF2.cpp" alt="" coords="5197,653,5351,694"/>
+<area shape="rect" id="node96" href="$AP__NavEKF3_8cpp.html" title="libraries/AP_NavEKF3\l/AP_NavEKF3.cpp" alt="" coords="5375,653,5528,694"/>
+<area shape="rect" id="node107" href="$AP__Terrain_8cpp.html" title="libraries/AP_Terrain\l/AP_Terrain.cpp" alt="" coords="17707,653,17843,694"/>
+<area shape="rect" id="node113" href="$DataFlash_8cpp.html" title="libraries/DataFlash\l/DataFlash.cpp" alt="" coords="3349,653,3479,694"/>
+<area shape="rect" id="node115" href="$DataFlash__MAVLinkLogTransfer_8cpp.html" title="libraries/DataFlash\l/DataFlash_MAVLinkLogTransfer.cpp" alt="" coords="16603,653,16843,694"/>
+<area shape="rect" id="node121" href="$DataFlash__AllTypes_8cpp.html" title="libraries/DataFlash\l/examples/DataFlash\l_AllTypes/DataFlash_AllTypes.cpp" alt="" coords="14669,749,14895,805"/>
+<area shape="rect" id="node122" href="$DataFlash__test_8cpp.html" title="libraries/DataFlash\l/examples/DataFlash\l_test/DataFlash_test.cpp" alt="" coords="15607,749,15776,805"/>
+<area shape="rect" id="node126" href="$GCS__serial__control_8cpp.html" title="libraries/GCS_MAVLink\l/GCS_serial_control.cpp" alt="" coords="16868,653,17032,694"/>
+<area shape="rect" id="node130" href="$SoloGimbal__Parameters_8h.html" title="libraries/AP_Mount\l/SoloGimbal_Parameters.h" alt="" coords="16521,452,16699,493"/>
+<area shape="rect" id="node132" href="$AP__Soaring_8h.html" title="libraries/AP_Soaring\l/AP_Soaring.h" alt="" coords="15485,653,15625,694"/>
+<area shape="rect" id="node133" href="$Variometer_8h.html" title="libraries/AP_Soaring\l/Variometer.h" alt="" coords="15515,549,15655,590"/>
+<area shape="rect" id="node135" href="$AP__SpdHgtControl_8h.html" title="generic speed &amp; height controller interface " alt="" coords="15601,452,15784,493"/>
+<area shape="rect" id="node138" href="$AP__Terrain_8h.html" title="libraries/AP_Terrain\l/AP_Terrain.h" alt="" coords="17657,452,17793,493"/>
+<area shape="rect" id="node152" href="$SIM__Aircraft_8cpp.html" title="libraries/SITL/SIM\l_Aircraft.cpp" alt="" coords="18656,653,18783,694"/>
+<area shape="rect" id="node157" href="$SIM__FlightAxis_8cpp.html" title="libraries/SITL/SIM\l_FlightAxis.cpp" alt="" coords="18415,757,18541,798"/>
+<area shape="rect" id="node169" href="$AP__Tuning_8h.html" title="libraries/AP_Tuning\l/AP_Tuning.h" alt="" coords="5604,452,5739,493"/>
+<area shape="rect" id="node170" href="$AP__AutoTune_8h.html" title="libraries/APM_Control\l/AP_AutoTune.h" alt="" coords="14686,452,14835,493"/>
+<area shape="rect" id="node172" href="$AP__PitchController_8h.html" title="libraries/APM_Control\l/AP_PitchController.h" alt="" coords="14599,549,14749,590"/>
+<area shape="rect" id="node175" href="$AP__RollController_8h.html" title="libraries/APM_Control\l/AP_RollController.h" alt="" coords="14946,549,15095,590"/>
+<area shape="rect" id="node177" href="$AP__SteerController_8h.html" title="libraries/APM_Control\l/AP_SteerController.h" alt="" coords="11030,452,11179,493"/>
+<area shape="rect" id="node179" href="$AP__YawController_8h.html" title="libraries/APM_Control\l/AP_YawController.h" alt="" coords="13129,452,13278,493"/>
+<area shape="rect" id="node181" href="$DataFlash__Backend_8h.html" title="libraries/DataFlash\l/DataFlash_Backend.h" alt="" coords="3603,452,3758,493"/>
+<area shape="rect" id="node185" href="$PID_8h.html" title="Generic PID algorithm, with EEPROM&#45;backed storage of constants. " alt="" coords="16072,459,16204,486"/>
+<area shape="rect" id="node188" href="$SIM__XPlane_8cpp.html" title="libraries/SITL/SIM\l_XPlane.cpp" alt="" coords="4455,452,4581,493"/>
+<area shape="rect" id="node189" href="$SITL_8cpp.html" title="libraries/SITL/SITL.cpp" alt="" coords="4605,459,4761,486"/>
+<area shape="rect" id="node26" href="$AC__HELI__PID_8h.html" title="Helicopter Specific Rate PID algorithm, with EEPROM&#45;backed storage of constants. " alt="" coords="2141,549,2284,590"/>
+<area shape="rect" id="node28" href="$AC__PID__test_8cpp.html" title="libraries/AC_PID/examples\l/AC_PID_test/AC_PID_test.cpp" alt="" coords="2431,653,2642,694"/>
+<area shape="rect" id="node29" href="$AC__PID_8cpp.html" title="Generic PID algorithm. " alt="" coords="2360,549,2503,590"/>
+<area shape="rect" id="node30" href="$AC__PrecLand__Backend_8h.html" title="libraries/AC_PrecLand\l/AC_PrecLand_Backend.h" alt="" coords="1815,549,1991,590"/>
+<area shape="rect" id="node27" href="$AC__HELI__PID_8cpp.html" title="Generic PID algorithm. " alt="" coords="2265,653,2408,694"/>
+<area shape="rect" id="node31" href="$AC__PrecLand_8cpp.html" title="libraries/AC_PrecLand\l/AC_PrecLand.cpp" alt="" coords="1770,757,1922,798"/>
+<area shape="rect" id="node32" href="$AC__PrecLand__Companion_8h.html" title="libraries/AC_PrecLand\l/AC_PrecLand_Companion.h" alt="" coords="1999,653,2189,694"/>
+<area shape="rect" id="node33" href="$AC__PrecLand__IRLock_8h.html" title="libraries/AC_PrecLand\l/AC_PrecLand_IRLock.h" alt="" coords="1348,653,1515,694"/>
+<area shape="rect" id="node34" href="$AC__PrecLand__SITL__Gazebo_8h.html" title="libraries/AC_PrecLand\l/AC_PrecLand_SITL_Gazebo.h" alt="" coords="1539,653,1745,694"/>
+<area shape="rect" id="node35" href="$AC__PrecLand__SITL_8h.html" title="libraries/AC_PrecLand\l/AC_PrecLand_SITL.h" alt="" coords="1769,653,1923,694"/>
+<area shape="rect" id="node48" href="$AP__Mount_8cpp.html" title="libraries/AP_Mount\l/AP_Mount.cpp" alt="" coords="3997,757,4129,798"/>
+<area shape="rect" id="node49" href="$AP__Mount__Backend_8h.html" title="libraries/AP_Mount\l/AP_Mount_Backend.h" alt="" coords="4265,549,4421,590"/>
+<area shape="rect" id="node51" href="$AP__Mount__Alexmos_8h.html" title="libraries/AP_Mount\l/AP_Mount_Alexmos.h" alt="" coords="3555,653,3711,694"/>
+<area shape="rect" id="node50" href="$AP__Mount__Servo_8h.html" title="libraries/AP_Mount\l/AP_Mount_Servo.h" alt="" coords="4453,653,4591,694"/>
+<area shape="rect" id="node53" href="$AP__Mount__SToRM32_8h.html" title="libraries/AP_Mount\l/AP_Mount_SToRM32.h" alt="" coords="4616,653,4780,694"/>
+<area shape="rect" id="node54" href="$AP__Mount__SToRM32__serial_8h.html" title="libraries/AP_Mount\l/AP_Mount_SToRM32_serial.h" alt="" coords="4031,653,4234,694"/>
+<area shape="rect" id="node55" href="$AP__Mount__Backend_8cpp.html" title="libraries/AP_Mount\l/AP_Mount_Backend.cpp" alt="" coords="4258,653,4429,694"/>
+<area shape="rect" id="node52" href="$AP__Mount__Alexmos_8cpp.html" title="libraries/AP_Mount\l/AP_Mount_Alexmos.cpp" alt="" coords="3547,757,3718,798"/>
+<area shape="rect" id="node58" href="$AC__Fence_8cpp.html" title="libraries/AC_Fence\l/AC_Fence.cpp" alt="" coords="8917,653,9050,694"/>
+<area shape="rect" id="node59" href="$AP__AccelCal_8cpp.html" title="libraries/AP_AccelCal\l/AP_AccelCal.cpp" alt="" coords="10949,653,11098,694"/>
+<area shape="rect" id="node60" href="$AP__ADSB_8cpp.html" title="libraries/AP_ADSB/AP\l_ADSB.cpp" alt="" coords="11122,653,11277,694"/>
+<area shape="rect" id="node61" href="$AP__AdvancedFailsafe_8cpp.html" title="libraries/AP_AdvancedFailsafe\l/AP_AdvancedFailsafe.cpp" alt="" coords="11301,653,11501,694"/>
+<area shape="rect" id="node62" href="$AP__AHRS__NavEKF_8cpp.html" title="libraries/AP_AHRS/AP\l_AHRS_NavEKF.cpp" alt="" coords="11525,653,11681,694"/>
+<area shape="rect" id="node63" href="$AP__Airspeed_8cpp.html" title="libraries/AP_Airspeed\l/AP_Airspeed.cpp" alt="" coords="11706,653,11853,694"/>
+<area shape="rect" id="node64" href="$AP__Arming_8cpp.html" title="libraries/AP_Arming\l/AP_Arming.cpp" alt="" coords="6664,653,6801,694"/>
+<area shape="rect" id="node65" href="$AP__Avoidance_8cpp.html" title="libraries/AP_Avoidance\l/AP_Avoidance.cpp" alt="" coords="6826,653,6983,694"/>
+<area shape="rect" id="node66" href="$AP__BoardConfig_8cpp.html" title="libraries/AP_BoardConfig\l/AP_BoardConfig.cpp" alt="" coords="7007,653,7175,694"/>
+<area shape="rect" id="node67" href="$AP__Button_8cpp.html" title="libraries/AP_Button\l/AP_Button.cpp" alt="" coords="7200,653,7335,694"/>
+<area shape="rect" id="node68" href="$AP__Camera_8h.html" title="Photo or video camera manager, with EEPROM&#45;backed storage of constants. " alt="" coords="7359,653,7501,694"/>
+<area shape="rect" id="node69" href="$AP__Compass__Calibration_8cpp.html" title="libraries/AP_Compass\l/AP_Compass_Calibration.cpp" alt="" coords="7525,653,7727,694"/>
+<area shape="rect" id="node70" href="$AP__Frsky__Telem_8cpp.html" title="libraries/AP_Frsky\l_Telem/AP_Frsky_Telem.cpp" alt="" coords="7751,653,7946,694"/>
+<area shape="rect" id="node71" href="$AP__GPS_8cpp.html" title="libraries/AP_GPS/AP\l_GPS.cpp" alt="" coords="7970,653,8117,694"/>
+<area shape="rect" id="node72" href="$GPS__Backend_8cpp.html" title="libraries/AP_GPS/GPS\l_Backend.cpp" alt="" coords="8141,653,8297,694"/>
+<area shape="rect" id="node73" href="$Linux_2UARTDriver_8cpp.html" title="libraries/AP_HAL_Linux\l/UARTDriver.cpp" alt="" coords="8322,653,8482,694"/>
+<area shape="rect" id="node74" href="$AP__ICEngine_8cpp.html" title="libraries/AP_ICEngine\l/AP_ICEngine.cpp" alt="" coords="8507,653,8657,694"/>
+<area shape="rect" id="node75" href="$AP__InertialSensor__UserInteract__MAVLink_8cpp.html" title="libraries/AP_InertialSensor\l/AP_InertialSensor_UserInteract\l_MAVLink.cpp" alt="" coords="8682,645,8893,701"/>
+<area shape="rect" id="node76" href="$AP__Landing_8h.html" title="libraries/AP_Landing\l/AP_Landing.h" alt="" coords="15865,757,16006,798"/>
+<area shape="rect" id="node77" href="$AP__Landing_8cpp.html" title="libraries/AP_Landing\l/AP_Landing.cpp" alt="" coords="15862,853,16003,895"/>
+<area shape="rect" id="node78" href="$AP__Landing__Deepstall_8cpp.html" title="libraries/AP_Landing\l/AP_Landing_Deepstall.cpp" alt="" coords="16243,853,16425,895"/>
+<area shape="rect" id="node79" href="$AP__Landing__Slope_8cpp.html" title="libraries/AP_Landing\l/AP_Landing_Slope.cpp" alt="" coords="15672,853,15833,895"/>
+<area shape="rect" id="node82" href="$AP__Landing__Deepstall_8h.html" title="libraries/AP_Landing\l/AP_Landing_Deepstall.h" alt="" coords="16100,653,16269,694"/>
+<area shape="rect" id="node83" href="$AP__Mission_8cpp.html" title="Handles the MAVLINK command mission stack. Reads and writes mission to storage. " alt="" coords="18027,653,18169,694"/>
+<area shape="rect" id="node84" href="$AP__MotorsCoax_8cpp.html" title="libraries/AP_Motors\l/AP_MotorsCoax.cpp" alt="" coords="18193,653,18339,694"/>
+<area shape="rect" id="node85" href="$AP__MotorsHeli_8cpp.html" title="libraries/AP_Motors\l/AP_MotorsHeli.cpp" alt="" coords="11877,653,12015,694"/>
+<area shape="rect" id="node86" href="$AP__MotorsHeli__Single_8cpp.html" title="libraries/AP_Motors\l/AP_MotorsHeli_Single.cpp" alt="" coords="12040,653,12223,694"/>
+<area shape="rect" id="node87" href="$AP__MotorsSingle_8cpp.html" title="libraries/AP_Motors\l/AP_MotorsSingle.cpp" alt="" coords="3173,653,3325,694"/>
+<area shape="rect" id="node88" href="$AP__MotorsTailsitter_8cpp.html" title="libraries/AP_Motors\l/AP_MotorsTailsitter.cpp" alt="" coords="18465,653,18632,694"/>
+<area shape="rect" id="node89" href="$AP__MotorsTri_8cpp.html" title="libraries/AP_Motors\l/AP_MotorsTri.cpp" alt="" coords="2717,653,2853,694"/>
+<area shape="rect" id="node91" href="$AP__NavEKF2__Control_8cpp.html" title="libraries/AP_NavEKF2\l/AP_NavEKF2_Control.cpp" alt="" coords="12247,653,12429,694"/>
+<area shape="rect" id="node92" href="$AP__NavEKF2__MagFusion_8cpp.html" title="libraries/AP_NavEKF2\l/AP_NavEKF2_MagFusion.cpp" alt="" coords="12453,653,12657,694"/>
+<area shape="rect" id="node93" href="$AP__NavEKF2__Measurements_8cpp.html" title="libraries/AP_NavEKF2\l/AP_NavEKF2_Measurements.cpp" alt="" coords="12682,653,12909,694"/>
+<area shape="rect" id="node94" href="$AP__NavEKF2__RngBcnFusion_8cpp.html" title="libraries/AP_NavEKF2\l/AP_NavEKF2_RngBcnFusion.cpp" alt="" coords="12933,653,13159,694"/>
+<area shape="rect" id="node95" href="$AP__NavEKF2__VehicleStatus_8cpp.html" title="libraries/AP_NavEKF2\l/AP_NavEKF2_VehicleStatus.cpp" alt="" coords="13183,653,13405,694"/>
+<area shape="rect" id="node97" href="$AP__NavEKF3__Control_8cpp.html" title="libraries/AP_NavEKF3\l/AP_NavEKF3_Control.cpp" alt="" coords="13429,653,13612,694"/>
+<area shape="rect" id="node98" href="$AP__NavEKF3__core_8cpp.html" title="libraries/AP_NavEKF3\l/AP_NavEKF3_core.cpp" alt="" coords="13637,653,13802,694"/>
+<area shape="rect" id="node99" href="$AP__NavEKF3__MagFusion_8cpp.html" title="libraries/AP_NavEKF3\l/AP_NavEKF3_MagFusion.cpp" alt="" coords="13827,653,14031,694"/>
+<area shape="rect" id="node100" href="$AP__NavEKF3__Measurements_8cpp.html" title="libraries/AP_NavEKF3\l/AP_NavEKF3_Measurements.cpp" alt="" coords="14055,653,14282,694"/>
+<area shape="rect" id="node101" href="$AP__NavEKF3__OptFlowFusion_8cpp.html" title="libraries/AP_NavEKF3\l/AP_NavEKF3_OptFlowFusion.cpp" alt="" coords="14307,653,14535,694"/>
+<area shape="rect" id="node102" href="$AP__NavEKF3__PosVelFusion_8cpp.html" title="libraries/AP_NavEKF3\l/AP_NavEKF3_PosVelFusion.cpp" alt="" coords="5763,653,5985,694"/>
+<area shape="rect" id="node103" href="$AP__NavEKF3__RngBcnFusion_8cpp.html" title="libraries/AP_NavEKF3\l/AP_NavEKF3_RngBcnFusion.cpp" alt="" coords="6009,653,6235,694"/>
+<area shape="rect" id="node104" href="$AP__NavEKF3__VehicleStatus_8cpp.html" title="libraries/AP_NavEKF3\l/AP_NavEKF3_VehicleStatus.cpp" alt="" coords="6259,653,6481,694"/>
+<area shape="rect" id="node105" href="$AP__Param_8cpp.html" title="The AP variable store. " alt="" coords="6505,653,6640,694"/>
+<area shape="rect" id="node106" href="$AP__Soaring_8cpp.html" title="libraries/AP_Soaring\l/AP_Soaring.cpp" alt="" coords="15156,757,15296,798"/>
+<area shape="rect" id="node108" href="$TerrainGCS_8cpp.html" title="libraries/AP_Terrain\l/TerrainGCS.cpp" alt="" coords="17227,653,17363,694"/>
+<area shape="rect" id="node109" href="$TerrainIO_8cpp.html" title="libraries/AP_Terrain\l/TerrainIO.cpp" alt="" coords="17387,653,17523,694"/>
+<area shape="rect" id="node110" href="$TerrainMission_8cpp.html" title="libraries/AP_Terrain\l/TerrainMission.cpp" alt="" coords="17547,653,17683,694"/>
+<area shape="rect" id="node111" href="$TerrainUtil_8cpp.html" title="libraries/AP_Terrain\l/TerrainUtil.cpp" alt="" coords="17867,653,18003,694"/>
+<area shape="rect" id="node112" href="$AP__Tuning_8cpp.html" title="libraries/AP_Tuning\l/AP_Tuning.cpp" alt="" coords="5604,653,5739,694"/>
+<area shape="rect" id="node114" href="$DataFlash__MAVLink_8cpp.html" title="libraries/DataFlash\l/DataFlash_MAVLink.cpp" alt="" coords="3786,653,3957,694"/>
+<area shape="rect" id="node116" href="$routing_8cpp.html" title="libraries/GCS_MAVLink\l/examples/routing/routing.cpp" alt="" coords="9075,653,9268,694"/>
+<area shape="rect" id="node117" href="$GCS_8cpp.html" title="libraries/GCS_MAVLink\l/GCS.cpp" alt="" coords="9293,653,9453,694"/>
+<area shape="rect" id="node118" href="$GCS__Common_8cpp.html" title="libraries/GCS_MAVLink\l/GCS_Common.cpp" alt="" coords="9477,653,9637,694"/>
+<area shape="rect" id="node119" href="$GCS__DeviceOp_8cpp.html" title="libraries/GCS_MAVLink\l/GCS_DeviceOp.cpp" alt="" coords="9661,653,9821,694"/>
+<area shape="rect" id="node120" href="$GCS__Dummy_8h.html" title="libraries/GCS_MAVLink\l/GCS_Dummy.h" alt="" coords="14711,653,14871,694"/>
+<area shape="rect" id="node123" href="$GCS__MAVLink_8cpp.html" title="libraries/GCS_MAVLink\l/GCS_MAVLink.cpp" alt="" coords="9845,653,10005,694"/>
+<area shape="rect" id="node124" href="$GCS__Param_8cpp.html" title="libraries/GCS_MAVLink\l/GCS_Param.cpp" alt="" coords="10029,653,10189,694"/>
+<area shape="rect" id="node125" href="$GCS__Rally_8cpp.html" title="libraries/GCS_MAVLink\l/GCS_Rally.cpp" alt="" coords="10213,653,10373,694"/>
+<area shape="rect" id="node127" href="$GCS__ServoRelay_8cpp.html" title="libraries/GCS_MAVLink\l/GCS_ServoRelay.cpp" alt="" coords="10397,653,10557,694"/>
+<area shape="rect" id="node128" href="$GCS__Signing_8cpp.html" title="libraries/GCS_MAVLink\l/GCS_Signing.cpp" alt="" coords="10581,653,10741,694"/>
+<area shape="rect" id="node129" href="$MAVLink__routing_8cpp.html" title="libraries/GCS_MAVLink\l/MAVLink_routing.cpp" alt="" coords="10765,653,10925,694"/>
+<area shape="rect" id="node81" href="$AP__TECS_8cpp.html" title="libraries/AP_TECS/AP\l_TECS.cpp" alt="" coords="15486,943,15641,984"/>
+<area shape="rect" id="node131" href="$SoloGimbal__Parameters_8cpp.html" title="libraries/AP_Mount\l/SoloGimbal_Parameters.cpp" alt="" coords="16517,549,16709,590"/>
+<area shape="rect" id="node134" href="$Variometer_8cpp.html" title="libraries/AP_Soaring\l/Variometer.cpp" alt="" coords="15649,653,15789,694"/>
+<area shape="rect" id="node136" href="$AP__L1__Control_8h.html" title="L1 Control algorithm. This is a instance of an AP_Navigation class. " alt="" coords="15731,549,15889,590"/>
+<area shape="rect" id="node137" href="$AP__L1__Control_8cpp.html" title="libraries/AP_L1_Control\l/AP_L1_Control.cpp" alt="" coords="15865,653,16024,694"/>
+<area shape="rect" id="node139" href="$Location_8cpp.html" title="libraries/AP_Common\l/Location.cpp" alt="" coords="17914,549,18063,590"/>
+<area shape="rect" id="node140" href="$SITL__State_8h.html" title="libraries/AP_HAL_SITL\l/SITL_State.h" alt="" coords="18617,757,18774,798"/>
+<area shape="rect" id="node148" href="$Console_8cpp.html" title="libraries/GCS_Console\l/examples/Console/Console.cpp" alt="" coords="18087,549,18298,590"/>
+<area shape="rect" id="node149" href="$SIM__Aircraft_8h.html" title="libraries/SITL/SIM\l_Aircraft.h" alt="" coords="19311,549,19437,590"/>
+<area shape="rect" id="node141" href="$HAL__SITL__Class_8h.html" title="libraries/AP_HAL_SITL\l/HAL_SITL_Class.h" alt="" coords="18551,853,18709,895"/>
+<area shape="rect" id="node142" href="$HAL__SITL__Class_8cpp.html" title="libraries/AP_HAL_SITL\l/HAL_SITL_Class.cpp" alt="" coords="18506,943,18663,984"/>
+<area shape="rect" id="node143" href="$sitl__airspeed_8cpp.html" title="libraries/AP_HAL_SITL\l/sitl_airspeed.cpp" alt="" coords="18325,943,18482,984"/>
+<area shape="rect" id="node145" href="$sitl__rangefinder_8cpp.html" title="libraries/AP_HAL_SITL\l/sitl_rangefinder.cpp" alt="" coords="18687,943,18845,984"/>
+<area shape="rect" id="node146" href="$AP__HAL__SITL__Private_8h.html" title="libraries/AP_HAL_SITL\l/AP_HAL_SITL_Private.h" alt="" coords="18783,853,18954,895"/>
+<area shape="rect" id="node147" href="$SITL_2UARTDriver_8cpp.html" title="libraries/AP_HAL_SITL\l/UARTDriver.cpp" alt="" coords="18978,853,19135,895"/>
+<area shape="rect" id="node144" href="$SITL__cmdline_8cpp.html" title="libraries/AP_HAL_SITL\l/SITL_cmdline.cpp" alt="" coords="19549,943,19706,984"/>
+<area shape="rect" id="node150" href="$SIM__ADSB_8h.html" title="libraries/SITL/SIM\l_ADSB.h" alt="" coords="18957,653,19084,694"/>
+<area shape="rect" id="node151" href="$SIM__ADSB_8cpp.html" title="libraries/SITL/SIM\l_ADSB.cpp" alt="" coords="19211,757,19337,798"/>
+<area shape="rect" id="node153" href="$SIM__Balloon_8h.html" title="libraries/SITL/SIM\l_Balloon.h" alt="" coords="19865,853,19992,895"/>
+<area shape="rect" id="node154" href="$SIM__Calibration_8h.html" title="libraries/SITL/SIM\l_Calibration.h" alt="" coords="19413,853,19540,895"/>
+<area shape="rect" id="node155" href="$SIM__CRRCSim_8h.html" title="libraries/SITL/SIM\l_CRRCSim.h" alt="" coords="19564,853,19691,895"/>
+<area shape="rect" id="node156" href="$SIM__FlightAxis_8h.html" title="libraries/SITL/SIM\l_FlightAxis.h" alt="" coords="18807,653,18933,694"/>
+<area shape="rect" id="node158" href="$SIM__Frame_8h.html" title="libraries/SITL/SIM\l_Frame.h" alt="" coords="19867,757,19993,798"/>
+<area shape="rect" id="node160" href="$SIM__Motor_8h.html" title="libraries/SITL/SIM\l_Motor.h" alt="" coords="19917,653,20044,694"/>
+<area shape="rect" id="node162" href="$SIM__Gazebo_8h.html" title="libraries/SITL/SIM\l_Gazebo.h" alt="" coords="19715,853,19841,895"/>
+<area shape="rect" id="node163" href="$SIM__Gimbal_8h.html" title="libraries/SITL/SIM\l_Gimbal.h" alt="" coords="19461,653,19588,694"/>
+<area shape="rect" id="node164" href="$SIM__Gimbal_8cpp.html" title="libraries/SITL/SIM\l_Gimbal.cpp" alt="" coords="19487,757,19613,798"/>
+<area shape="rect" id="node165" href="$SIM__Gripper__EPM_8h.html" title="libraries/SITL/SIM\l_Gripper_EPM.h" alt="" coords="19160,653,19287,694"/>
+<area shape="rect" id="node166" href="$SIM__Gripper__Servo_8h.html" title="libraries/SITL/SIM\l_Gripper_Servo.h" alt="" coords="19311,653,19437,694"/>
+<area shape="rect" id="node168" href="$SIM__SingleCopter_8cpp.html" title="libraries/SITL/SIM\l_SingleCopter.cpp" alt="" coords="20220,757,20349,798"/>
+<area shape="rect" id="node171" href="$AP__AutoTune_8cpp.html" title="libraries/APM_Control\l/AP_AutoTune.cpp" alt="" coords="14773,549,14922,590"/>
+<area shape="rect" id="node173" href="$AP__PitchController_8cpp.html" title="libraries/APM_Control\l/AP_PitchController.cpp" alt="" coords="15119,653,15282,694"/>
+<area shape="rect" id="node174" href="$APM__Control_8h.html" title="libraries/APM_Control\l/APM_Control.h" alt="" coords="14946,653,15095,694"/>
+<area shape="rect" id="node176" href="$AP__RollController_8cpp.html" title="libraries/APM_Control\l/AP_RollController.cpp" alt="" coords="15306,653,15461,694"/>
+<area shape="rect" id="node178" href="$AP__SteerController_8cpp.html" title="libraries/APM_Control\l/AP_SteerController.cpp" alt="" coords="11023,549,11186,590"/>
+<area shape="rect" id="node180" href="$AP__YawController_8cpp.html" title="libraries/APM_Control\l/AP_YawController.cpp" alt="" coords="13124,549,13283,590"/>
+<area shape="rect" id="node182" href="$DFMessageWriter_8h.html" title="libraries/DataFlash\l/DFMessageWriter.h" alt="" coords="3177,549,3320,590"/>
+<area shape="rect" id="node183" href="$DataFlash__Backend_8cpp.html" title="libraries/DataFlash\l/DataFlash_Backend.cpp" alt="" coords="2979,653,3148,694"/>
+<area shape="rect" id="node184" href="$DataFlash__MAVLink_8h.html" title="libraries/DataFlash\l/DataFlash_MAVLink.h" alt="" coords="3589,549,3746,590"/>
+<area shape="rect" id="node186" href="$pid_8cpp.html" title="libraries/PID/examples\l/pid/pid.cpp" alt="" coords="16117,549,16271,590"/>
+<area shape="rect" id="node187" href="$PID_8cpp.html" title="Generic PID algorithm. " alt="" coords="16295,556,16442,583"/>
+<area shape="rect" id="node193" href="$AP__Motors6DOF_8h.html" title="Motor control class for ROVs with direct control over 6DOF (or fewer) in movement. " alt="" coords="10816,184,10953,225"/>
+<area shape="rect" id="node195" href="$AP__MotorsMatrix_8cpp.html" title="libraries/AP_Motors\l/AP_MotorsMatrix.cpp" alt="" coords="10589,184,10741,225"/>
+<area shape="rect" id="node194" href="$AP__Motors6DOF_8cpp.html" title="libraries/AP_Motors\l/AP_Motors6DOF.cpp" alt="" coords="10809,273,10960,315"/>
+</map>

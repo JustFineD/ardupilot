@@ -1,0 +1,51 @@
+digraph "AP_Motors::get_pwm_type"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Motors::get_pwm_type",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Motors::output_armed\l_stabilizing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a617a5bb4ec5549a934f0ece9200872a7"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Motors::rc_write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#aaa7607c19a1ce444330aee972dd925ef"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_HAL::RCOutput::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCOutput.html#ade509cf82dfb1f6fab3eba0c026c5d60"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Motors::rc_set_freq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a3d84a895c644d34e7fe78d7301ccf534"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Motors::rc_map_mask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#ac3abe2484a90e4717f50b63613e05ba6"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_HAL::RCOutput::set_freq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCOutput.html#ae7903398aa18e2472dd34081e626dcb7"];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_HAL::RCOutput::set\l_output_mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCOutput.html#a2750a3caebe138a66da523e78502d51c"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_Motors::rc_enable_ch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a91e69152a30b5e1020f3e49271b9d054"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_HAL::RCOutput::enable_ch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCOutput.html#a25196bb820266d4afcae14d0acdb7e1c"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_Motors::add_motor_num",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#ad0a73edfaa0d7b5c4f325a823c7781f4"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="SRV_Channels::set_aux\l_channel_default",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channels.html#a97577ca02c12e3b851cd5d563d32b640"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AP_HAL::UARTDriver\l::printf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1UARTDriver.html#a6ceedc792594e59fc7d80b39a435f027"];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_HAL::UARTDriver\l::vprintf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1UARTDriver.html#aa8abfb6d6641299472c29ac1edde559f"];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="print_vprintf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$print__vprintf_8cpp.html#a1534eaeab54696df96975b56d9f49212"];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="AP_HAL::Print::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Print.html#acc65391952a43334f8f5c9bef341f501"];
+  Node15 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="ftoa_engine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ftoa__engine_8cpp.html#a1c28234da8f20b43c85890d4bb452947"];
+  Node15 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="strnlen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$replace_8cpp.html#a880bcc7b85a09e6254691bebd5344b51"];
+  Node15 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="ulltoa_invert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$utoa__invert_8cpp.html#a34926f552460b47c414ec4d83b32815c"];
+  Node15 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="ultoa_invert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$utoa__invert_8cpp.html#a5d99bba8e697c1e11da489d88fca8559"];
+  Node11 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="SRV_Channels::find\l_channel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channels.html#aa8ce392569ac9b773e5edd27bd3c6650"];
+  Node1 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="AP_Motors::update_throttle\l_filter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a0b3a909f1dc8dbf4326f8663c3ff4725"];
+}

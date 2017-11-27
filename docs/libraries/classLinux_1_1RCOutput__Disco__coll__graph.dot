@@ -1,0 +1,22 @@
+digraph "Linux::RCOutput_Disco"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::RCOutput_Disco",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_HAL::RCOutput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCOutput.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bebop_out" ,fontname="Helvetica"];
+  Node3 [label="Linux::RCOutput_Bebop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1RCOutput__Bebop.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _dev" ,fontname="Helvetica"];
+  Node4 [label="AP_HAL::OwnPtr\< AP\l_HAL::Linux::I2CDevice \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1OwnPtr.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" output_table" ,fontname="Helvetica"];
+  Node5 [label="Linux::RCOutput_Disco\l::output_table_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structLinux_1_1RCOutput__Disco_1_1output__table__t.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sysfs_out" ,fontname="Helvetica"];
+  Node6 [label="Linux::RCOutput_Sysfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1RCOutput__Sysfs.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _pwm_channels" ,fontname="Helvetica"];
+  Node7 [label="Linux::PWM_Sysfs_Base",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1PWM__Sysfs__Base.html"];
+}

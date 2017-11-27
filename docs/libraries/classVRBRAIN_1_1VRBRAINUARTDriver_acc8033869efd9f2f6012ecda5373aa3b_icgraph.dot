@@ -1,0 +1,31 @@
+digraph "VRBRAIN::VRBRAINUARTDriver::try_initialise"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VRBRAIN::VRBRAINUARTDriver\l::try_initialise",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="VRBRAIN::VRBRAINUARTDriver\l::available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINUARTDriver.html#abae1cb2aafe5341766fce594d48b33b4"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="VRBRAIN::VRBRAINUARTDriver\l::is_initialized",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINUARTDriver.html#ac482ec7548dcdcdfc383ebf1df411a53"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="VRBRAIN::VRBRAINUARTDriver\l::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINUARTDriver.html#a6a59afa2692575245576723f2bc8f955"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="VRBRAIN::VRBRAINUARTDriver\l::_read_fd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINUARTDriver.html#a0177a181f5bb9cbfda1d564f62711100"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="VRBRAIN::VRBRAINUARTDriver\l::_timer_tick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINUARTDriver.html#a72593c9ad60f292fe8c5b9cd5176e93b"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="VRBRAIN::VRBRAINUARTDriver\l::set_device_path",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINUARTDriver.html#aaa5e69f0f9a8ddacc82a37acc5dad411"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="HAL_VRBRAIN::run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHAL__VRBRAIN.html#a6bd6af4ec63788b20d4fa7794d0bb896"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="VRBRAIN::VRBRAINUARTDriver\l::txspace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINUARTDriver.html#afbf2ebafd244875ac42178564ae877f0"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="VRBRAIN::VRBRAINUARTDriver\l::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINUARTDriver.html#a255b67303b401e64c49f9f0c44c68720"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="VRBRAIN::VRBRAINUARTDriver\l::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINUARTDriver.html#acbaf340daa822b61725298405720b8d3"];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="VRBRAIN::VRBRAINUARTDriver\l::_write_fd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINUARTDriver.html#afc978b3e0b18ae4a113fe1c04de5fe13"];
+  Node12 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

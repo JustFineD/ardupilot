@@ -1,0 +1,35 @@
+digraph "AP_InertialNav::get_origin"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_InertialNav::get\l_origin",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AC_Fence::check_destination\l_within_fence",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Fence.html#a1ddf2b4968acee81332875003c5ff64d"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AC_Fence::enabled",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Fence.html#acdc600f19a3e4eb6de655c26f52e0968",tooltip="enabled - returns true if fence is enabled "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AC_Avoid::get_alt_above_home",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#a7b4eabb1f4554b35d7831957adc4b83d"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AC_Avoid::adjust_velocity_z",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#a951c0fa76621cd6ab06d0aa8138392dd"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AC_Avoid::get_position",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#a41d275eda1fdeb8d0fe4fcafe02fa8f9"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AC_Avoid::adjust_velocity\l_circle_fence",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#ab17bec0b2b5b58be5d4686d680a68a6a"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AC_Avoid::adjust_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#abee541d127ce0da1fe6be54f987a0779"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AC_Avoid::adjust_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#a95e227fdefd6f8c85b4d4888cad8993f"];
+  Node8 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AC_WPNav::calc_loiter\l_desired_velocity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__WPNav.html#a3dbf7bda89b127cdc81bca29e2af25de"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AC_WPNav::update_loiter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__WPNav.html#a0a434270245fd8641352af387700dc82",tooltip="update_loiter - run the loiter controller - should be called at 10hz "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AC_WPNav::get_loiter\l_target",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__WPNav.html#ae34a88192799de8f2b96c8cd295bb971",tooltip="get_loiter_target - returns loiter target position "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AC_Fence::load_polygon\l_from_eeprom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Fence.html#a4064af0cdae32b2fa68e8f85ea40c384",tooltip="load polygon points stored in eeprom into boundary array and perform validation. returns true if load..."];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AC_Fence::check_fence",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Fence.html#a730e2005dc74a0a70ee16bfb9569baeb"];
+  Node14 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

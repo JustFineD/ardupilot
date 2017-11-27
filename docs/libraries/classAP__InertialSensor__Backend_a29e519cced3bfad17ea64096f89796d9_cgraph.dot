@@ -1,0 +1,12 @@
+digraph "AP_InertialSensor_Backend::enable_fast_sampling"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_InertialSensor_Backend\l::enable_fast_sampling",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_InertialSensor_Backend\l::notify_accel_fifo_reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__InertialSensor__Backend.html#a22ccb4035c013aef8ad6c903400b54b6"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_InertialSensor_Backend\l::notify_gyro_fifo_reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__InertialSensor__Backend.html#a8a2e0f8e0912bd0b1737a6b55a8612fe"];
+}

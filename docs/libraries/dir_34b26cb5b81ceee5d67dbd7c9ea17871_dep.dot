@@ -1,0 +1,9 @@
+digraph "libraries/AP_Module/examples/ModuleTest/module" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_97fb43a68e081a188ca4bf7128f2e10c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="ModuleTest" fontname="Helvetica", fontsize="10", URL="dir_97fb43a68e081a188ca4bf7128f2e10c.html"]
+  dir_34b26cb5b81ceee5d67dbd7c9ea17871 [shape=box, label="module", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_34b26cb5b81ceee5d67dbd7c9ea17871.html"];
+  }
+}

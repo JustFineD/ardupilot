@@ -1,0 +1,15 @@
+<map id="AC_PosControl::accel_to_throttle" name="AC_PosControl::accel_to_throttle">
+<area shape="rect" id="node2" href="$classAP__AHRS__View.html#a30dcc3814e306d0492b335d14ca35eba" title="AP_AHRS_View::get_accel\l_ef_blended" alt="" coords="205,5,391,47"/>
+<area shape="rect" id="node4" href="$classAC__PID.html#ac267330f1299f011febcaaba47994af7" title="AC_PID::set_input_filter_all" alt="" coords="206,71,390,98"/>
+<area shape="rect" id="node7" href="$classAC__PID.html#a3f727ab395b401474027b6b9efcab5a3" title="AC_PID::set_desired_rate" alt="" coords="211,122,385,149"/>
+<area shape="rect" id="node8" href="$classAC__PID.html#a4808bb2656a1e8d94c713e58a7a2a222" title="AC_PID::get_p" alt="" coords="243,173,353,199"/>
+<area shape="rect" id="node9" href="$classAC__PID.html#a0fc275cae5ff46799af85af551c65870" title="AC_PID::get_integrator" alt="" coords="219,223,377,250"/>
+<area shape="rect" id="node10" href="$classAP__Motors.html#a6641c5398dea1388547dff3db5d95a86" title="AP_Motors::get_throttle\l_hover" alt="" coords="218,275,378,316"/>
+<area shape="rect" id="node11" href="$classAC__PID.html#a78d399f4731c6c4e0a1f9a4421b6c066" title="AC_PID::imax" alt="" coords="245,341,351,367"/>
+<area shape="rect" id="node12" href="$classAC__PID.html#a2d5bf9811a78c93a396ec1e37ae6fa0a" title="AC_PID::get_i" alt="" coords="463,391,570,418"/>
+<area shape="rect" id="node13" href="$classAC__PID.html#ad0c0510049ea37401920792e843bec86" title="AC_PID::get_d" alt="" coords="243,442,353,469"/>
+<area shape="rect" id="node14" href="$classAC__AttitudeControl.html#afb7047fed5ca67153e98c7369b3b9cd7" title="AC_AttitudeControl\l::set_throttle_out" alt="" coords="231,493,365,535"/>
+<area shape="rect" id="node3" href="$classAP__AHRS.html#abf6bbe1a98a2b7f99289e9394ce8fcd8" title="AP_AHRS::get_accel\l_ef_blended" alt="" coords="442,5,591,47"/>
+<area shape="rect" id="node5" href="$classAC__PID.html#ac12ffbd4fd053c6152d403b69e07b8e1" title="AC_PID::get_filt_alpha" alt="" coords="439,341,595,367"/>
+<area shape="rect" id="node6" href="$AP__Math_8h.html#a2a12cce483e9b870da70d30406d82c60" title="is_zero" alt="" coords="643,366,707,393"/>
+</map>

@@ -1,0 +1,12 @@
+digraph "SRV_Channels::set_safety_limit"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SRV_Channels::set_safety\l_limit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SRV_Channel::get_limit_pwm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSRV__Channel.html#a7bfe77a80fdca6bd4ace5c214855a5fe"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_HAL::RCOutput::set\l_safety_pwm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1RCOutput.html#aacbd8496b8bcb0a156897c1e06b8ce0c"];
+}

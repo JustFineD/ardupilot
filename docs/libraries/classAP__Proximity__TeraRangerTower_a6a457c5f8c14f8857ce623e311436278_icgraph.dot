@@ -1,0 +1,12 @@
+digraph "AP_Proximity_TeraRangerTower::detect"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Proximity_TeraRangerTower\l::detect",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Proximity::detect\l_instance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity.html#aa06a750c61f34848a0cabaafbad387d5"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Proximity::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity.html#a4fb240810284854fe169203d2dad280e"];
+}

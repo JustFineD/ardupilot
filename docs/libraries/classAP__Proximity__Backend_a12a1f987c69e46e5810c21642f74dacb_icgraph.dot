@@ -1,0 +1,21 @@
+digraph "AP_Proximity_Backend::get_object_count"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Proximity_Backend\l::get_object_count",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Proximity::get_object\l_count",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity.html#a71e6e75f4cd8553b3e4be332f4322c13"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AC_Avoid::get_proximity\l_roll_pitch_pct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#ad27740aa416a455958dcdc914a2be63e"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AC_Avoid::adjust_roll\l_pitch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__Avoid.html#a836fb856e23b46260cadd85665077ea8"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Proximity::num_sensors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity.html#aa4e5c5caf87c30f77d4173980544a15e"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Proximity_Backend\l::handle_msg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity__Backend.html#a752b6f958a876a540db7c794a20cee4f"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_Proximity::handle_msg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity.html#ace9bc2a217e4700cd8a324f2ebcf4c71"];
+  Node7 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

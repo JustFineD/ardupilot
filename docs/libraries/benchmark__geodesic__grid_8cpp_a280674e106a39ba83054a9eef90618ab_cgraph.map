@@ -1,0 +1,11 @@
+<map id="BM_GeodesicGridSections" name="BM_GeodesicGridSections">
+<area shape="rect" id="node2" href="$benchmark__geodesic__grid_8cpp.html#a1700493a3b872d3bdc794ab4baa7f6c5" title="section_triangle" alt="" coords="263,105,377,131"/>
+<area shape="rect" id="node3" href="$structAP__GeodesicGrid.html#a04a68b6581a66dc78ba25c8331d236a4" title="AP_GeodesicGrid::section" alt="" coords="232,155,408,182"/>
+<area shape="rect" id="node10" href="$benchmark__geodesic__grid_8cpp.html#aeac65f62e77b265c4ac03c91a1e5c015" title="BENCHMARK" alt="" coords="265,206,375,233"/>
+<area shape="rect" id="node4" href="$structAP__GeodesicGrid.html#a921673acc94e62b37884907d79b44051" title="AP_GeodesicGrid::_triangle\l_index" alt="" coords="456,119,639,160"/>
+<area shape="rect" id="node9" href="$structAP__GeodesicGrid.html#a501aa54c7e9f5cb28685f44058994584" title="AP_GeodesicGrid::_subtriangle\l_index" alt="" coords="687,177,891,219"/>
+<area shape="rect" id="node5" href="$AP__Math_8h.html#a2a12cce483e9b870da70d30406d82c60" title="is_zero" alt="" coords="1002,126,1066,153"/>
+<area shape="rect" id="node6" href="$structAP__GeodesicGrid.html#a4bd78a9f6ebb48ca1e67d6580a7fe86e" title="AP_GeodesicGrid::_from\l_neighbor_umbrella" alt="" coords="705,60,872,101"/>
+<area shape="rect" id="node7" href="$AP__Math_8cpp.html#accbd9f8bbc0adacd51efa66fad490c24" title="is_equal" alt="" coords="999,71,1069,98"/>
+<area shape="rect" id="node8" href="$structAP__GeodesicGrid.html#ad239aec9f7cd77fc6a6755584743fe0b" title="AP_GeodesicGrid::_neighbor\l_umbrella_component" alt="" coords="939,5,1129,47"/>
+</map>

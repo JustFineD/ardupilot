@@ -1,0 +1,12 @@
+digraph "AnalogSource_IIO::init_pins"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AnalogSource_IIO::init_pins",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AnalogSource_IIO::Analog\lSource_IIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__IIO.html#a5ae8d4e10313d76b314a54bd0209f3f5"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AnalogIn_IIO::channel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogIn__IIO.html#a65afd6a3ddffce46b91e1cd5d8bc2318"];
+}

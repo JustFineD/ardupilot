@@ -1,0 +1,59 @@
+<map id="libraries/AP_BattMonitor/AP_BattMonitor_Bebop.cpp" name="libraries/AP_BattMonitor/AP_BattMonitor_Bebop.cpp">
+<area shape="rect" id="node2" href="$AP__HAL_8h.html" title="AP_HAL/AP_HAL.h" alt="" coords="1265,736,1404,763"/>
+<area shape="rect" id="node39" href="$AP__BattMonitor__Bebop_8h.html" title="AP_BattMonitor_Bebop.h" alt="" coords="1511,191,1681,218"/>
+<area shape="rect" id="node62" href="$RCOutput__Bebop_8h.html" title="AP_HAL_Linux/RCOutput\l_Bebop.h" alt="" coords="866,184,1041,225"/>
+<area shape="rect" id="node66" href="$RCOutput__Disco_8h.html" title="AP_HAL_Linux/RCOutput\l_Disco.h" alt="" coords="1059,95,1234,136"/>
+<area shape="rect" id="node4" href="$AP__HAL__Namespace_8h.html" title="AP_HAL_Namespace.h" alt="" coords="431,1259,593,1285"/>
+<area shape="rect" id="node8" href="$AP__HAL__Boards_8h.html" title="AP_HAL_Boards.h" alt="" coords="1546,1184,1678,1211"/>
+<area shape="rect" id="node9" href="$AP__HAL__Macros_8h.html" title="AP_HAL_Macros.h" alt="" coords="1801,1035,1935,1061"/>
+<area shape="rect" id="node10" href="$AP__HAL__Main_8h.html" title="AP_HAL_Main.h" alt="" coords="1175,811,1294,837"/>
+<area shape="rect" id="node11" href="$HAL_8h.html" title="HAL.h" alt="" coords="1103,885,1161,912"/>
+<area shape="rect" id="node12" href="$AnalogIn_8h.html" title="AnalogIn.h" alt="" coords="1211,1035,1295,1061"/>
+<area shape="rect" id="node14" href="$GPIO_8h.html" title="GPIO.h" alt="" coords="1120,1035,1187,1061"/>
+<area shape="rect" id="node15" href="$RCInput_8h.html" title="RCInput.h" alt="" coords="456,960,539,987"/>
+<area shape="rect" id="node16" href="$RCOutput_8h.html" title="RCOutput.h" alt="" coords="614,960,706,987"/>
+<area shape="rect" id="node21" href="$Storage_8h.html" title="Storage.h" alt="" coords="1342,1109,1421,1136"/>
+<area shape="rect" id="node22" href="$UARTDriver_8h.html" title="UARTDriver.h" alt="" coords="883,960,989,987"/>
+<area shape="rect" id="node30" href="$BetterStream_8h.html" title="utility/BetterStream.h" alt="" coords="673,1035,818,1061"/>
+<area shape="rect" id="node32" href="$Stream_8h.html" title="Stream.h" alt="" coords="819,1109,893,1136"/>
+<area shape="rect" id="node33" href="$Print_8h.html" title="Print.h" alt="" coords="1054,1184,1114,1211"/>
+<area shape="rect" id="node34" href="$system_8h.html" title="system.h" alt="" coords="1830,960,1906,987"/>
+<area shape="rect" id="node35" href="$AP__HAL_2OpticalFlow_8h.html" title="OpticalFlow.h" alt="" coords="1267,960,1370,987"/>
+<area shape="rect" id="node36" href="$Scheduler_8h.html" title="Scheduler.h" alt="" coords="1584,1035,1675,1061"/>
+<area shape="rect" id="node37" href="$Semaphores_8h.html" title="Semaphores.h" alt="" coords="549,811,656,837"/>
+<area shape="rect" id="node38" href="$Util_8h.html" title="Util.h" alt="" coords="397,1035,451,1061"/>
+<area shape="rect" id="node6" href="$functor_8h.html" title="utility/functor.h" alt="" coords="557,1333,665,1360"/>
+<area shape="rect" id="node17" href="$SPIDevice_8h.html" title="SPIDevice.h" alt="" coords="1069,1109,1165,1136"/>
+<area shape="rect" id="node18" href="$Device_8h.html" title="Device.h" alt="" coords="752,1184,827,1211"/>
+<area shape="rect" id="node19" href="$OwnPtr_8h.html" title="utility/OwnPtr.h" alt="" coords="1189,1184,1301,1211"/>
+<area shape="rect" id="node23" href="$AP__Common_8h.html" title="Common definitions and utility routines for the ArduPilot libraries. " alt="" coords="2295,1109,2489,1136"/>
+<area shape="rect" id="node25" href="$replace_8h.html" title="AP_HAL_QURT/replace.h" alt="" coords="2397,1184,2571,1211"/>
+<area shape="rect" id="node40" href="$AP__BattMonitor__Backend_8h.html" title="AP_BattMonitor_Backend.h" alt="" coords="1691,273,1874,300"/>
+<area shape="rect" id="node41" href="$AP__BattMonitor_8h.html" title="AP_BattMonitor.h" alt="" coords="2036,348,2161,375"/>
+<area shape="rect" id="node42" href="$AP__Param_8h.html" title="A system for managing and storing variables that are of general interest to the system. " alt="" coords="1803,587,1965,613"/>
+<area shape="rect" id="node47" href="$AP__Math_8h.html" title="AP_Math/AP_Math.h" alt="" coords="2398,505,2543,531"/>
+<area shape="rect" id="node58" href="$GCS__MAVLink_8h.html" title="One size fits all header for MAVLink integration. " alt="" coords="1795,423,2010,449"/>
+<area shape="rect" id="node45" href="$StorageManager_8h.html" title="StorageManager/StorageManager.h" alt="" coords="1476,661,1703,688"/>
+<area shape="rect" id="node49" href="$definitions_8h.html" title="definitions.h" alt="" coords="2226,661,2318,688"/>
+<area shape="rect" id="node50" href="$edc_8h.html" title="edc.h" alt="" coords="2079,885,2134,912"/>
+<area shape="rect" id="node51" href="$location_8h.html" title="location.h" alt="" coords="2610,587,2689,613"/>
+<area shape="rect" id="node52" href="$vector2_8h.html" title="vector2.h" alt="" coords="2342,661,2418,688"/>
+<area shape="rect" id="node53" href="$vector3_8h.html" title="vector3.h" alt="" coords="2763,661,2839,688"/>
+<area shape="rect" id="node54" href="$rotations_8h.html" title="rotations.h" alt="" coords="2808,736,2891,763"/>
+<area shape="rect" id="node55" href="$matrix3_8h.html" title="matrix3.h" alt="" coords="2713,587,2789,613"/>
+<area shape="rect" id="node56" href="$polygon_8h.html" title="polygon.h" alt="" coords="2354,587,2433,613"/>
+<area shape="rect" id="node57" href="$quaternion_8h.html" title="quaternion.h" alt="" coords="2443,661,2536,688"/>
+<area shape="rect" id="node63" href="$AP__HAL__Linux_8h.html" title="AP_HAL_Linux.h" alt="" coords="725,587,848,613"/>
+<area shape="rect" id="node65" href="$I2CDevice_8h.html" title="AP_HAL/I2CDevice.h" alt="" coords="449,1109,599,1136"/>
+<area shape="rect" id="node64" href="$HAL__Linux__Class_8h.html" title="HAL_Linux_Class.h" alt="" coords="736,661,875,688"/>
+<area shape="rect" id="node67" href="$RCOutput__Sysfs_8h.html" title="RCOutput_Sysfs.h" alt="" coords="1065,191,1199,218"/>
+<area shape="rect" id="node68" href="$PWM__Sysfs_8h.html" title="PWM_Sysfs.h" alt="" coords="703,273,809,300"/>
+<area shape="rect" id="node69" href="$Linux_2Util_8h.html" title="Util.h" alt="" coords="849,348,903,375"/>
+<area shape="rect" id="node70" href="$Heat_8h.html" title="Heat.h" alt="" coords="929,423,991,449"/>
+<area shape="rect" id="node71" href="$Perf_8h.html" title="Perf.h" alt="" coords="847,423,905,449"/>
+<area shape="rect" id="node78" href="$ToneAlarm__Raspilot_8h.html" title="ToneAlarm_Raspilot.h" alt="" coords="673,423,823,449"/>
+<area shape="rect" id="node79" href="$ToneAlarm_8h.html" title="ToneAlarm.h" alt="" coords="145,505,241,531"/>
+<area shape="rect" id="node80" href="$Linux_2Semaphores_8h.html" title="Semaphores.h" alt="" coords="415,505,521,531"/>
+<area shape="rect" id="node76" href="$Perf__Lttng_8h.html" title="Perf_Lttng.h" alt="" coords="647,505,740,531"/>
+<area shape="rect" id="node77" href="$Thread_8h.html" title="Thread.h" alt="" coords="266,505,339,531"/>
+</map>

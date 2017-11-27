@@ -1,0 +1,48 @@
+digraph "VRBRAIN::VRBRAINUARTDriver::begin"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VRBRAIN::VRBRAINUARTDriver\l::begin",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ByteBuffer::get_size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#abffbbc49b95018491a103ea32d44b54a"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ByteBuffer::set_size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#a4279e626cb21779cc92f7cf63b9cb3f7"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ByteBuffer::advance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#a876a74665a4f4358cf2a57941543d0d6"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ByteBuffer::available",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#aacbc04305e267a33a431f8736f8d0d5d"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ByteBuffer::readptr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#ac8877785d9931ae293a216b46951b4a1"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ByteBuffer::peek",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#afe100bddde679bb1130338073ec5a9a9"];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ByteBuffer::peekbytes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#af34d398a28a23bf19cad598487eeb54d"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ByteBuffer::peekiovec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classByteBuffer.html#a413289b6d4cc7f9550b9c75dc7e886d5"];
+  Node9 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_HAL::Scheduler::\ldelay",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html#ab3175e2e6223ccfe82f957e41cc12b26"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_HAL::UARTDriver\l::printf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1UARTDriver.html#a6ceedc792594e59fc7d80b39a435f027"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_HAL::UARTDriver\l::vprintf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1UARTDriver.html#aa8abfb6d6641299472c29ac1edde559f"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="print_vprintf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$print__vprintf_8cpp.html#a1534eaeab54696df96975b56d9f49212"];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_HAL::Print::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Print.html#acc65391952a43334f8f5c9bef341f501"];
+  Node13 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="ftoa_engine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ftoa__engine_8cpp.html#a1c28234da8f20b43c85890d4bb452947"];
+  Node13 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="strnlen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$replace_8cpp.html#a880bcc7b85a09e6254691bebd5344b51"];
+  Node13 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="ulltoa_invert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$utoa__invert_8cpp.html#a34926f552460b47c414ec4d83b32815c"];
+  Node13 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="ultoa_invert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$utoa__invert_8cpp.html#a5d99bba8e697c1e11da489d88fca8559"];
+  Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="getpid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$replace_8h.html#ac61b207337ca21b3b309593fd1a0cb82"];
+}

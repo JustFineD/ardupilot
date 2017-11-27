@@ -1,0 +1,14 @@
+<map id="get_device" name="get_device">
+<area shape="rect" id="node2" href="$classAP__HAL_1_1SPIDeviceManager.html#a934f05385b87bfbdfc912162028867fc" title="AP_HAL::SPIDeviceManager\l::get_device_name" alt="" coords="139,34,333,75"/>
+<area shape="rect" id="node3" href="$classAP__HAL_1_1UARTDriver.html#a6ceedc792594e59fc7d80b39a435f027" title="AP_HAL::UARTDriver\l::printf" alt="" coords="159,99,313,141"/>
+<area shape="rect" id="node11" href="$classAP__HAL_1_1Scheduler.html#ab3175e2e6223ccfe82f957e41cc12b26" title="AP_HAL::Scheduler::\ldelay" alt="" coords="163,165,309,206"/>
+<area shape="rect" id="node12" href="$classAP__HAL_1_1SPIDeviceManager.html#af0b7857bf18d0f5aa9d71cca6278dfa2" title="AP_HAL::SPIDeviceManager\l::get_count" alt="" coords="139,230,333,271"/>
+<area shape="rect" id="node13" href="$classAP__HAL_1_1SPIDeviceManager.html#a84c4a9ff2ae0cdaa9a0bc8a3f0939893" title="AP_HAL::SPIDeviceManager\l::get_device" alt="" coords="139,295,333,337"/>
+<area shape="rect" id="node4" href="$classAP__HAL_1_1UARTDriver.html#aa8abfb6d6641299472c29ac1edde559f" title="AP_HAL::UARTDriver\l::vprintf" alt="" coords="381,99,535,141"/>
+<area shape="rect" id="node5" href="$print__vprintf_8cpp.html#a1534eaeab54696df96975b56d9f49212" title="print_vprintf" alt="" coords="583,107,673,133"/>
+<area shape="rect" id="node6" href="$classAP__HAL_1_1Print.html#acc65391952a43334f8f5c9bef341f501" title="AP_HAL::Print::write" alt="" coords="721,5,865,32"/>
+<area shape="rect" id="node7" href="$ftoa__engine_8cpp.html#a1c28234da8f20b43c85890d4bb452947" title="ftoa_engine" alt="" coords="749,56,838,83"/>
+<area shape="rect" id="node8" href="$replace_8cpp.html#a880bcc7b85a09e6254691bebd5344b51" title="strnlen" alt="" coords="763,107,824,133"/>
+<area shape="rect" id="node9" href="$utoa__invert_8cpp.html#a34926f552460b47c414ec4d83b32815c" title="ulltoa_invert" alt="" coords="747,157,839,184"/>
+<area shape="rect" id="node10" href="$utoa__invert_8cpp.html#a5d99bba8e697c1e11da489d88fca8559" title="ultoa_invert" alt="" coords="749,208,838,235"/>
+</map>

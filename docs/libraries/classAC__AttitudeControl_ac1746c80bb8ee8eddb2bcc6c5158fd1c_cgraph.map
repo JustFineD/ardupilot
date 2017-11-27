@@ -1,0 +1,10 @@
+<map id="AC_AttitudeControl::max_angle_step_bf_roll" name="AC_AttitudeControl::max_angle_step_bf_roll">
+<area shape="rect" id="node2" href="$classAC__AttitudeControl.html#a81707c8a063a129c3025c87687b06b52" title="AC_AttitudeControl\l::max_rate_step_bf_roll" alt="" coords="220,123,379,164"/>
+<area shape="rect" id="node9" href="$classAC__P.html#a723b372dfceb74ddb2edbe11544e9d5a" title="AC_P::kP" alt="" coords="259,189,340,215"/>
+<area shape="rect" id="node3" href="$classAC__AttitudeControl.html#ad300b51e0777495496adddd1770ee920" title="AC_AttitudeControl\l::get_rate_roll_pid" alt="" coords="439,5,574,47"/>
+<area shape="rect" id="node4" href="$classAC__PID.html#ac12ffbd4fd053c6152d403b69e07b8e1" title="AC_PID::get_filt_alpha" alt="" coords="429,71,585,98"/>
+<area shape="rect" id="node6" href="$classAP__Motors.html#a6641c5398dea1388547dff3db5d95a86" title="AP_Motors::get_throttle\l_hover" alt="" coords="427,123,587,164"/>
+<area shape="rect" id="node7" href="$classAC__PID.html#a2d7be199fbc437ee472fad5a4308c668" title="AC_PID::kD" alt="" coords="459,189,555,215"/>
+<area shape="rect" id="node8" href="$classAC__PID.html#ac29a8c72a8618d87886599204dcb5b79" title="AC_PID::kP" alt="" coords="459,239,554,266"/>
+<area shape="rect" id="node5" href="$AP__Math_8h.html#a2a12cce483e9b870da70d30406d82c60" title="is_zero" alt="" coords="635,71,699,98"/>
+</map>

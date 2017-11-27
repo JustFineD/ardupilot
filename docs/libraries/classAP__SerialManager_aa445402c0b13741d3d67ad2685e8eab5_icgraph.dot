@@ -1,0 +1,34 @@
+digraph "AP_SerialManager::map_baudrate"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_SerialManager::map\l_baudrate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_SerialManager::find\l_baudrate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__SerialManager.html#a98789d2356587b32dd3507578ca1d89d"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Beacon_Marvelmind\l::AP_Beacon_Marvelmind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon__Marvelmind.html#a4c08f55db7763f7fe3696882fb8badbe"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Beacon_Pozyx::AP\l_Beacon_Pozyx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Beacon__Pozyx.html#af04a9586164ad91c2fb27adc8fdbcf3e"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Proximity_LightWareSF40\lC::AP_Proximity_LightWareSF40C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity__LightWareSF40C.html#a5c2fc4063a2ca5aed46cf8906e26d5c8"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Proximity_TeraRangerTower\l::AP_Proximity_TeraRangerTower",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity__TeraRangerTower.html#a71cb30c6fe9b3850d6a9f172c5e3550d"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_RangeFinder_LeddarOne\l::AP_RangeFinder_LeddarOne",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__LeddarOne.html#afe62befa48e9caebd2d3e9b227c8519b"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_RangeFinder_LightWare\lSerial::AP_RangeFinder\l_LightWareSerial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__LightWareSerial.html#a1e1c2db82dc21ab575aeaa8e1bc878da"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_RangeFinder_MaxsonarSerial\lLV::AP_RangeFinder_MaxsonarSerialLV",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__MaxsonarSerialLV.html#a624ffd0eeaf5d4ee9f9e481720c258ef"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AP_RangeFinder_uLanding\l::AP_RangeFinder_uLanding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__RangeFinder__uLanding.html#a8860a7bd3f570b5ad2510e24440a8029"];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="GCS_MAVLINK::setup_uart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structGCS__MAVLINK.html#a0680c93d81d7de3273931c5bccc890f5"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_SerialManager::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__SerialManager.html#a4f6d491b1538d6d2513af7375825f35e"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AHRS__Test_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_SerialManager::set\l_console_baud",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__SerialManager.html#acad9b72c3b313f4e551be9f4861ffbf2"];
+}

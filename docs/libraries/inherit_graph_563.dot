@@ -1,0 +1,44 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="NotifyDevice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNotifyDevice.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_BoardLED",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__BoardLED.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Buzzer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuzzer.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Display",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDisplay.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ExternalLED",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classExternalLED.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="OreoLED_PX4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOreoLED__PX4.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="RGBLed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRGBLed.html"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="DiscoLED",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDiscoLED.html"];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="DiscreteRGBLed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classDiscreteRGBLed.html"];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="NavioLED",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavioLED.html"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="NavioLED_I2C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavioLED__I2C.html"];
+  Node7 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PixRacerLED",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPixRacerLED.html"];
+  Node7 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="RCOutputRGBLed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRCOutputRGBLed.html"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="RCOutputRGBLedOff",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRCOutputRGBLedOff.html"];
+  Node7 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="ToshibaLED",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classToshibaLED.html"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="ToshibaLED_I2C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classToshibaLED__I2C.html"];
+  Node7 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="VRBoard_LED",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBoard__LED.html"];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="ToneAlarm_Linux",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classToneAlarm__Linux.html"];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="ToneAlarm_PX4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classToneAlarm__PX4.html"];
+}

@@ -1,0 +1,20 @@
+digraph "AP_AHRS_NavEKF::getLastVelNorthEastReset"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_AHRS_NavEKF::getLastVel\lNorthEastReset",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_AHRS_NavEKF::ekf_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS__NavEKF.html#a2421598bfc909c228709f99347a5fcea"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_AHRS_NavEKF::always\l_use_EKF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__AHRS__NavEKF.html#a9af775a381a41ff78ac75a06ba7b1a05"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NavEKF2::getLastVelNorth\lEastReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF2.html#a490ffcf1cad643ae6e5828af2369c9a8"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="NavEKF2_core::getLastVel\lNorthEastReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF2__core.html#a46f0cb76c7ad767139eec3afd8b252d9"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="NavEKF3::getLastVelNorth\lEastReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF3.html#ae5fe55da211155da857eaffae804942f"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="NavEKF3_core::getLastVel\lNorthEastReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNavEKF3__core.html#a28e0cf5fa6f5eaa571772f2a59a823d2"];
+}

@@ -1,0 +1,36 @@
+digraph "AP_HAL::Scheduler::resume_timer_procs"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_HAL::Scheduler::\lresume_timer_procs",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AnalogIn_ADS1115::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogIn__ADS1115.html#a4dbe06d5858fbcacea9da4341dd65444"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PX4::PX4AnalogSource\l::read_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPX4_1_1PX4AnalogSource.html#a70fb63a3bf1c7a5613ce9cd78453aadc"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PX4::PX4AnalogSource\l::voltage_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPX4_1_1PX4AnalogSource.html#a254619275d9239396e49c858414a7c25"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PX4::PX4AnalogSource\l::voltage_average_ratiometric",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPX4_1_1PX4AnalogSource.html#a4a045494b02f13d840c7e8830f6d4e9e"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="VRBRAIN::VRBRAINAnalogSource\l::read_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINAnalogSource.html#a97755c565c9b2cf9016da767d732590e"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="VRBRAIN::VRBRAINAnalogSource\l::voltage_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINAnalogSource.html#adebcdf5de43a73f3ebdd8f1a6f2e9b5b"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="VRBRAIN::VRBRAINAnalogSource\l::voltage_average_ratiometric",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINAnalogSource.html#a8a4e25afd0b30c9810b1a505a402c8f0"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AnalogSource_IIO::read\l_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__IIO.html#a99e4878021dcfe65223db6416e0c8087"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AnalogSource_IIO::voltage\l_average",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__IIO.html#a93c21dea3c2b90c0d53d37b0a2d61ed3"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AnalogSource_IIO::voltage\l_average_ratiometric",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__IIO.html#a9dcf2c3943c42ab9d990819fd57b4370"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_HAL::Scheduler::\lregister_timer_process",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1Scheduler.html#a7b76a3578fca13230ebf3e8f51306ef6"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PX4::PX4AnalogSource\l::set_pin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPX4_1_1PX4AnalogSource.html#a9664889e0a5f407152d44da27471e8b0"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="VRBRAIN::VRBRAINAnalogSource\l::set_pin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINAnalogSource.html#a2050a1c3972344da090578be53140076"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="AnalogSource_IIO::set_pin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__IIO.html#a318541caaaae9fd9a4fb916a39064395"];
+}

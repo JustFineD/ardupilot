@@ -1,0 +1,16 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AC_PrecLand_Backend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PrecLand__Backend.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AC_PrecLand_Companion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PrecLand__Companion.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AC_PrecLand_IRLock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PrecLand__IRLock.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AC_PrecLand_SITL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PrecLand__SITL.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AC_PrecLand_SITL_Gazebo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAC__PrecLand__SITL__Gazebo.html"];
+}

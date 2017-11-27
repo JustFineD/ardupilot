@@ -1,0 +1,17 @@
+digraph "VRBRAIN::VRBRAINRCOutput::_publish_actuators"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VRBRAIN::VRBRAINRCOutput\l::_publish_actuators",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="VRBRAIN::VRBRAINRCOutput\l::_send_outputs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINRCOutput.html#a39fb2554e861e0923b1781f983d3eca3"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="VRBRAIN::VRBRAINRCOutput\l::push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINRCOutput.html#af3c941f5717b26889e36c63d0d3ba01a"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="VRBRAIN::VRBRAINRCOutput\l::set_esc_scaling",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINRCOutput.html#aabaf1d58892d696bd76d13ee84ce97c7"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="VRBRAIN::VRBRAINRCOutput\l::_timer_tick",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAINRCOutput.html#a4322ba67a1b91bddc42474267e614e8b"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

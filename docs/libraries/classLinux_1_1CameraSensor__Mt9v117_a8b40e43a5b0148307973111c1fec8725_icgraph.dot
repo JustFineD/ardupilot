@@ -1,0 +1,10 @@
+digraph "Linux::CameraSensor_Mt9v117::_configure_sensor_qvga"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::CameraSensor\l_Mt9v117::_configure\l_sensor_qvga",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::CameraSensor\l_Mt9v117::CameraSensor\l_Mt9v117",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1CameraSensor__Mt9v117.html#a4ca64405fd0ece45d76b844a14eb2f5f"];
+}

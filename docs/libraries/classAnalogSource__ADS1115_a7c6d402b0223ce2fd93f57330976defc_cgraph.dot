@@ -1,0 +1,10 @@
+digraph "AnalogSource_ADS1115::read_average"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AnalogSource_ADS1115\l::read_average",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AnalogSource_ADS1115\l::read_latest",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAnalogSource__ADS1115.html#a61b81824d9b4b33788198d3d185c9bb5"];
+}

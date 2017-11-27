@@ -1,0 +1,22 @@
+digraph "AP_Avoidance::check_startup"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Avoidance::check\l_startup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Avoidance::add_obstacle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Avoidance.html#a8205fe7958301bf7f039bf0ebe2ef76b"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Avoidance::add_obstacle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Avoidance.html#a20897f1792d996e094ed92b076fe7740"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Avoidance::get_adsb\l_samples",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Avoidance.html#aaa2a7d298e4d0349bc423525c2f97bd3"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Avoidance::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Avoidance.html#a37059296c298d5f6d9a5fb11bab4d329"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Avoidance::handle_msg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Avoidance.html#ad4c6e3d73abd681053400138e9bd94ee"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_Avoidance::disable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Avoidance.html#a67dd17b2b39d80a09a84b62197581a7e"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,12 @@
+digraph "SITL::Submarine::calculate_forces"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SITL::Submarine::calculate\l_forces",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SITL::Submarine::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Submarine.html#a9ac406adb6adef2936c9d51d45d74165"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SITL::Submarine::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSITL_1_1Submarine.html#ae172876dbb527df84dfb38c9fa383878"];
+}

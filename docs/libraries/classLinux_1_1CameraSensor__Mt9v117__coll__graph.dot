@@ -1,0 +1,14 @@
+digraph "Linux::CameraSensor_Mt9v117"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Linux::CameraSensor\l_Mt9v117",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Linux::CameraSensor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLinux_1_1CameraSensor.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _dev" ,fontname="Helvetica"];
+  Node3 [label="AP_HAL::OwnPtr\< AP\l_HAL::Linux::I2CDevice \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1OwnPtr.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _patch_lines" ,fontname="Helvetica"];
+  Node4 [label="Linux::mt9v117_patch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structLinux_1_1mt9v117__patch.html"];
+}

@@ -1,0 +1,19 @@
+digraph "DSPBuffer"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="DSPBuffer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mag" ,fontname="Helvetica"];
+  Node2 [label="DSPBuffer::MAG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDSPBuffer_1_1MAG.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buf" ,fontname="Helvetica"];
+  Node3 [label="DSPBuffer::MAG::BUF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDSPBuffer_1_1MAG_1_1BUF.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" baro" ,fontname="Helvetica"];
+  Node4 [label="DSPBuffer::BARO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDSPBuffer_1_1BARO.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buf" ,fontname="Helvetica"];
+  Node5 [label="DSPBuffer::BARO::BUF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDSPBuffer_1_1BARO_1_1BUF.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" imu" ,fontname="Helvetica"];
+  Node6 [label="DSPBuffer::IMU",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDSPBuffer_1_1IMU.html"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buf" ,fontname="Helvetica"];
+  Node7 [label="DSPBuffer::IMU::BUF",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDSPBuffer_1_1IMU_1_1BUF.html"];
+}

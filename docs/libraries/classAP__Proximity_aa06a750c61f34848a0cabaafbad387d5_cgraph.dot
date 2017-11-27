@@ -1,0 +1,17 @@
+digraph "AP_Proximity::detect_instance"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_Proximity::detect\l_instance",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Proximity_LightWareSF40\lC::detect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity__LightWareSF40C.html#acb50f290c521c4ff5fa658aa271c6aad"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_SerialManager::find\l_serial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__SerialManager.html#af80d1e798f50bcd4ffcff2f3313e3950"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_SerialManager::protocol\l_match",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__SerialManager.html#a0b9318b2cf0f61a6e13d46a125dc038b"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Proximity_TeraRangerTower\l::detect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Proximity__TeraRangerTower.html#a6a457c5f8c14f8857ce623e311436278"];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

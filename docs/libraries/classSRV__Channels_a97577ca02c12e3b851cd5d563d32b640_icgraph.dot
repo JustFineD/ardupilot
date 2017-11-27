@@ -1,0 +1,49 @@
+digraph "SRV_Channels::set_aux_channel_default"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SRV_Channels::set_aux\l_channel_default",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Motors::add_motor_num",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#ad0a73edfaa0d7b5c4f325a823c7781f4"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_MotorsMatrix::add\l_motor_raw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsMatrix.html#a7845148fb3e5acb078d0dc121d75470b"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_MotorsMatrix::add\l_motor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsMatrix.html#acee5f69304786deff28075ae14eb6a46"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Motors6DOF::add\l_motor_raw_6dof",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors6DOF.html#ac454275ad3ea3fc58279921e7fccd487"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Motors6DOF::setup\l_motors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors6DOF.html#af9f238b776db93043513ef422c80559d"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="AP_MotorsMatrix::AP\l_MotorsMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsMatrix.html#a1079a240f98556fe4cb0af7d1d039917",tooltip="Constructor. "];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="AP_MotorsMatrix::setup\l_motors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsMatrix.html#add4cc7528ad5a337f58ec38a64156bd4"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="AP_MotorsMatrix::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsMatrix.html#aac841b5c0bd90818f0dbf5ea523b9ec7"];
+  Node9 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="setup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AP__Motors__test_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d"];
+  Node8 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="AP_MotorsMatrix::set\l_frame_class_and_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsMatrix.html#a58482c4eb0d57303b9bd7f7e122e7187"];
+  Node11 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="AP_Motors::get_pwm_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Motors.html#a03665c7df835ae4b22a34c650819ce27"];
+  Node2 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="AP_MotorsTri::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsTri.html#ab3d9289eccb10b59908b71f5d6deef12"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="AP_MotorsTri::AP_MotorsTri",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsTri.html#a282f48b7e788fbbe5ae835a00937cb02",tooltip="Constructor. "];
+  Node2 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="AP_MotorsSingle::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsSingle.html#a23f9e9dec626aa810d730065eabadbf3"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="AP_MotorsSingle::AP\l_MotorsSingle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsSingle.html#a93eade83957680ac6f0b01fadc8fbbfa",tooltip="Constructor. "];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="AP_MotorsHeli_RSC::\linit_servo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__RSC.html#aeb6143de2bc88e0540acd68349f61c73"];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="AP_MotorsHeli_RSC::\lAP_MotorsHeli_RSC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__RSC.html#afd079223262ce6bea3c32e0c7e783aeb"];
+  Node17 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="AP_MotorsHeli_Dual\l::init_outputs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Dual.html#af9f3d3cb5c7d59106219ad51e02df7a9"];
+  Node17 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="AP_MotorsHeli_Single\l::init_outputs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__MotorsHeli__Single.html#a018454351a5f35b808c933e3cab29a04"];
+}

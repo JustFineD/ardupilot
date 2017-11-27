@@ -1,0 +1,28 @@
+digraph "HALSITL::GPIO::GPIO"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="HALSITL::GPIO::GPIO",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="HALSITL::GPIO::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1GPIO.html#a136864b3b663cd065289c8d4071bca94"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="HALSITL::GPIO::pinMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1GPIO.html#ad6b691af3890825e870b355e5895a612"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="HALSITL::GPIO::analogPin\lToDigitalPin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1GPIO.html#ae1ae35fa9d900acc3b4a6f39aeaccac7"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HALSITL::GPIO::read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1GPIO.html#aedc660df2278ce47542f458582bf6c72"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="HALSITL::GPIO::write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1GPIO.html#a37f695836148e56bb7d173111c2b8aaf"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HALSITL::GPIO::toggle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1GPIO.html#a6906dcead960b89e663570dc781d8234"];
+  Node7 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="HALSITL::GPIO::channel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1GPIO.html#abfc6934a0171b60d39e377f2ebf7ab8c"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="HALSITL::GPIO::attach\l_interrupt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1GPIO.html#adf774f560b09c1b074d936e946a02c10"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="HALSITL::GPIO::usb\l_connected",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHALSITL_1_1GPIO.html#a0154283dda39e06f3c749b3988d5b577"];
+}

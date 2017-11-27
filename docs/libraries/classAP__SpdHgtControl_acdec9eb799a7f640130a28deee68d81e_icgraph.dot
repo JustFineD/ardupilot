@@ -1,0 +1,16 @@
+digraph "AP_SpdHgtControl::get_land_sinkrate"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AP_SpdHgtControl::get\l_land_sinkrate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="AP_Landing::type_slope\l_setup_landing_glide_slope",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Landing.html#a1dfa510a03baa86e6814acf6b3c75595"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AP_Landing::setup_landing\l_glide_slope",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Landing.html#a5cdce89b787f18c99ced194d501c50ae"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Landing::type_slope\l_adjust_landing_slope\l_for_rangefinder_bump",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Landing.html#a68317a4d27e65aadc7013a9363da5ce3"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Landing::adjust\l_landing_slope_for_rangefinder_bump",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Landing.html#aca701ba52726269447500bdf654b3b10"];
+}

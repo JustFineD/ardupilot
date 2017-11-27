@@ -1,0 +1,25 @@
+digraph "DiscreteRGBLed"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DiscreteRGBLed",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RGBLed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRGBLed.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NotifyDevice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNotifyDevice.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pNotify" ,fontname="Helvetica"];
+  Node4 [label="AP_Notify",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Notify.html"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" events" ,fontname="Helvetica"];
+  Node5 [label="AP_Notify::notify_events_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__Notify_1_1notify__events__type.html",tooltip="notify_events_type - bitmask of active events. "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" flags" ,fontname="Helvetica"];
+  Node6 [label="AP_Notify::notify_flags\l_and_values_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__Notify_1_1notify__flags__and__values__type.html",tooltip="notify_flags_type - bitmask of notification flags "];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" var_info" ,fontname="Helvetica"];
+  Node7 [label="AP_Param::GroupInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAP__Param_1_1GroupInfo.html"];
+  Node7 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" group_info_ptr\ngroup_info" ,fontname="Helvetica"];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _devices" ,fontname="Helvetica"];
+  Node4 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" _instance" ,fontname="Helvetica"];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" green_pin\nblue_pin\nred_pin" ,fontname="Helvetica"];
+  Node8 [label="AP_HAL::DigitalSource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__HAL_1_1DigitalSource.html"];
+}

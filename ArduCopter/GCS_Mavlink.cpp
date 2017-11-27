@@ -1563,10 +1563,23 @@ void GCS_MAVLINK_Copter::handleMessage(mavlink_message_t* msg)
         break;
     }
 
-#if HIL_MODE != HIL_MODE_DISABLED
+    // ### 21/11/17 - Added by DF - receive HIL_STATE_QUATERNION message
+    case MAVLINK_MSG_ID_HIL_STATE_QUATERNION:
+    {
+    	mavlink_hil_state_quaternion_t packet;
+
+    	hal.console->printf("Received HIL_STATE message");
+    	mavlink_msg_hil_state_quaternion_decode(msg, &packet);
+
+    	break;
+    }
+// ### Removed by DF at 21/11/17 - enable HIL_STATE message
+    //#if HIL_MODE != HIL_MODE_DISABLED
     case MAVLINK_MSG_ID_HIL_STATE:          // MAV ID: 90
     {
+
         mavlink_hil_state_t packet;
+
         mavlink_msg_hil_state_decode(msg, &packet);
 
         // sanity check location
@@ -1575,16 +1588,18 @@ void GCS_MAVLINK_Copter::handleMessage(mavlink_message_t* msg)
         }
 
         // set gps hil sensor
-        Location loc;
-        loc.lat = packet.lat;
-        loc.lng = packet.lon;
-        loc.alt = packet.alt/10;
+        //Location loc;
+        //loc.lat = packet.lat;
+        //loc.lng = packet.lon;
+        //loc.alt = packet.alt/10;
         Vector3f vel(packet.vx, packet.vy, packet.vz);
         vel *= 0.01f;
-
+// ### temp removed
+        /*
         gps.setHIL(0, AP_GPS::GPS_OK_FIX_3D,
                    packet.time_usec/1000,
                    loc, vel, 10, 0);
+        */
 
         // rad/sec
         Vector3f gyros;
@@ -1597,10 +1612,12 @@ void GCS_MAVLINK_Copter::handleMessage(mavlink_message_t* msg)
         accels.x = packet.xacc * (GRAVITY_MSS/1000.0f);
         accels.y = packet.yacc * (GRAVITY_MSS/1000.0f);
         accels.z = packet.zacc * (GRAVITY_MSS/1000.0f);
-
+// ### Temp removed
+        /*
         ins.set_gyro(0, gyros);
 
         ins.set_accel(0, accels);
+        */
 
         copter.barometer.setHIL(packet.alt*0.001f);
         copter.compass.setHIL(0, packet.roll, packet.pitch, packet.yaw);
@@ -1608,7 +1625,7 @@ void GCS_MAVLINK_Copter::handleMessage(mavlink_message_t* msg)
 
         break;
     }
-#endif //  HIL_MODE != HIL_MODE_DISABLED
+//#endif //  HIL_MODE != HIL_MODE_DISABLED
 
     case MAVLINK_MSG_ID_RADIO:
     case MAVLINK_MSG_ID_RADIO_STATUS:       // MAV ID: 109

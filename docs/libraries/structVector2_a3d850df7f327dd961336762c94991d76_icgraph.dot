@@ -1,0 +1,19 @@
+digraph "Vector2::operator-"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Vector2::operator-",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Vector2::angle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structVector2.html#a62830d89ee7cd308a7d12caf352f1be9"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Vector2\< int32_t \>\l::operator()",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structVector2.html#af58fdb320b592f2a623f767b96f82171"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AP_Landing_Deepstall\l::verify_breakout",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Landing__Deepstall.html#afc811efa3075df08f3c8f43ac32cf303"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AP_Landing_Deepstall\l::verify_land",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Landing__Deepstall.html#af3cde793ef57477c3468547de0a8a90f"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="AP_Landing::verify_land",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAP__Landing.html#afdbc34de818b9cb366336c23660fd495"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,14 @@
+digraph "VRBRAIN::VRBRAIN_I2C::do_transfer"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="VRBRAIN::VRBRAIN_I2C\l::do_transfer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="VRBRAIN::I2CDevice\l::transfer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1I2CDevice.html#a0fdbf058ddfdb0f92b18d4c9b454e470"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="VRBRAIN::I2CDevice\l::set_speed",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1I2CDevice.html#ac0c498b703533a8f1c0074b5b52dbe87"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="VRBRAIN::VRBRAIN_I2C\l::VRBRAIN_I2C",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classVRBRAIN_1_1VRBRAIN__I2C.html#a912f551f8099630d1794d72d4ff3e3c8"];
+}
